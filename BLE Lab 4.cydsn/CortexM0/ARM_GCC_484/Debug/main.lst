@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 1
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -17,15 +17,21 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 1
   14              		.text
   15              	.Ltext0:
   16              		.cfi_sections	.debug_frame
-  17              		.section	.text.main,"ax",%progbits
-  18              		.align	2
-  19              		.global	main
-  20              		.code	16
-  21              		.thumb_func
-  22              		.type	main, %function
-  23              	main:
-  24              	.LFB35:
-  25              		.file 1 ".\\main.c"
+  17              		.global	shut_down_led
+  18              		.data
+  19              		.type	shut_down_led, %object
+  20              		.size	shut_down_led, 1
+  21              	shut_down_led:
+  22 0000 01       		.byte	1
+  23              		.section	.text.main,"ax",%progbits
+  24              		.align	2
+  25              		.global	main
+  26              		.code	16
+  27              		.thumb_func
+  28              		.type	main, %function
+  29              	main:
+  30              	.LFB35:
+  31              		.file 1 ".\\main.c"
    1:.\main.c      **** /*****************************************************************************
    2:.\main.c      **** * File Name: main.c
    3:.\main.c      **** *
@@ -52,15 +58,15 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 1
   24:.\main.c      **** * this software except as specified above is prohibited without the express
   25:.\main.c      **** * written permission of Cypress.
   26:.\main.c      **** *
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 2
+
+
   27:.\main.c      **** * Disclaimer: CYPRESS MAKES NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, WITH
   28:.\main.c      **** * REGARD TO THIS MATERIAL, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
   29:.\main.c      **** * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
   30:.\main.c      **** * Cypress reserves the right to make changes without further notice to the
   31:.\main.c      **** * materials described herein. Cypress does not assume any liability arising out
   32:.\main.c      **** * of the application or use of any product or circuit described herein. Cypress
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 2
-
-
   33:.\main.c      **** * does not authorize its products for use as critical components in life-support
   34:.\main.c      **** * systems where a malfunction or failure may reasonably be expected to result in
   35:.\main.c      **** * significant injury to the user. The inclusion of Cypress' product in a life-
@@ -77,787 +83,1769 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 1
   46:.\main.c      **** #include <BLEApplications.h>
   47:.\main.c      **** 
   48:.\main.c      **** 
-  49:.\main.c      **** /*****************************************************************************
-  50:.\main.c      **** * Function Prototypes
-  51:.\main.c      **** *****************************************************************************/
-  52:.\main.c      **** static void InitializeSystem(void);
-  53:.\main.c      **** static void HandleCapSenseSlider(void);
-  54:.\main.c      **** 
-  55:.\main.c      **** 
-  56:.\main.c      **** /*****************************************************************************
-  57:.\main.c      **** * Public functions
-  58:.\main.c      **** *****************************************************************************/
-  59:.\main.c      **** 
-  60:.\main.c      **** /*******************************************************************************
-  61:.\main.c      **** * Function Name: main
-  62:.\main.c      **** ********************************************************************************
-  63:.\main.c      **** * Summary:
-  64:.\main.c      **** * System entrance point. This calls the initializing function and continuously
-  65:.\main.c      **** * process BLE and CapSense events.
-  66:.\main.c      **** *
-  67:.\main.c      **** * Parameters:
-  68:.\main.c      **** *  void
+  49:.\main.c      **** uint8 shut_down_led = TRUE;
+  50:.\main.c      **** 
+  51:.\main.c      **** /*****************************************************************************
+  52:.\main.c      **** * Function Prototypes
+  53:.\main.c      **** *****************************************************************************/
+  54:.\main.c      **** static void InitializeSystem(void);
+  55:.\main.c      **** static void HandleCapSenseSlider(void);
+  56:.\main.c      **** void HandleLowPowerMode(void);
+  57:.\main.c      **** 
+  58:.\main.c      **** 
+  59:.\main.c      **** /*****************************************************************************
+  60:.\main.c      **** * Public functions
+  61:.\main.c      **** *****************************************************************************/
+  62:.\main.c      **** 
+  63:.\main.c      **** /*******************************************************************************
+  64:.\main.c      **** * Function Name: main
+  65:.\main.c      **** ********************************************************************************
+  66:.\main.c      **** * Summary:
+  67:.\main.c      **** * System entrance point. This calls the initializing function and continuously
+  68:.\main.c      **** * process BLE and CapSense events.
   69:.\main.c      **** *
-  70:.\main.c      **** * Return:
-  71:.\main.c      **** *  int
+  70:.\main.c      **** * Parameters:
+  71:.\main.c      **** *  void
   72:.\main.c      **** *
-  73:.\main.c      **** *******************************************************************************/
-  74:.\main.c      **** int main()
-  75:.\main.c      **** {
-  26              		.loc 1 75 0
-  27              		.cfi_startproc
-  28 0000 80B5     		push	{r7, lr}
-  29              		.cfi_def_cfa_offset 8
-  30              		.cfi_offset 7, -8
-  31              		.cfi_offset 14, -4
-  32 0002 00AF     		add	r7, sp, #0
-  33              		.cfi_def_cfa_register 7
-  76:.\main.c      **** 	/* This function will initialize the system resources such as BLE and CapSense */
-  77:.\main.c      ****     InitializeSystem();
-  34              		.loc 1 77 0
-  35 0004 FFF7FEFF 		bl	InitializeSystem
-  36              	.L3:
-  78:.\main.c      **** 	
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 3
+  73:.\main.c      **** * Return:
+  74:.\main.c      **** *  int
+  75:.\main.c      **** *
+  76:.\main.c      **** *******************************************************************************/
+  77:.\main.c      **** int main()
+  78:.\main.c      **** {
+  32              		.loc 1 78 0
+  33              		.cfi_startproc
+  34 0000 80B5     		push	{r7, lr}
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 7, -8
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 3
 
 
-  79:.\main.c      ****     for(;;)
-  80:.\main.c      ****     {
-  81:.\main.c      ****         /*Process event callback to handle BLE events. The events generated and 
-  82:.\main.c      **** 		* used for this application are inside the 'CustomEventHandler' routine*/
-  83:.\main.c      ****         CyBle_ProcessEvents();
-  37              		.loc 1 83 0
-  38 0008 FFF7FEFF 		bl	CyBle_ProcessEvents
-  84:.\main.c      **** 		
-  85:.\main.c      **** 		if(TRUE == deviceConnected)
-  39              		.loc 1 85 0
-  40 000c 064B     		ldr	r3, .L4
-  41 000e 1B78     		ldrb	r3, [r3]
-  42 0010 012B     		cmp	r3, #1
-  43 0012 08D1     		bne	.L2
-  86:.\main.c      **** 		{
-  87:.\main.c      ****             /* When the Client Characteristic Configuration descriptor (CCCD) is
-  88:.\main.c      ****              * written by Central device for enabling/disabling notifications, 
-  89:.\main.c      ****              * then the same descriptor value has to be explicitly updated in 
-  90:.\main.c      ****              * application so that it reflects the correct value when the 
-  91:.\main.c      ****              * descriptor is read */
-  92:.\main.c      **** 			UpdateNotificationCCCD();
-  44              		.loc 1 92 0
-  45 0014 FFF7FEFF 		bl	UpdateNotificationCCCD
-  93:.\main.c      **** 			
-  94:.\main.c      **** 			/* Send CapSense Slider data when respective notification is enabled */
-  95:.\main.c      **** 			if(TRUE == sendCapSenseSliderNotifications)
-  46              		.loc 1 95 0
-  47 0018 044B     		ldr	r3, .L4+4
-  48 001a 1B78     		ldrb	r3, [r3]
-  49 001c 012B     		cmp	r3, #1
-  50 001e 02D1     		bne	.L2
-  96:.\main.c      **** 			{
-  97:.\main.c      **** 				/* Check for CapSense slider swipe and send data accordingly */
-  98:.\main.c      **** 				HandleCapSenseSlider();
-  51              		.loc 1 98 0
-  52 0020 FFF7FEFF 		bl	HandleCapSenseSlider
-  99:.\main.c      **** 			}
- 100:.\main.c      **** 		}
- 101:.\main.c      ****     }	
-  53              		.loc 1 101 0
-  54 0024 F0E7     		b	.L3
-  55              	.L2:
-  56 0026 EFE7     		b	.L3
-  57              	.L5:
-  58              		.align	2
-  59              	.L4:
-  60 0028 00000000 		.word	deviceConnected
-  61 002c 00000000 		.word	sendCapSenseSliderNotifications
-  62              		.cfi_endproc
-  63              	.LFE35:
-  64              		.size	main, .-main
-  65              		.section	.text.InitializeSystem,"ax",%progbits
-  66              		.align	2
-  67              		.code	16
-  68              		.thumb_func
-  69              		.type	InitializeSystem, %function
-  70              	InitializeSystem:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 4
+  37              		.cfi_offset 14, -4
+  38 0002 00AF     		add	r7, sp, #0
+  39              		.cfi_def_cfa_register 7
+  79:.\main.c      **** 	/* This function will initialize the system resources such as BLE and CapSense */
+  80:.\main.c      ****     InitializeSystem();
+  40              		.loc 1 80 0
+  41 0004 FFF7FEFF 		bl	InitializeSystem
+  42              	.L3:
+  81:.\main.c      **** 	
+  82:.\main.c      ****     for(;;)
+  83:.\main.c      ****     {
+  84:.\main.c      ****         /*Process event callback to handle BLE events. The events generated and 
+  85:.\main.c      **** 		* used for this application are inside the 'CustomEventHandler' routine*/
+  86:.\main.c      ****         CyBle_ProcessEvents();
+  43              		.loc 1 86 0
+  44 0008 FFF7FEFF 		bl	CyBle_ProcessEvents
+  87:.\main.c      **** 		
+  88:.\main.c      **** 		if(TRUE == deviceConnected)
+  45              		.loc 1 88 0
+  46 000c 074B     		ldr	r3, .L4
+  47 000e 1B78     		ldrb	r3, [r3]
+  48 0010 012B     		cmp	r3, #1
+  49 0012 07D1     		bne	.L2
+  89:.\main.c      **** 		{
+  90:.\main.c      ****             /* When the Client Characteristic Configuration descriptor (CCCD) is
+  91:.\main.c      ****              * written by Central device for enabling/disabling notifications, 
+  92:.\main.c      ****              * then the same descriptor value has to be explicitly updated in 
+  93:.\main.c      ****              * application so that it reflects the correct value when the 
+  94:.\main.c      ****              * descriptor is read */
+  95:.\main.c      **** 			UpdateNotificationCCCD();
+  50              		.loc 1 95 0
+  51 0014 FFF7FEFF 		bl	UpdateNotificationCCCD
+  96:.\main.c      **** 			
+  97:.\main.c      **** 			/* Send CapSense Slider data when respective notification is enabled */
+  98:.\main.c      **** 			if(TRUE == sendCapSenseSliderNotifications)
+  52              		.loc 1 98 0
+  53 0018 054B     		ldr	r3, .L4+4
+  54 001a 1B78     		ldrb	r3, [r3]
+  55 001c 012B     		cmp	r3, #1
+  56 001e 01D1     		bne	.L2
+  99:.\main.c      **** 			{
+ 100:.\main.c      **** 				/* Check for CapSense slider swipe and send data accordingly */
+ 101:.\main.c      **** 				HandleCapSenseSlider();
+  57              		.loc 1 101 0
+  58 0020 FFF7FEFF 		bl	HandleCapSenseSlider
+  59              	.L2:
+ 102:.\main.c      **** 			}
+ 103:.\main.c      **** 		}
+ 104:.\main.c      ****         
+ 105:.\main.c      ****         HandleLowPowerMode();
+  60              		.loc 1 105 0
+  61 0024 FFF7FEFF 		bl	HandleLowPowerMode
+ 106:.\main.c      ****     }	
+  62              		.loc 1 106 0
+  63 0028 EEE7     		b	.L3
+  64              	.L5:
+  65 002a C046     		.align	2
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 4
 
 
-  71              	.LFB36:
- 102:.\main.c      **** }
- 103:.\main.c      **** 
- 104:.\main.c      **** 
- 105:.\main.c      **** /*******************************************************************************
- 106:.\main.c      **** * Function Name: InitializeSystem
- 107:.\main.c      **** ********************************************************************************
- 108:.\main.c      **** * Summary:
- 109:.\main.c      **** * Start the components and initialize system.
- 110:.\main.c      **** *
- 111:.\main.c      **** * Parameters:
- 112:.\main.c      **** *  void
- 113:.\main.c      **** *
- 114:.\main.c      **** * Return:
- 115:.\main.c      **** *  void
- 116:.\main.c      **** *
- 117:.\main.c      **** *******************************************************************************/
- 118:.\main.c      **** void InitializeSystem(void)
- 119:.\main.c      **** {
-  72              		.loc 1 119 0
-  73              		.cfi_startproc
-  74 0000 80B5     		push	{r7, lr}
-  75              		.cfi_def_cfa_offset 8
-  76              		.cfi_offset 7, -8
-  77              		.cfi_offset 14, -4
-  78 0002 00AF     		add	r7, sp, #0
-  79              		.cfi_def_cfa_register 7
- 120:.\main.c      **** 	/* Enable global interrupt mask */
- 121:.\main.c      **** 	CyGlobalIntEnable; 
-  80              		.loc 1 121 0
-  81              	@ 121 ".\main.c" 1
-  82 0004 62B6     		CPSIE   i
-  83              	@ 0 "" 2
- 122:.\main.c      **** 		
- 123:.\main.c      **** 	/* Start BLE component and register the CustomEventHandler function. This 
- 124:.\main.c      **** 	 * function exposes the events from BLE component for application use */
- 125:.\main.c      ****     CyBle_Start(CustomEventHandler);	
-  84              		.loc 1 125 0
-  85              		.code	16
-  86 0006 114B     		ldr	r3, .L7
-  87 0008 181C     		mov	r0, r3
-  88 000a FFF7FEFF 		bl	CyBle_Start
- 126:.\main.c      ****     
- 127:.\main.c      **** 	/* Start both the PrISM components for LED control*/
- 128:.\main.c      ****     PRS_1_Start();
-  89              		.loc 1 128 0
-  90 000e FFF7FEFF 		bl	PRS_1_Start
- 129:.\main.c      ****     PRS_2_Start();
-  91              		.loc 1 129 0
-  92 0012 FFF7FEFF 		bl	PRS_2_Start
- 130:.\main.c      **** 	
- 131:.\main.c      **** 	/* The RGB LED on BLE Pioneer kit are active low. Drive HIGH on 
- 132:.\main.c      **** 	 * pin for OFF and drive LOW on pin for ON*/
- 133:.\main.c      **** 	PRS_1_WritePulse0(RGB_LED_OFF);
-  93              		.loc 1 133 0
-  94 0016 FF20     		mov	r0, #255
-  95 0018 FFF7FEFF 		bl	PRS_1_WritePulse0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 5
+  66              	.L4:
+  67 002c 00000000 		.word	deviceConnected
+  68 0030 00000000 		.word	sendCapSenseSliderNotifications
+  69              		.cfi_endproc
+  70              	.LFE35:
+  71              		.size	main, .-main
+  72              		.section	.text.InitializeSystem,"ax",%progbits
+  73              		.align	2
+  74              		.code	16
+  75              		.thumb_func
+  76              		.type	InitializeSystem, %function
+  77              	InitializeSystem:
+  78              	.LFB36:
+ 107:.\main.c      **** }
+ 108:.\main.c      **** 
+ 109:.\main.c      **** 
+ 110:.\main.c      **** /*******************************************************************************
+ 111:.\main.c      **** * Function Name: InitializeSystem
+ 112:.\main.c      **** ********************************************************************************
+ 113:.\main.c      **** * Summary:
+ 114:.\main.c      **** * Start the components and initialize system.
+ 115:.\main.c      **** *
+ 116:.\main.c      **** * Parameters:
+ 117:.\main.c      **** *  void
+ 118:.\main.c      **** *
+ 119:.\main.c      **** * Return:
+ 120:.\main.c      **** *  void
+ 121:.\main.c      **** *
+ 122:.\main.c      **** *******************************************************************************/
+ 123:.\main.c      **** void InitializeSystem(void)
+ 124:.\main.c      **** {
+  79              		.loc 1 124 0
+  80              		.cfi_startproc
+  81 0000 80B5     		push	{r7, lr}
+  82              		.cfi_def_cfa_offset 8
+  83              		.cfi_offset 7, -8
+  84              		.cfi_offset 14, -4
+  85 0002 00AF     		add	r7, sp, #0
+  86              		.cfi_def_cfa_register 7
+ 125:.\main.c      **** 	/* Enable global interrupt mask */
+ 126:.\main.c      **** 	CyGlobalIntEnable; 
+  87              		.loc 1 126 0
+  88              	@ 126 ".\main.c" 1
+  89 0004 62B6     		CPSIE   i
+  90              	@ 0 "" 2
+ 127:.\main.c      **** 		
+ 128:.\main.c      **** 	/* Start BLE component and register the CustomEventHandler function. This 
+ 129:.\main.c      **** 	 * function exposes the events from BLE component for application use */
+ 130:.\main.c      ****     CyBle_Start(CustomEventHandler);	
+  91              		.loc 1 130 0
+  92              		.code	16
+  93 0006 114B     		ldr	r3, .L7
+  94 0008 181C     		mov	r0, r3
+  95 000a FFF7FEFF 		bl	CyBle_Start
+ 131:.\main.c      ****     
+ 132:.\main.c      **** 	/* Start both the PrISM components for LED control*/
+ 133:.\main.c      ****     PRS_1_Start();
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 5
 
 
- 134:.\main.c      **** 	PRS_1_WritePulse1(RGB_LED_OFF);
-  96              		.loc 1 134 0
-  97 001c FF20     		mov	r0, #255
-  98 001e FFF7FEFF 		bl	PRS_1_WritePulse1
- 135:.\main.c      **** 	PRS_2_WritePulse0(RGB_LED_OFF);
-  99              		.loc 1 135 0
- 100 0022 FF20     		mov	r0, #255
- 101 0024 FFF7FEFF 		bl	PRS_2_WritePulse0
- 136:.\main.c      **** 	
- 137:.\main.c      **** 	/* Set Drive mode of output pins from HiZ to Strong */
- 138:.\main.c      **** 	RED_SetDriveMode(RED_DM_STRONG);
- 102              		.loc 1 138 0
- 103 0028 0620     		mov	r0, #6
- 104 002a FFF7FEFF 		bl	RED_SetDriveMode
- 139:.\main.c      **** 	GREEN_SetDriveMode(GREEN_DM_STRONG);
- 105              		.loc 1 139 0
- 106 002e 0620     		mov	r0, #6
- 107 0030 FFF7FEFF 		bl	GREEN_SetDriveMode
- 140:.\main.c      **** 	BLUE_SetDriveMode(BLUE_DM_STRONG);
- 108              		.loc 1 140 0
- 109 0034 0620     		mov	r0, #6
- 110 0036 FFF7FEFF 		bl	BLUE_SetDriveMode
+  96              		.loc 1 133 0
+  97 000e FFF7FEFF 		bl	PRS_1_Start
+ 134:.\main.c      ****     PRS_2_Start();
+  98              		.loc 1 134 0
+  99 0012 FFF7FEFF 		bl	PRS_2_Start
+ 135:.\main.c      **** 	
+ 136:.\main.c      **** 	/* The RGB LED on BLE Pioneer kit are active low. Drive HIGH on 
+ 137:.\main.c      **** 	 * pin for OFF and drive LOW on pin for ON*/
+ 138:.\main.c      **** 	PRS_1_WritePulse0(RGB_LED_OFF);
+ 100              		.loc 1 138 0
+ 101 0016 FF20     		mov	r0, #255
+ 102 0018 FFF7FEFF 		bl	PRS_1_WritePulse0
+ 139:.\main.c      **** 	PRS_1_WritePulse1(RGB_LED_OFF);
+ 103              		.loc 1 139 0
+ 104 001c FF20     		mov	r0, #255
+ 105 001e FFF7FEFF 		bl	PRS_1_WritePulse1
+ 140:.\main.c      **** 	PRS_2_WritePulse0(RGB_LED_OFF);
+ 106              		.loc 1 140 0
+ 107 0022 FF20     		mov	r0, #255
+ 108 0024 FFF7FEFF 		bl	PRS_2_WritePulse0
  141:.\main.c      **** 	
- 142:.\main.c      **** 	/* Initialize CapSense component and initialize baselines*/
- 143:.\main.c      **** 	CapSense_Start();
- 111              		.loc 1 143 0
- 112 003a FFF7FEFF 		bl	CapSense_Start
- 144:.\main.c      **** 	CapSense_InitializeAllBaselines();
- 113              		.loc 1 144 0
- 114 003e FFF7FEFF 		bl	CapSense_InitializeAllBaselines
- 145:.\main.c      ****     CapSense_EnableWidget(CapSense_PROXIMITYSENSOR0__PROX);
+ 142:.\main.c      **** 	/* Set Drive mode of output pins from HiZ to Strong */
+ 143:.\main.c      **** 	RED_SetDriveMode(RED_DM_STRONG);
+ 109              		.loc 1 143 0
+ 110 0028 0620     		mov	r0, #6
+ 111 002a FFF7FEFF 		bl	RED_SetDriveMode
+ 144:.\main.c      **** 	GREEN_SetDriveMode(GREEN_DM_STRONG);
+ 112              		.loc 1 144 0
+ 113 002e 0620     		mov	r0, #6
+ 114 0030 FFF7FEFF 		bl	GREEN_SetDriveMode
+ 145:.\main.c      **** 	BLUE_SetDriveMode(BLUE_DM_STRONG);
  115              		.loc 1 145 0
- 116 0042 0020     		mov	r0, #0
- 117 0044 FFF7FEFF 		bl	CapSense_EnableWidget
- 146:.\main.c      **** }
- 118              		.loc 1 146 0
- 119 0048 BD46     		mov	sp, r7
- 120              		@ sp needed
- 121 004a 80BD     		pop	{r7, pc}
- 122              	.L8:
- 123              		.align	2
- 124              	.L7:
- 125 004c 00000000 		.word	CustomEventHandler
- 126              		.cfi_endproc
- 127              	.LFE36:
- 128              		.size	InitializeSystem, .-InitializeSystem
- 129              		.section	.text.HandleCapSenseSlider,"ax",%progbits
+ 116 0034 0620     		mov	r0, #6
+ 117 0036 FFF7FEFF 		bl	BLUE_SetDriveMode
+ 146:.\main.c      **** 	
+ 147:.\main.c      **** 	/* Initialize CapSense component and initialize baselines*/
+ 148:.\main.c      **** 	CapSense_Start();
+ 118              		.loc 1 148 0
+ 119 003a FFF7FEFF 		bl	CapSense_Start
+ 149:.\main.c      **** 	CapSense_InitializeAllBaselines();
+ 120              		.loc 1 149 0
+ 121 003e FFF7FEFF 		bl	CapSense_InitializeAllBaselines
+ 150:.\main.c      ****     CapSense_EnableWidget(CapSense_PROXIMITYSENSOR0__PROX);
+ 122              		.loc 1 150 0
+ 123 0042 0020     		mov	r0, #0
+ 124 0044 FFF7FEFF 		bl	CapSense_EnableWidget
+ 151:.\main.c      **** }
+ 125              		.loc 1 151 0
+ 126 0048 BD46     		mov	sp, r7
+ 127              		@ sp needed
+ 128 004a 80BD     		pop	{r7, pc}
+ 129              	.L8:
  130              		.align	2
- 131              		.code	16
- 132              		.thumb_func
- 133              		.type	HandleCapSenseSlider, %function
- 134              	HandleCapSenseSlider:
- 135              	.LFB37:
- 147:.\main.c      **** 
- 148:.\main.c      **** 
- 149:.\main.c      **** /*******************************************************************************
- 150:.\main.c      **** * Function Name: HandleCapSenseSlider
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 6
+ 131              	.L7:
+ 132 004c 00000000 		.word	CustomEventHandler
+ 133              		.cfi_endproc
+ 134              	.LFE36:
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 6
 
 
- 151:.\main.c      **** ********************************************************************************
- 152:.\main.c      **** * Summary:
- 153:.\main.c      **** * This function scans for finger position on CapSense slider, and if the  
- 154:.\main.c      **** * position is different, triggers separate routine for BLE notification.
- 155:.\main.c      **** *
- 156:.\main.c      **** * Parameters:
- 157:.\main.c      **** *  void
- 158:.\main.c      **** *
- 159:.\main.c      **** * Return:
- 160:.\main.c      **** *  void
- 161:.\main.c      **** *
- 162:.\main.c      **** *******************************************************************************/
- 163:.\main.c      **** void HandleCapSenseSlider(void)
- 164:.\main.c      **** {
- 136              		.loc 1 164 0
- 137              		.cfi_startproc
- 138 0000 80B5     		push	{r7, lr}
- 139              		.cfi_def_cfa_offset 8
- 140              		.cfi_offset 7, -8
- 141              		.cfi_offset 14, -4
- 142 0002 82B0     		sub	sp, sp, #8
- 143              		.cfi_def_cfa_offset 16
- 144 0004 00AF     		add	r7, sp, #0
- 145              		.cfi_def_cfa_register 7
- 165:.\main.c      **** 	/* Last read CapSense slider position value */
- 166:.\main.c      **** 	//static uint16 lastPosition;	
- 167:.\main.c      **** 	
- 168:.\main.c      **** 	/* Present slider position read by CapSense */
- 169:.\main.c      **** 	uint16 sliderPosition;
- 170:.\main.c      **** 		
- 171:.\main.c      **** 	/* Update CapSense baseline for next reading*/
- 172:.\main.c      **** 	CapSense_UpdateEnabledBaselines();	
- 146              		.loc 1 172 0
- 147 0006 FFF7FEFF 		bl	CapSense_UpdateEnabledBaselines
- 173:.\main.c      **** 		
- 174:.\main.c      **** 	/* Scan the slider widget */
- 175:.\main.c      **** 	CapSense_ScanEnabledWidgets();			
- 148              		.loc 1 175 0
- 149 000a FFF7FEFF 		bl	CapSense_ScanEnabledWidgets
- 176:.\main.c      **** 	
- 177:.\main.c      **** 	/* Wait for CapSense scanning to be complete. This could take about 5 ms */
- 178:.\main.c      **** 	while(CapSense_IsBusy());
- 150              		.loc 1 178 0
- 151 000e C046     		mov	r8, r8
- 152              	.L10:
- 153              		.loc 1 178 0 is_stmt 0 discriminator 1
- 154 0010 FFF7FEFF 		bl	CapSense_IsBusy
- 155 0014 031C     		mov	r3, r0
- 156 0016 002B     		cmp	r3, #0
- 157 0018 FAD1     		bne	.L10
- 179:.\main.c      **** 	
- 180:.\main.c      **** 	/* Read the finger position on the slider */
- 181:.\main.c      **** 	sliderPosition =  CapSense_GetDiffCountData(CapSense_PROXIMITYSENSOR0__PROX);
- 158              		.loc 1 181 0 is_stmt 1
- 159 001a 0020     		mov	r0, #0
- 160 001c FFF7FEFF 		bl	CapSense_GetDiffCountData
- 161 0020 031C     		mov	r3, r0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 7
+ 135              		.size	InitializeSystem, .-InitializeSystem
+ 136              		.section	.text.HandleCapSenseSlider,"ax",%progbits
+ 137              		.align	2
+ 138              		.code	16
+ 139              		.thumb_func
+ 140              		.type	HandleCapSenseSlider, %function
+ 141              	HandleCapSenseSlider:
+ 142              	.LFB37:
+ 152:.\main.c      **** 
+ 153:.\main.c      **** 
+ 154:.\main.c      **** /*******************************************************************************
+ 155:.\main.c      **** * Function Name: HandleCapSenseSlider
+ 156:.\main.c      **** ********************************************************************************
+ 157:.\main.c      **** * Summary:
+ 158:.\main.c      **** * This function scans for finger position on CapSense slider, and if the  
+ 159:.\main.c      **** * position is different, triggers separate routine for BLE notification.
+ 160:.\main.c      **** *
+ 161:.\main.c      **** * Parameters:
+ 162:.\main.c      **** *  void
+ 163:.\main.c      **** *
+ 164:.\main.c      **** * Return:
+ 165:.\main.c      **** *  void
+ 166:.\main.c      **** *
+ 167:.\main.c      **** *******************************************************************************/
+ 168:.\main.c      **** void HandleCapSenseSlider(void)
+ 169:.\main.c      **** {
+ 143              		.loc 1 169 0
+ 144              		.cfi_startproc
+ 145 0000 80B5     		push	{r7, lr}
+ 146              		.cfi_def_cfa_offset 8
+ 147              		.cfi_offset 7, -8
+ 148              		.cfi_offset 14, -4
+ 149 0002 82B0     		sub	sp, sp, #8
+ 150              		.cfi_def_cfa_offset 16
+ 151 0004 00AF     		add	r7, sp, #0
+ 152              		.cfi_def_cfa_register 7
+ 170:.\main.c      **** 	/* Last read CapSense slider position value */
+ 171:.\main.c      **** 	//static uint16 lastPosition;	
+ 172:.\main.c      **** 	
+ 173:.\main.c      **** 	/* Present slider position read by CapSense */
+ 174:.\main.c      **** 	uint16 sliderPosition;
+ 175:.\main.c      **** 		
+ 176:.\main.c      **** 	/* Update CapSense baseline for next reading*/
+ 177:.\main.c      **** 	CapSense_UpdateEnabledBaselines();	
+ 153              		.loc 1 177 0
+ 154 0006 FFF7FEFF 		bl	CapSense_UpdateEnabledBaselines
+ 178:.\main.c      **** 		
+ 179:.\main.c      **** 	/* Scan the slider widget */
+ 180:.\main.c      **** 	CapSense_ScanEnabledWidgets();			
+ 155              		.loc 1 180 0
+ 156 000a FFF7FEFF 		bl	CapSense_ScanEnabledWidgets
+ 181:.\main.c      **** 	
+ 182:.\main.c      **** 	/* Wait for CapSense scanning to be complete. This could take about 5 ms */
+ 183:.\main.c      **** 	while(CapSense_IsBusy());
+ 157              		.loc 1 183 0
+ 158 000e C046     		mov	r8, r8
+ 159              	.L10:
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 7
 
 
- 162 0022 1A1C     		mov	r2, r3
- 163 0024 BB1D     		add	r3, r7, #6
- 164 0026 1A80     		strh	r2, [r3]
- 182:.\main.c      **** 	SendCapSenseNotification((uint8)sliderPosition);
- 165              		.loc 1 182 0
- 166 0028 BB1D     		add	r3, r7, #6
- 167 002a 1B88     		ldrh	r3, [r3]
- 168 002c DBB2     		uxtb	r3, r3
- 169 002e 181C     		mov	r0, r3
- 170 0030 FFF7FEFF 		bl	SendCapSenseNotification
- 183:.\main.c      **** 
- 184:.\main.c      **** 	/*If finger is detected on the slider*/
- 185:.\main.c      **** 	//if((sliderPosition != NO_FINGER) && (sliderPosition <= SLIDER_MAX_VALUE))
- 186:.\main.c      **** 	{
- 187:.\main.c      ****         /* If finger position on the slider is changed then send data as BLE 
- 188:.\main.c      ****          * notifications */
- 189:.\main.c      ****        // if(sliderPosition != lastPosition)
- 190:.\main.c      **** 		{
- 191:.\main.c      **** 			/* Update global variable with present finger position on slider*/
- 192:.\main.c      **** 			//lastPosition = sliderPosition;
- 193:.\main.c      **** 
- 194:.\main.c      **** 			
- 195:.\main.c      **** 
- 196:.\main.c      **** 		}	
- 197:.\main.c      **** 	}	
- 198:.\main.c      **** }
- 171              		.loc 1 198 0
- 172 0034 BD46     		mov	sp, r7
- 173 0036 02B0     		add	sp, sp, #8
- 174              		@ sp needed
- 175 0038 80BD     		pop	{r7, pc}
- 176              		.cfi_endproc
- 177              	.LFE37:
- 178              		.size	HandleCapSenseSlider, .-HandleCapSenseSlider
- 179 003a C046     		.text
- 180              	.Letext0:
- 181              		.file 2 ".\\Generated_Source\\PSoC4/cytypes.h"
- 182              		.file 3 "./BLEApplications.h"
- 183              		.section	.debug_info,"",%progbits
- 184              	.Ldebug_info0:
- 185 0000 FA000000 		.4byte	0xfa
- 186 0004 0400     		.2byte	0x4
- 187 0006 00000000 		.4byte	.Ldebug_abbrev0
- 188 000a 04       		.byte	0x4
- 189 000b 01       		.uleb128 0x1
- 190 000c 1D010000 		.4byte	.LASF17
- 191 0010 01       		.byte	0x1
- 192 0011 0D010000 		.4byte	.LASF18
- 193 0015 4E000000 		.4byte	.LASF19
- 194 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 195 001d 00000000 		.4byte	0
- 196 0021 00000000 		.4byte	.Ldebug_line0
- 197 0025 02       		.uleb128 0x2
- 198 0026 01       		.byte	0x1
- 199 0027 06       		.byte	0x6
- 200 0028 9F010000 		.4byte	.LASF0
- 201 002c 02       		.uleb128 0x2
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 8
+ 160              		.loc 1 183 0 is_stmt 0 discriminator 1
+ 161 0010 FFF7FEFF 		bl	CapSense_IsBusy
+ 162 0014 031C     		mov	r3, r0
+ 163 0016 002B     		cmp	r3, #0
+ 164 0018 FAD1     		bne	.L10
+ 184:.\main.c      **** 	
+ 185:.\main.c      **** 	/* Read the finger position on the slider */
+ 186:.\main.c      **** 	sliderPosition =  CapSense_GetDiffCountData(CapSense_PROXIMITYSENSOR0__PROX);
+ 165              		.loc 1 186 0 is_stmt 1
+ 166 001a 0020     		mov	r0, #0
+ 167 001c FFF7FEFF 		bl	CapSense_GetDiffCountData
+ 168 0020 031C     		mov	r3, r0
+ 169 0022 1A1C     		mov	r2, r3
+ 170 0024 BB1D     		add	r3, r7, #6
+ 171 0026 1A80     		strh	r2, [r3]
+ 187:.\main.c      **** 	SendCapSenseNotification((uint8)sliderPosition);
+ 172              		.loc 1 187 0
+ 173 0028 BB1D     		add	r3, r7, #6
+ 174 002a 1B88     		ldrh	r3, [r3]
+ 175 002c DBB2     		uxtb	r3, r3
+ 176 002e 181C     		mov	r0, r3
+ 177 0030 FFF7FEFF 		bl	SendCapSenseNotification
+ 188:.\main.c      **** 
+ 189:.\main.c      **** 	/*If finger is detected on the slider*/
+ 190:.\main.c      **** 	//if((sliderPosition != NO_FINGER) && (sliderPosition <= SLIDER_MAX_VALUE))
+ 191:.\main.c      **** 	{
+ 192:.\main.c      ****         /* If finger position on the slider is changed then send data as BLE 
+ 193:.\main.c      ****          * notifications */
+ 194:.\main.c      ****        // if(sliderPosition != lastPosition)
+ 195:.\main.c      **** 		{
+ 196:.\main.c      **** 			/* Update global variable with present finger position on slider*/
+ 197:.\main.c      **** 			//lastPosition = sliderPosition;
+ 198:.\main.c      **** 
+ 199:.\main.c      **** 			
+ 200:.\main.c      **** 
+ 201:.\main.c      **** 		}	
+ 202:.\main.c      **** 	}	
+ 203:.\main.c      **** }
+ 178              		.loc 1 203 0
+ 179 0034 BD46     		mov	sp, r7
+ 180 0036 02B0     		add	sp, sp, #8
+ 181              		@ sp needed
+ 182 0038 80BD     		pop	{r7, pc}
+ 183              		.cfi_endproc
+ 184              	.LFE37:
+ 185              		.size	HandleCapSenseSlider, .-HandleCapSenseSlider
+ 186 003a C046     		.section	.text.HandleLowPowerMode,"ax",%progbits
+ 187              		.align	2
+ 188              		.global	HandleLowPowerMode
+ 189              		.code	16
+ 190              		.thumb_func
+ 191              		.type	HandleLowPowerMode, %function
+ 192              	HandleLowPowerMode:
+ 193              	.LFB38:
+ 204:.\main.c      **** 
+ 205:.\main.c      **** void HandleLowPowerMode(void)
+ 206:.\main.c      **** {
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 8
 
 
- 202 002d 01       		.byte	0x1
- 203 002e 08       		.byte	0x8
- 204 002f E1000000 		.4byte	.LASF1
- 205 0033 02       		.uleb128 0x2
- 206 0034 02       		.byte	0x2
- 207 0035 05       		.byte	0x5
- 208 0036 B1010000 		.4byte	.LASF2
- 209 003a 02       		.uleb128 0x2
- 210 003b 02       		.byte	0x2
- 211 003c 07       		.byte	0x7
- 212 003d 0E000000 		.4byte	.LASF3
- 213 0041 02       		.uleb128 0x2
- 214 0042 04       		.byte	0x4
- 215 0043 05       		.byte	0x5
- 216 0044 04010000 		.4byte	.LASF4
- 217 0048 02       		.uleb128 0x2
- 218 0049 04       		.byte	0x4
- 219 004a 07       		.byte	0x7
- 220 004b A2000000 		.4byte	.LASF5
- 221 004f 02       		.uleb128 0x2
- 222 0050 08       		.byte	0x8
- 223 0051 05       		.byte	0x5
- 224 0052 00000000 		.4byte	.LASF6
- 225 0056 02       		.uleb128 0x2
- 226 0057 08       		.byte	0x8
- 227 0058 07       		.byte	0x7
- 228 0059 B4000000 		.4byte	.LASF7
- 229 005d 03       		.uleb128 0x3
- 230 005e 04       		.byte	0x4
- 231 005f 05       		.byte	0x5
- 232 0060 696E7400 		.ascii	"int\000"
- 233 0064 02       		.uleb128 0x2
- 234 0065 04       		.byte	0x4
- 235 0066 07       		.byte	0x7
- 236 0067 21000000 		.4byte	.LASF8
- 237 006b 04       		.uleb128 0x4
- 238 006c 99010000 		.4byte	.LASF9
- 239 0070 02       		.byte	0x2
- 240 0071 A1       		.byte	0xa1
- 241 0072 2C000000 		.4byte	0x2c
- 242 0076 04       		.uleb128 0x4
- 243 0077 BB010000 		.4byte	.LASF10
- 244 007b 02       		.byte	0x2
- 245 007c A2       		.byte	0xa2
- 246 007d 3A000000 		.4byte	0x3a
- 247 0081 02       		.uleb128 0x2
- 248 0082 04       		.byte	0x4
- 249 0083 04       		.byte	0x4
- 250 0084 AB010000 		.4byte	.LASF11
- 251 0088 02       		.uleb128 0x2
- 252 0089 08       		.byte	0x8
- 253 008a 04       		.byte	0x4
- 254 008b 16010000 		.4byte	.LASF12
- 255 008f 02       		.uleb128 0x2
- 256 0090 01       		.byte	0x1
- 257 0091 08       		.byte	0x8
- 258 0092 DC000000 		.4byte	.LASF13
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 9
+ 194              		.loc 1 206 0
+ 195              		.cfi_startproc
+ 196 0000 90B5     		push	{r4, r7, lr}
+ 197              		.cfi_def_cfa_offset 12
+ 198              		.cfi_offset 4, -12
+ 199              		.cfi_offset 7, -8
+ 200              		.cfi_offset 14, -4
+ 201 0002 83B0     		sub	sp, sp, #12
+ 202              		.cfi_def_cfa_offset 24
+ 203 0004 00AF     		add	r7, sp, #0
+ 204              		.cfi_def_cfa_register 7
+ 207:.\main.c      **** 	// Local variable to store the status of BLESS Hardware block
+ 208:.\main.c      **** 	CYBLE_LP_MODE_T sleepMode;
+ 209:.\main.c      **** 	CYBLE_BLESS_STATE_T blessState;
+ 210:.\main.c      **** 
+ 211:.\main.c      ****     /* Put CapSense to Sleep*/
+ 212:.\main.c      **** 	CapSense_Sleep();
+ 205              		.loc 1 212 0
+ 206 0006 FFF7FEFF 		bl	CapSense_Sleep
+ 213:.\main.c      **** 	
+ 214:.\main.c      **** 	/* Put BLESS into Deep Sleep and check the return status */
+ 215:.\main.c      **** 	sleepMode = CyBle_EnterLPM(CYBLE_BLESS_DEEPSLEEP);
+ 207              		.loc 1 215 0
+ 208 000a FC1D     		add	r4, r7, #7
+ 209 000c 0320     		mov	r0, #3
+ 210 000e FFF7FEFF 		bl	CyBle_EnterLPM
+ 211 0012 031C     		mov	r3, r0
+ 212 0014 2370     		strb	r3, [r4]
+ 216:.\main.c      **** 	
+ 217:.\main.c      **** 	/* Disable global interrupt to prevent changes from any other interrupt ISR */
+ 218:.\main.c      **** 	CyGlobalIntDisable;
+ 213              		.loc 1 218 0
+ 214              	@ 218 ".\main.c" 1
+ 215 0016 72B6     		CPSID   i
+ 216              	@ 0 "" 2
+ 219:.\main.c      **** 
+ 220:.\main.c      **** 	/* Check the Status of BLESS */
+ 221:.\main.c      **** 	blessState = CyBle_GetBleSsState();
+ 217              		.loc 1 221 0
+ 218              		.code	16
+ 219 0018 BC1D     		add	r4, r7, #6
+ 220 001a FFF7FEFF 		bl	CyBle_GetBleSsState
+ 221 001e 031C     		mov	r3, r0
+ 222 0020 2370     		strb	r3, [r4]
+ 222:.\main.c      **** 
+ 223:.\main.c      **** 	if(sleepMode == CYBLE_BLESS_DEEPSLEEP)
+ 223              		.loc 1 223 0
+ 224 0022 FB1D     		add	r3, r7, #7
+ 225 0024 1B78     		ldrb	r3, [r3]
+ 226 0026 032B     		cmp	r3, #3
+ 227 0028 06D1     		bne	.L12
+ 224:.\main.c      **** 	{
+ 225:.\main.c      **** 	    /* If the ECO has started or the BLESS can go to Deep Sleep, then place CPU 
+ 226:.\main.c      **** 		* to Deep Sleep */
+ 227:.\main.c      **** //		if(blessState == CYBLE_BLESS_STATE_ECO_ON || blessState == CYBLE_BLESS_STATE_DEEPSLEEP)
+ 228:.\main.c      **** //	    {
+ 229:.\main.c      **** //			if(shut_down_led)
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 9
 
 
- 259 0096 02       		.uleb128 0x2
- 260 0097 04       		.byte	0x4
- 261 0098 07       		.byte	0x7
- 262 0099 C2010000 		.4byte	.LASF14
- 263 009d 05       		.uleb128 0x5
- 264 009e EF000000 		.4byte	.LASF20
- 265 00a2 01       		.byte	0x1
- 266 00a3 4A       		.byte	0x4a
- 267 00a4 5D000000 		.4byte	0x5d
- 268 00a8 00000000 		.4byte	.LFB35
- 269 00ac 30000000 		.4byte	.LFE35-.LFB35
- 270 00b0 01       		.uleb128 0x1
- 271 00b1 9C       		.byte	0x9c
- 272 00b2 06       		.uleb128 0x6
- 273 00b3 CB000000 		.4byte	.LASF21
- 274 00b7 01       		.byte	0x1
- 275 00b8 76       		.byte	0x76
- 276 00b9 00000000 		.4byte	.LFB36
- 277 00bd 50000000 		.4byte	.LFE36-.LFB36
- 278 00c1 01       		.uleb128 0x1
- 279 00c2 9C       		.byte	0x9c
- 280 00c3 07       		.uleb128 0x7
- 281 00c4 8D000000 		.4byte	.LASF22
- 282 00c8 01       		.byte	0x1
- 283 00c9 A3       		.byte	0xa3
- 284 00ca 00000000 		.4byte	.LFB37
- 285 00ce 3A000000 		.4byte	.LFE37-.LFB37
- 286 00d2 01       		.uleb128 0x1
- 287 00d3 9C       		.byte	0x9c
- 288 00d4 E7000000 		.4byte	0xe7
- 289 00d8 08       		.uleb128 0x8
- 290 00d9 7E000000 		.4byte	.LASF23
- 291 00dd 01       		.byte	0x1
- 292 00de A9       		.byte	0xa9
- 293 00df 76000000 		.4byte	0x76
- 294 00e3 02       		.uleb128 0x2
- 295 00e4 91       		.byte	0x91
- 296 00e5 76       		.sleb128 -10
- 297 00e6 00       		.byte	0
- 298 00e7 09       		.uleb128 0x9
- 299 00e8 F4000000 		.4byte	.LASF15
- 300 00ec 03       		.byte	0x3
- 301 00ed 55       		.byte	0x55
- 302 00ee 6B000000 		.4byte	0x6b
- 303 00f2 09       		.uleb128 0x9
- 304 00f3 2E000000 		.4byte	.LASF16
- 305 00f7 03       		.byte	0x3
- 306 00f8 56       		.byte	0x56
- 307 00f9 6B000000 		.4byte	0x6b
- 308 00fd 00       		.byte	0
- 309              		.section	.debug_abbrev,"",%progbits
- 310              	.Ldebug_abbrev0:
- 311 0000 01       		.uleb128 0x1
- 312 0001 11       		.uleb128 0x11
- 313 0002 01       		.byte	0x1
- 314 0003 25       		.uleb128 0x25
- 315 0004 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 10
+ 230:.\main.c      **** //			{
+ 231:.\main.c      **** //				/* Place CPU to Deep sleep only when the RGB PrISM module is not 
+ 232:.\main.c      **** //				* active (indicated by flag 'shut_down_led'). 
+ 233:.\main.c      **** //				* If RGB PrISM is active, then the CPU should only be placed in 
+ 234:.\main.c      **** //				* Sleep to allow the SysTick to function and control the color 
+ 235:.\main.c      **** //				* and Intensity */
+ 236:.\main.c      **** //		        CySysPmDeepSleep();
+ 237:.\main.c      **** //			}
+ 238:.\main.c      **** //			else
+ 239:.\main.c      **** //			{
+ 240:.\main.c      **** //				/* If the system is controlling RGB LED, then PrISM needs to be running. 
+ 241:.\main.c      **** //				* Put CPU to sleep only */
+ 242:.\main.c      **** //				CySysPmSleep();
+ 243:.\main.c      **** //			}
+ 244:.\main.c      **** //	 	}
+ 245:.\main.c      ****         if(blessState == CYBLE_BLESS_STATE_ECO_ON)
+ 228              		.loc 1 245 0
+ 229 002a BB1D     		add	r3, r7, #6
+ 230 002c 1B78     		ldrb	r3, [r3]
+ 231 002e 042B     		cmp	r3, #4
+ 232 0030 08D1     		bne	.L14
+ 246:.\main.c      ****         {
+ 247:.\main.c      ****             CySysPmSleep();
+ 233              		.loc 1 247 0
+ 234 0032 FFF7FEFF 		bl	CySysPmSleep
+ 235 0036 05E0     		b	.L14
+ 236              	.L12:
+ 248:.\main.c      ****         }
+ 249:.\main.c      **** 	}
+ 250:.\main.c      **** 	else
+ 251:.\main.c      **** 	{
+ 252:.\main.c      **** 	    if(blessState != CYBLE_BLESS_STATE_EVENT_CLOSE)
+ 237              		.loc 1 252 0
+ 238 0038 BB1D     		add	r3, r7, #6
+ 239 003a 1B78     		ldrb	r3, [r3]
+ 240 003c 022B     		cmp	r3, #2
+ 241 003e 01D0     		beq	.L14
+ 253:.\main.c      **** 	    {
+ 254:.\main.c      **** 			/* If the BLESS hardware block cannot go to Deep Sleep and BLE Event has not 
+ 255:.\main.c      **** 			* closed yet, then place CPU to Sleep */
+ 256:.\main.c      **** 	        CySysPmSleep();
+ 242              		.loc 1 256 0
+ 243 0040 FFF7FEFF 		bl	CySysPmSleep
+ 244              	.L14:
+ 257:.\main.c      **** 	    }
+ 258:.\main.c      **** 	}
+ 259:.\main.c      **** 	
+ 260:.\main.c      **** 	/* Re-enable global interrupt mask after wakeup */
+ 261:.\main.c      **** 	CyGlobalIntEnable;
+ 245              		.loc 1 261 0
+ 246              	@ 261 ".\main.c" 1
+ 247 0044 62B6     		CPSIE   i
+ 248              	@ 0 "" 2
+ 262:.\main.c      **** 	
+ 263:.\main.c      **** 	/* Wakeup CapSense Block */
+ 264:.\main.c      **** 	CapSense_Wakeup();
+ 249              		.loc 1 264 0
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 10
 
 
- 316 0005 13       		.uleb128 0x13
- 317 0006 0B       		.uleb128 0xb
- 318 0007 03       		.uleb128 0x3
- 319 0008 0E       		.uleb128 0xe
- 320 0009 1B       		.uleb128 0x1b
- 321 000a 0E       		.uleb128 0xe
- 322 000b 55       		.uleb128 0x55
- 323 000c 17       		.uleb128 0x17
- 324 000d 11       		.uleb128 0x11
- 325 000e 01       		.uleb128 0x1
- 326 000f 10       		.uleb128 0x10
- 327 0010 17       		.uleb128 0x17
- 328 0011 00       		.byte	0
- 329 0012 00       		.byte	0
- 330 0013 02       		.uleb128 0x2
- 331 0014 24       		.uleb128 0x24
- 332 0015 00       		.byte	0
- 333 0016 0B       		.uleb128 0xb
- 334 0017 0B       		.uleb128 0xb
- 335 0018 3E       		.uleb128 0x3e
- 336 0019 0B       		.uleb128 0xb
- 337 001a 03       		.uleb128 0x3
- 338 001b 0E       		.uleb128 0xe
- 339 001c 00       		.byte	0
- 340 001d 00       		.byte	0
- 341 001e 03       		.uleb128 0x3
- 342 001f 24       		.uleb128 0x24
- 343 0020 00       		.byte	0
- 344 0021 0B       		.uleb128 0xb
- 345 0022 0B       		.uleb128 0xb
- 346 0023 3E       		.uleb128 0x3e
- 347 0024 0B       		.uleb128 0xb
- 348 0025 03       		.uleb128 0x3
- 349 0026 08       		.uleb128 0x8
- 350 0027 00       		.byte	0
- 351 0028 00       		.byte	0
- 352 0029 04       		.uleb128 0x4
- 353 002a 16       		.uleb128 0x16
- 354 002b 00       		.byte	0
- 355 002c 03       		.uleb128 0x3
- 356 002d 0E       		.uleb128 0xe
- 357 002e 3A       		.uleb128 0x3a
- 358 002f 0B       		.uleb128 0xb
- 359 0030 3B       		.uleb128 0x3b
- 360 0031 0B       		.uleb128 0xb
- 361 0032 49       		.uleb128 0x49
- 362 0033 13       		.uleb128 0x13
- 363 0034 00       		.byte	0
- 364 0035 00       		.byte	0
- 365 0036 05       		.uleb128 0x5
- 366 0037 2E       		.uleb128 0x2e
- 367 0038 00       		.byte	0
- 368 0039 3F       		.uleb128 0x3f
- 369 003a 19       		.uleb128 0x19
- 370 003b 03       		.uleb128 0x3
- 371 003c 0E       		.uleb128 0xe
- 372 003d 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 11
+ 250              		.code	16
+ 251 0046 FFF7FEFF 		bl	CapSense_Wakeup
+ 265:.\main.c      **** }
+ 252              		.loc 1 265 0
+ 253 004a BD46     		mov	sp, r7
+ 254 004c 03B0     		add	sp, sp, #12
+ 255              		@ sp needed
+ 256 004e 90BD     		pop	{r4, r7, pc}
+ 257              		.cfi_endproc
+ 258              	.LFE38:
+ 259              		.size	HandleLowPowerMode, .-HandleLowPowerMode
+ 260              		.text
+ 261              	.Letext0:
+ 262              		.file 2 ".\\Generated_Source\\PSoC4/cytypes.h"
+ 263              		.file 3 ".\\Generated_Source\\PSoC4/BLE_1_Stack.h"
+ 264              		.file 4 "./BLEApplications.h"
+ 265              		.section	.debug_info,"",%progbits
+ 266              	.Ldebug_info0:
+ 267 0000 29030000 		.4byte	0x329
+ 268 0004 0400     		.2byte	0x4
+ 269 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 270 000a 04       		.byte	0x4
+ 271 000b 01       		.uleb128 0x1
+ 272 000c 52090000 		.4byte	.LASF90
+ 273 0010 01       		.byte	0x1
+ 274 0011 B2010000 		.4byte	.LASF91
+ 275 0015 33070000 		.4byte	.LASF92
+ 276 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 277 001d 00000000 		.4byte	0
+ 278 0021 00000000 		.4byte	.Ldebug_line0
+ 279 0025 02       		.uleb128 0x2
+ 280 0026 01       		.byte	0x1
+ 281 0027 06       		.byte	0x6
+ 282 0028 C1040000 		.4byte	.LASF0
+ 283 002c 02       		.uleb128 0x2
+ 284 002d 01       		.byte	0x1
+ 285 002e 08       		.byte	0x8
+ 286 002f 62040000 		.4byte	.LASF1
+ 287 0033 02       		.uleb128 0x2
+ 288 0034 02       		.byte	0x2
+ 289 0035 05       		.byte	0x5
+ 290 0036 A6000000 		.4byte	.LASF2
+ 291 003a 02       		.uleb128 0x2
+ 292 003b 02       		.byte	0x2
+ 293 003c 07       		.byte	0x7
+ 294 003d 46060000 		.4byte	.LASF3
+ 295 0041 02       		.uleb128 0x2
+ 296 0042 04       		.byte	0x4
+ 297 0043 05       		.byte	0x5
+ 298 0044 14030000 		.4byte	.LASF4
+ 299 0048 02       		.uleb128 0x2
+ 300 0049 04       		.byte	0x4
+ 301 004a 07       		.byte	0x7
+ 302 004b 52050000 		.4byte	.LASF5
+ 303 004f 02       		.uleb128 0x2
+ 304 0050 08       		.byte	0x8
+ 305 0051 05       		.byte	0x5
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 11
 
 
- 373 003e 0B       		.uleb128 0xb
- 374 003f 3B       		.uleb128 0x3b
- 375 0040 0B       		.uleb128 0xb
- 376 0041 49       		.uleb128 0x49
- 377 0042 13       		.uleb128 0x13
- 378 0043 11       		.uleb128 0x11
- 379 0044 01       		.uleb128 0x1
- 380 0045 12       		.uleb128 0x12
- 381 0046 06       		.uleb128 0x6
- 382 0047 40       		.uleb128 0x40
- 383 0048 18       		.uleb128 0x18
- 384 0049 9642     		.uleb128 0x2116
- 385 004b 19       		.uleb128 0x19
- 386 004c 00       		.byte	0
- 387 004d 00       		.byte	0
- 388 004e 06       		.uleb128 0x6
- 389 004f 2E       		.uleb128 0x2e
- 390 0050 00       		.byte	0
- 391 0051 03       		.uleb128 0x3
- 392 0052 0E       		.uleb128 0xe
- 393 0053 3A       		.uleb128 0x3a
- 394 0054 0B       		.uleb128 0xb
- 395 0055 3B       		.uleb128 0x3b
- 396 0056 0B       		.uleb128 0xb
- 397 0057 27       		.uleb128 0x27
- 398 0058 19       		.uleb128 0x19
- 399 0059 11       		.uleb128 0x11
- 400 005a 01       		.uleb128 0x1
- 401 005b 12       		.uleb128 0x12
- 402 005c 06       		.uleb128 0x6
- 403 005d 40       		.uleb128 0x40
- 404 005e 18       		.uleb128 0x18
- 405 005f 9642     		.uleb128 0x2116
- 406 0061 19       		.uleb128 0x19
- 407 0062 00       		.byte	0
- 408 0063 00       		.byte	0
- 409 0064 07       		.uleb128 0x7
- 410 0065 2E       		.uleb128 0x2e
- 411 0066 01       		.byte	0x1
- 412 0067 03       		.uleb128 0x3
- 413 0068 0E       		.uleb128 0xe
- 414 0069 3A       		.uleb128 0x3a
- 415 006a 0B       		.uleb128 0xb
- 416 006b 3B       		.uleb128 0x3b
- 417 006c 0B       		.uleb128 0xb
- 418 006d 27       		.uleb128 0x27
- 419 006e 19       		.uleb128 0x19
- 420 006f 11       		.uleb128 0x11
- 421 0070 01       		.uleb128 0x1
- 422 0071 12       		.uleb128 0x12
- 423 0072 06       		.uleb128 0x6
- 424 0073 40       		.uleb128 0x40
- 425 0074 18       		.uleb128 0x18
- 426 0075 9642     		.uleb128 0x2116
- 427 0077 19       		.uleb128 0x19
- 428 0078 01       		.uleb128 0x1
- 429 0079 13       		.uleb128 0x13
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 12
+ 306 0052 F3020000 		.4byte	.LASF6
+ 307 0056 02       		.uleb128 0x2
+ 308 0057 08       		.byte	0x8
+ 309 0058 07       		.byte	0x7
+ 310 0059 F1000000 		.4byte	.LASF7
+ 311 005d 03       		.uleb128 0x3
+ 312 005e 04       		.byte	0x4
+ 313 005f 05       		.byte	0x5
+ 314 0060 696E7400 		.ascii	"int\000"
+ 315 0064 02       		.uleb128 0x2
+ 316 0065 04       		.byte	0x4
+ 317 0066 07       		.byte	0x7
+ 318 0067 2A050000 		.4byte	.LASF8
+ 319 006b 04       		.uleb128 0x4
+ 320 006c 27040000 		.4byte	.LASF9
+ 321 0070 02       		.byte	0x2
+ 322 0071 A1       		.byte	0xa1
+ 323 0072 2C000000 		.4byte	0x2c
+ 324 0076 04       		.uleb128 0x4
+ 325 0077 AB010000 		.4byte	.LASF10
+ 326 007b 02       		.byte	0x2
+ 327 007c A2       		.byte	0xa2
+ 328 007d 3A000000 		.4byte	0x3a
+ 329 0081 02       		.uleb128 0x2
+ 330 0082 04       		.byte	0x4
+ 331 0083 04       		.byte	0x4
+ 332 0084 BA020000 		.4byte	.LASF11
+ 333 0088 02       		.uleb128 0x2
+ 334 0089 08       		.byte	0x8
+ 335 008a 04       		.byte	0x4
+ 336 008b F6060000 		.4byte	.LASF12
+ 337 008f 02       		.uleb128 0x2
+ 338 0090 01       		.byte	0x1
+ 339 0091 08       		.byte	0x8
+ 340 0092 25060000 		.4byte	.LASF13
+ 341 0096 02       		.uleb128 0x2
+ 342 0097 04       		.byte	0x4
+ 343 0098 07       		.byte	0x7
+ 344 0099 E8000000 		.4byte	.LASF14
+ 345 009d 05       		.uleb128 0x5
+ 346 009e 01       		.byte	0x1
+ 347 009f 03       		.byte	0x3
+ 348 00a0 58       		.byte	0x58
+ 349 00a1 0D020000 		.4byte	0x20d
+ 350 00a5 06       		.uleb128 0x6
+ 351 00a6 47020000 		.4byte	.LASF15
+ 352 00aa 00       		.sleb128 0
+ 353 00ab 06       		.uleb128 0x6
+ 354 00ac 7A010000 		.4byte	.LASF16
+ 355 00b0 01       		.sleb128 1
+ 356 00b1 06       		.uleb128 0x6
+ 357 00b2 C5080000 		.4byte	.LASF17
+ 358 00b6 02       		.sleb128 2
+ 359 00b7 06       		.uleb128 0x6
+ 360 00b8 A0070000 		.4byte	.LASF18
+ 361 00bc 03       		.sleb128 3
+ 362 00bd 06       		.uleb128 0x6
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 12
 
 
- 430 007a 00       		.byte	0
- 431 007b 00       		.byte	0
- 432 007c 08       		.uleb128 0x8
- 433 007d 34       		.uleb128 0x34
- 434 007e 00       		.byte	0
- 435 007f 03       		.uleb128 0x3
- 436 0080 0E       		.uleb128 0xe
- 437 0081 3A       		.uleb128 0x3a
- 438 0082 0B       		.uleb128 0xb
- 439 0083 3B       		.uleb128 0x3b
- 440 0084 0B       		.uleb128 0xb
- 441 0085 49       		.uleb128 0x49
- 442 0086 13       		.uleb128 0x13
- 443 0087 02       		.uleb128 0x2
- 444 0088 18       		.uleb128 0x18
- 445 0089 00       		.byte	0
- 446 008a 00       		.byte	0
- 447 008b 09       		.uleb128 0x9
- 448 008c 34       		.uleb128 0x34
- 449 008d 00       		.byte	0
- 450 008e 03       		.uleb128 0x3
- 451 008f 0E       		.uleb128 0xe
- 452 0090 3A       		.uleb128 0x3a
- 453 0091 0B       		.uleb128 0xb
- 454 0092 3B       		.uleb128 0x3b
- 455 0093 0B       		.uleb128 0xb
- 456 0094 49       		.uleb128 0x49
- 457 0095 13       		.uleb128 0x13
- 458 0096 3F       		.uleb128 0x3f
- 459 0097 19       		.uleb128 0x19
- 460 0098 3C       		.uleb128 0x3c
- 461 0099 19       		.uleb128 0x19
- 462 009a 00       		.byte	0
- 463 009b 00       		.byte	0
- 464 009c 00       		.byte	0
- 465              		.section	.debug_aranges,"",%progbits
- 466 0000 2C000000 		.4byte	0x2c
- 467 0004 0200     		.2byte	0x2
- 468 0006 00000000 		.4byte	.Ldebug_info0
- 469 000a 04       		.byte	0x4
- 470 000b 00       		.byte	0
- 471 000c 0000     		.2byte	0
- 472 000e 0000     		.2byte	0
- 473 0010 00000000 		.4byte	.LFB35
- 474 0014 30000000 		.4byte	.LFE35-.LFB35
- 475 0018 00000000 		.4byte	.LFB36
- 476 001c 50000000 		.4byte	.LFE36-.LFB36
- 477 0020 00000000 		.4byte	.LFB37
- 478 0024 3A000000 		.4byte	.LFE37-.LFB37
- 479 0028 00000000 		.4byte	0
- 480 002c 00000000 		.4byte	0
- 481              		.section	.debug_ranges,"",%progbits
- 482              	.Ldebug_ranges0:
- 483 0000 00000000 		.4byte	.LFB35
- 484 0004 30000000 		.4byte	.LFE35
- 485 0008 00000000 		.4byte	.LFB36
- 486 000c 50000000 		.4byte	.LFE36
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 13
+ 363 00be 44010000 		.4byte	.LASF19
+ 364 00c2 04       		.sleb128 4
+ 365 00c3 06       		.uleb128 0x6
+ 366 00c4 70070000 		.4byte	.LASF20
+ 367 00c8 05       		.sleb128 5
+ 368 00c9 06       		.uleb128 0x6
+ 369 00ca FE070000 		.4byte	.LASF21
+ 370 00ce 20       		.sleb128 32
+ 371 00cf 06       		.uleb128 0x6
+ 372 00d0 64050000 		.4byte	.LASF22
+ 373 00d4 21       		.sleb128 33
+ 374 00d5 06       		.uleb128 0x6
+ 375 00d6 1A000000 		.4byte	.LASF23
+ 376 00da 22       		.sleb128 34
+ 377 00db 06       		.uleb128 0x6
+ 378 00dc BF030000 		.4byte	.LASF24
+ 379 00e0 23       		.sleb128 35
+ 380 00e1 06       		.uleb128 0x6
+ 381 00e2 0E050000 		.4byte	.LASF25
+ 382 00e6 24       		.sleb128 36
+ 383 00e7 06       		.uleb128 0x6
+ 384 00e8 B0000000 		.4byte	.LASF26
+ 385 00ec 25       		.sleb128 37
+ 386 00ed 06       		.uleb128 0x6
+ 387 00ee BB010000 		.4byte	.LASF27
+ 388 00f2 26       		.sleb128 38
+ 389 00f3 06       		.uleb128 0x6
+ 390 00f4 3E030000 		.4byte	.LASF28
+ 391 00f8 27       		.sleb128 39
+ 392 00f9 06       		.uleb128 0x6
+ 393 00fa 74000000 		.4byte	.LASF29
+ 394 00fe 28       		.sleb128 40
+ 395 00ff 06       		.uleb128 0x6
+ 396 0100 9C050000 		.4byte	.LASF30
+ 397 0104 29       		.sleb128 41
+ 398 0105 06       		.uleb128 0x6
+ 399 0106 FC050000 		.4byte	.LASF31
+ 400 010a 2A       		.sleb128 42
+ 401 010b 06       		.uleb128 0x6
+ 402 010c 96060000 		.4byte	.LASF32
+ 403 0110 2B       		.sleb128 43
+ 404 0111 06       		.uleb128 0x6
+ 405 0112 E3010000 		.4byte	.LASF33
+ 406 0116 2C       		.sleb128 44
+ 407 0117 06       		.uleb128 0x6
+ 408 0118 5A000000 		.4byte	.LASF34
+ 409 011c C000     		.sleb128 64
+ 410 011e 06       		.uleb128 0x6
+ 411 011f 37050000 		.4byte	.LASF35
+ 412 0123 C100     		.sleb128 65
+ 413 0125 06       		.uleb128 0x6
+ 414 0126 CA000000 		.4byte	.LASF36
+ 415 012a C200     		.sleb128 66
+ 416 012c 06       		.uleb128 0x6
+ 417 012d 8D010000 		.4byte	.LASF37
+ 418 0131 C300     		.sleb128 67
+ 419 0133 06       		.uleb128 0x6
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 13
 
 
- 487 0010 00000000 		.4byte	.LFB37
- 488 0014 3A000000 		.4byte	.LFE37
- 489 0018 00000000 		.4byte	0
- 490 001c 00000000 		.4byte	0
- 491              		.section	.debug_line,"",%progbits
- 492              	.Ldebug_line0:
- 493 0000 B6000000 		.section	.debug_str,"MS",%progbits,1
- 493      02005C00 
- 493      00000201 
- 493      FB0E0D00 
- 493      01010101 
- 494              	.LASF6:
- 495 0000 6C6F6E67 		.ascii	"long long int\000"
- 495      206C6F6E 
- 495      6720696E 
- 495      7400
- 496              	.LASF3:
- 497 000e 73686F72 		.ascii	"short unsigned int\000"
- 497      7420756E 
- 497      7369676E 
- 497      65642069 
- 497      6E7400
- 498              	.LASF8:
- 499 0021 756E7369 		.ascii	"unsigned int\000"
- 499      676E6564 
- 499      20696E74 
- 499      00
- 500              	.LASF16:
- 501 002e 73656E64 		.ascii	"sendCapSenseSliderNotifications\000"
- 501      43617053 
- 501      656E7365 
- 501      536C6964 
- 501      65724E6F 
- 502              	.LASF19:
- 503 004e 433A5C55 		.ascii	"C:\\Users\\Evan\\Desktop\\BLE Lab 4\\BLE Lab 4.cyds"
- 503      73657273 
- 503      5C457661 
- 503      6E5C4465 
- 503      736B746F 
- 504 007c 6E00     		.ascii	"n\000"
- 505              	.LASF23:
- 506 007e 736C6964 		.ascii	"sliderPosition\000"
- 506      6572506F 
- 506      73697469 
- 506      6F6E00
- 507              	.LASF22:
- 508 008d 48616E64 		.ascii	"HandleCapSenseSlider\000"
- 508      6C654361 
- 508      7053656E 
- 508      7365536C 
- 508      69646572 
- 509              	.LASF5:
- 510 00a2 6C6F6E67 		.ascii	"long unsigned int\000"
- 510      20756E73 
- 510      69676E65 
- 510      6420696E 
- 510      7400
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 14
+ 420 0134 83080000 		.4byte	.LASF38
+ 421 0138 C400     		.sleb128 68
+ 422 013a 06       		.uleb128 0x6
+ 423 013b 3E080000 		.4byte	.LASF39
+ 424 013f C500     		.sleb128 69
+ 425 0141 06       		.uleb128 0x6
+ 426 0142 59010000 		.4byte	.LASF40
+ 427 0146 C600     		.sleb128 70
+ 428 0148 06       		.uleb128 0x6
+ 429 0149 A3040000 		.4byte	.LASF41
+ 430 014d C700     		.sleb128 71
+ 431 014f 06       		.uleb128 0x6
+ 432 0150 E7040000 		.4byte	.LASF42
+ 433 0154 C800     		.sleb128 72
+ 434 0156 06       		.uleb128 0x6
+ 435 0157 C0020000 		.4byte	.LASF43
+ 436 015b C900     		.sleb128 73
+ 437 015d 06       		.uleb128 0x6
+ 438 015e 59060000 		.4byte	.LASF44
+ 439 0162 CA00     		.sleb128 74
+ 440 0164 06       		.uleb128 0x6
+ 441 0165 07020000 		.4byte	.LASF45
+ 442 0169 CB00     		.sleb128 75
+ 443 016b 06       		.uleb128 0x6
+ 444 016c CD040000 		.4byte	.LASF46
+ 445 0170 CC00     		.sleb128 76
+ 446 0172 06       		.uleb128 0x6
+ 447 0173 D9020000 		.4byte	.LASF47
+ 448 0177 CD00     		.sleb128 77
+ 449 0179 06       		.uleb128 0x6
+ 450 017a 65080000 		.4byte	.LASF48
+ 451 017e CE00     		.sleb128 78
+ 452 0180 06       		.uleb128 0x6
+ 453 0181 70040000 		.4byte	.LASF49
+ 454 0185 CF00     		.sleb128 79
+ 455 0187 06       		.uleb128 0x6
+ 456 0188 E5080000 		.4byte	.LASF50
+ 457 018c D000     		.sleb128 80
+ 458 018e 06       		.uleb128 0x6
+ 459 018f 77060000 		.4byte	.LASF51
+ 460 0193 D100     		.sleb128 81
+ 461 0195 06       		.uleb128 0x6
+ 462 0196 86030000 		.4byte	.LASF52
+ 463 019a D200     		.sleb128 82
+ 464 019c 06       		.uleb128 0x6
+ 465 019d 1D030000 		.4byte	.LASF53
+ 466 01a1 D300     		.sleb128 83
+ 467 01a3 06       		.uleb128 0x6
+ 468 01a4 26020000 		.4byte	.LASF54
+ 469 01a8 D400     		.sleb128 84
+ 470 01aa 06       		.uleb128 0x6
+ 471 01ab 2E090000 		.4byte	.LASF55
+ 472 01af D500     		.sleb128 85
+ 473 01b1 06       		.uleb128 0x6
+ 474 01b2 3C040000 		.4byte	.LASF56
+ 475 01b6 F000     		.sleb128 112
+ 476 01b8 06       		.uleb128 0x6
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 14
 
 
- 511              	.LASF7:
- 512 00b4 6C6F6E67 		.ascii	"long long unsigned int\000"
- 512      206C6F6E 
- 512      6720756E 
- 512      7369676E 
- 512      65642069 
- 513              	.LASF21:
- 514 00cb 496E6974 		.ascii	"InitializeSystem\000"
- 514      69616C69 
- 514      7A655379 
- 514      7374656D 
- 514      00
- 515              	.LASF13:
- 516 00dc 63686172 		.ascii	"char\000"
- 516      00
- 517              	.LASF1:
- 518 00e1 756E7369 		.ascii	"unsigned char\000"
- 518      676E6564 
- 518      20636861 
- 518      7200
- 519              	.LASF20:
- 520 00ef 6D61696E 		.ascii	"main\000"
- 520      00
- 521              	.LASF15:
- 522 00f4 64657669 		.ascii	"deviceConnected\000"
- 522      6365436F 
- 522      6E6E6563 
- 522      74656400 
- 523              	.LASF4:
- 524 0104 6C6F6E67 		.ascii	"long int\000"
- 524      20696E74 
- 524      00
- 525              	.LASF18:
- 526 010d 2E5C6D61 		.ascii	".\\main.c\000"
- 526      696E2E63 
- 526      00
- 527              	.LASF12:
- 528 0116 646F7562 		.ascii	"double\000"
- 528      6C6500
- 529              	.LASF17:
- 530 011d 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 530      4320342E 
- 530      382E3420 
- 530      32303134 
- 530      30353236 
- 531 0150 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 531      20726576 
- 531      6973696F 
- 531      6E203231 
- 531      31333538 
- 532 0183 30202D66 		.ascii	"0 -ffunction-sections\000"
- 532      66756E63 
- 532      74696F6E 
- 532      2D736563 
- 532      74696F6E 
- 533              	.LASF9:
- 534 0199 75696E74 		.ascii	"uint8\000"
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\cccuSsYN.s 			page 15
+ 477 01b9 D8070000 		.4byte	.LASF57
+ 478 01bd F100     		.sleb128 113
+ 479 01bf 06       		.uleb128 0x6
+ 480 01c0 2A060000 		.4byte	.LASF58
+ 481 01c4 F200     		.sleb128 114
+ 482 01c6 06       		.uleb128 0x6
+ 483 01c7 5E020000 		.4byte	.LASF59
+ 484 01cb F300     		.sleb128 115
+ 485 01cd 06       		.uleb128 0x6
+ 486 01ce FB030000 		.4byte	.LASF60
+ 487 01d2 F400     		.sleb128 116
+ 488 01d4 06       		.uleb128 0x6
+ 489 01d5 7B050000 		.4byte	.LASF61
+ 490 01d9 F500     		.sleb128 117
+ 491 01db 06       		.uleb128 0x6
+ 492 01dc 99020000 		.4byte	.LASF62
+ 493 01e0 F600     		.sleb128 118
+ 494 01e2 06       		.uleb128 0x6
+ 495 01e3 B9070000 		.4byte	.LASF63
+ 496 01e7 F700     		.sleb128 119
+ 497 01e9 06       		.uleb128 0x6
+ 498 01ea D3060000 		.4byte	.LASF64
+ 499 01ee F800     		.sleb128 120
+ 500 01f0 06       		.uleb128 0x6
+ 501 01f1 10070000 		.4byte	.LASF65
+ 502 01f5 F900     		.sleb128 121
+ 503 01f7 06       		.uleb128 0x6
+ 504 01f8 A1080000 		.4byte	.LASF66
+ 505 01fc FA00     		.sleb128 122
+ 506 01fe 06       		.uleb128 0x6
+ 507 01ff B5060000 		.4byte	.LASF67
+ 508 0203 FA01     		.sleb128 250
+ 509 0205 06       		.uleb128 0x6
+ 510 0206 19040000 		.4byte	.LASF68
+ 511 020a FF01     		.sleb128 255
+ 512 020c 00       		.byte	0
+ 513 020d 07       		.uleb128 0x7
+ 514 020e 01       		.byte	0x1
+ 515 020f 03       		.byte	0x3
+ 516 0210 F801     		.2byte	0x1f8
+ 517 0212 36020000 		.4byte	0x236
+ 518 0216 06       		.uleb128 0x6
+ 519 0217 FD060000 		.4byte	.LASF69
+ 520 021b 01       		.sleb128 1
+ 521 021c 06       		.uleb128 0x6
+ 522 021d D9050000 		.4byte	.LASF70
+ 523 0221 02       		.sleb128 2
+ 524 0222 06       		.uleb128 0x6
+ 525 0223 E5030000 		.4byte	.LASF71
+ 526 0227 03       		.sleb128 3
+ 527 0228 06       		.uleb128 0x6
+ 528 0229 CE090000 		.4byte	.LASF72
+ 529 022d 04       		.sleb128 4
+ 530 022e 06       		.uleb128 0x6
+ 531 022f 8C070000 		.4byte	.LASF73
+ 532 0233 FF01     		.sleb128 255
+ 533 0235 00       		.byte	0
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 15
 
 
- 534      3800
- 535              	.LASF0:
- 536 019f 7369676E 		.ascii	"signed char\000"
- 536      65642063 
- 536      68617200 
- 537              	.LASF11:
- 538 01ab 666C6F61 		.ascii	"float\000"
- 538      7400
- 539              	.LASF2:
- 540 01b1 73686F72 		.ascii	"short int\000"
- 540      7420696E 
- 540      7400
- 541              	.LASF10:
- 542 01bb 75696E74 		.ascii	"uint16\000"
- 542      313600
- 543              	.LASF14:
- 544 01c2 73697A65 		.ascii	"sizetype\000"
- 544      74797065 
- 544      00
- 545              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ 534 0236 08       		.uleb128 0x8
+ 535 0237 5D030000 		.4byte	.LASF74
+ 536 023b 03       		.byte	0x3
+ 537 023c 1402     		.2byte	0x214
+ 538 023e 0D020000 		.4byte	0x20d
+ 539 0242 07       		.uleb128 0x7
+ 540 0243 01       		.byte	0x1
+ 541 0244 03       		.byte	0x3
+ 542 0245 1802     		.2byte	0x218
+ 543 0247 7D020000 		.4byte	0x27d
+ 544 024b 06       		.uleb128 0x6
+ 545 024c 6D030000 		.4byte	.LASF75
+ 546 0250 01       		.sleb128 1
+ 547 0251 06       		.uleb128 0x6
+ 548 0252 0D010000 		.4byte	.LASF76
+ 549 0256 02       		.sleb128 2
+ 550 0257 06       		.uleb128 0x6
+ 551 0258 A7030000 		.4byte	.LASF77
+ 552 025c 03       		.sleb128 3
+ 553 025d 06       		.uleb128 0x6
+ 554 025e 2B010000 		.4byte	.LASF78
+ 555 0262 04       		.sleb128 4
+ 556 0263 06       		.uleb128 0x6
+ 557 0264 7C020000 		.4byte	.LASF79
+ 558 0268 05       		.sleb128 5
+ 559 0269 06       		.uleb128 0x6
+ 560 026a 22080000 		.4byte	.LASF80
+ 561 026e 06       		.sleb128 6
+ 562 026f 06       		.uleb128 0x6
+ 563 0270 3E000000 		.4byte	.LASF81
+ 564 0274 07       		.sleb128 7
+ 565 0275 06       		.uleb128 0x6
+ 566 0276 00000000 		.4byte	.LASF82
+ 567 027a FF01     		.sleb128 255
+ 568 027c 00       		.byte	0
+ 569 027d 08       		.uleb128 0x8
+ 570 027e 8F040000 		.4byte	.LASF83
+ 571 0282 03       		.byte	0x3
+ 572 0283 2102     		.2byte	0x221
+ 573 0285 42020000 		.4byte	0x242
+ 574 0289 09       		.uleb128 0x9
+ 575 028a 08010000 		.4byte	.LASF93
+ 576 028e 01       		.byte	0x1
+ 577 028f 4D       		.byte	0x4d
+ 578 0290 5D000000 		.4byte	0x5d
+ 579 0294 00000000 		.4byte	.LFB35
+ 580 0298 34000000 		.4byte	.LFE35-.LFB35
+ 581 029c 01       		.uleb128 0x1
+ 582 029d 9C       		.byte	0x9c
+ 583 029e 0A       		.uleb128 0xa
+ 584 029f EB050000 		.4byte	.LASF94
+ 585 02a3 01       		.byte	0x1
+ 586 02a4 7B       		.byte	0x7b
+ 587 02a5 00000000 		.4byte	.LFB36
+ 588 02a9 50000000 		.4byte	.LFE36-.LFB36
+ 589 02ad 01       		.uleb128 0x1
+ 590 02ae 9C       		.byte	0x9c
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 16
+
+
+ 591 02af 0B       		.uleb128 0xb
+ 592 02b0 C4050000 		.4byte	.LASF95
+ 593 02b4 01       		.byte	0x1
+ 594 02b5 A8       		.byte	0xa8
+ 595 02b6 00000000 		.4byte	.LFB37
+ 596 02ba 3A000000 		.4byte	.LFE37-.LFB37
+ 597 02be 01       		.uleb128 0x1
+ 598 02bf 9C       		.byte	0x9c
+ 599 02c0 D3020000 		.4byte	0x2d3
+ 600 02c4 0C       		.uleb128 0xc
+ 601 02c5 2D040000 		.4byte	.LASF84
+ 602 02c9 01       		.byte	0x1
+ 603 02ca AE       		.byte	0xae
+ 604 02cb 76000000 		.4byte	0x76
+ 605 02cf 02       		.uleb128 0x2
+ 606 02d0 91       		.byte	0x91
+ 607 02d1 76       		.sleb128 -10
+ 608 02d2 00       		.byte	0
+ 609 02d3 0D       		.uleb128 0xd
+ 610 02d4 01030000 		.4byte	.LASF96
+ 611 02d8 01       		.byte	0x1
+ 612 02d9 CD       		.byte	0xcd
+ 613 02da 00000000 		.4byte	.LFB38
+ 614 02de 50000000 		.4byte	.LFE38-.LFB38
+ 615 02e2 01       		.uleb128 0x1
+ 616 02e3 9C       		.byte	0x9c
+ 617 02e4 05030000 		.4byte	0x305
+ 618 02e8 0C       		.uleb128 0xc
+ 619 02e9 04090000 		.4byte	.LASF85
+ 620 02ed 01       		.byte	0x1
+ 621 02ee D0       		.byte	0xd0
+ 622 02ef 36020000 		.4byte	0x236
+ 623 02f3 02       		.uleb128 0x2
+ 624 02f4 91       		.byte	0x91
+ 625 02f5 6F       		.sleb128 -17
+ 626 02f6 0C       		.uleb128 0xc
+ 627 02f7 B9050000 		.4byte	.LASF86
+ 628 02fb 01       		.byte	0x1
+ 629 02fc D1       		.byte	0xd1
+ 630 02fd 7D020000 		.4byte	0x27d
+ 631 0301 02       		.uleb128 0x2
+ 632 0302 91       		.byte	0x91
+ 633 0303 6E       		.sleb128 -18
+ 634 0304 00       		.byte	0
+ 635 0305 0E       		.uleb128 0xe
+ 636 0306 96000000 		.4byte	.LASF87
+ 637 030a 04       		.byte	0x4
+ 638 030b 55       		.byte	0x55
+ 639 030c 6B000000 		.4byte	0x6b
+ 640 0310 0E       		.uleb128 0xe
+ 641 0311 0E090000 		.4byte	.LASF88
+ 642 0315 04       		.byte	0x4
+ 643 0316 56       		.byte	0x56
+ 644 0317 6B000000 		.4byte	0x6b
+ 645 031b 0F       		.uleb128 0xf
+ 646 031c D7080000 		.4byte	.LASF89
+ 647 0320 01       		.byte	0x1
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 17
+
+
+ 648 0321 31       		.byte	0x31
+ 649 0322 6B000000 		.4byte	0x6b
+ 650 0326 05       		.uleb128 0x5
+ 651 0327 03       		.byte	0x3
+ 652 0328 00000000 		.4byte	shut_down_led
+ 653 032c 00       		.byte	0
+ 654              		.section	.debug_abbrev,"",%progbits
+ 655              	.Ldebug_abbrev0:
+ 656 0000 01       		.uleb128 0x1
+ 657 0001 11       		.uleb128 0x11
+ 658 0002 01       		.byte	0x1
+ 659 0003 25       		.uleb128 0x25
+ 660 0004 0E       		.uleb128 0xe
+ 661 0005 13       		.uleb128 0x13
+ 662 0006 0B       		.uleb128 0xb
+ 663 0007 03       		.uleb128 0x3
+ 664 0008 0E       		.uleb128 0xe
+ 665 0009 1B       		.uleb128 0x1b
+ 666 000a 0E       		.uleb128 0xe
+ 667 000b 55       		.uleb128 0x55
+ 668 000c 17       		.uleb128 0x17
+ 669 000d 11       		.uleb128 0x11
+ 670 000e 01       		.uleb128 0x1
+ 671 000f 10       		.uleb128 0x10
+ 672 0010 17       		.uleb128 0x17
+ 673 0011 00       		.byte	0
+ 674 0012 00       		.byte	0
+ 675 0013 02       		.uleb128 0x2
+ 676 0014 24       		.uleb128 0x24
+ 677 0015 00       		.byte	0
+ 678 0016 0B       		.uleb128 0xb
+ 679 0017 0B       		.uleb128 0xb
+ 680 0018 3E       		.uleb128 0x3e
+ 681 0019 0B       		.uleb128 0xb
+ 682 001a 03       		.uleb128 0x3
+ 683 001b 0E       		.uleb128 0xe
+ 684 001c 00       		.byte	0
+ 685 001d 00       		.byte	0
+ 686 001e 03       		.uleb128 0x3
+ 687 001f 24       		.uleb128 0x24
+ 688 0020 00       		.byte	0
+ 689 0021 0B       		.uleb128 0xb
+ 690 0022 0B       		.uleb128 0xb
+ 691 0023 3E       		.uleb128 0x3e
+ 692 0024 0B       		.uleb128 0xb
+ 693 0025 03       		.uleb128 0x3
+ 694 0026 08       		.uleb128 0x8
+ 695 0027 00       		.byte	0
+ 696 0028 00       		.byte	0
+ 697 0029 04       		.uleb128 0x4
+ 698 002a 16       		.uleb128 0x16
+ 699 002b 00       		.byte	0
+ 700 002c 03       		.uleb128 0x3
+ 701 002d 0E       		.uleb128 0xe
+ 702 002e 3A       		.uleb128 0x3a
+ 703 002f 0B       		.uleb128 0xb
+ 704 0030 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 18
+
+
+ 705 0031 0B       		.uleb128 0xb
+ 706 0032 49       		.uleb128 0x49
+ 707 0033 13       		.uleb128 0x13
+ 708 0034 00       		.byte	0
+ 709 0035 00       		.byte	0
+ 710 0036 05       		.uleb128 0x5
+ 711 0037 04       		.uleb128 0x4
+ 712 0038 01       		.byte	0x1
+ 713 0039 0B       		.uleb128 0xb
+ 714 003a 0B       		.uleb128 0xb
+ 715 003b 3A       		.uleb128 0x3a
+ 716 003c 0B       		.uleb128 0xb
+ 717 003d 3B       		.uleb128 0x3b
+ 718 003e 0B       		.uleb128 0xb
+ 719 003f 01       		.uleb128 0x1
+ 720 0040 13       		.uleb128 0x13
+ 721 0041 00       		.byte	0
+ 722 0042 00       		.byte	0
+ 723 0043 06       		.uleb128 0x6
+ 724 0044 28       		.uleb128 0x28
+ 725 0045 00       		.byte	0
+ 726 0046 03       		.uleb128 0x3
+ 727 0047 0E       		.uleb128 0xe
+ 728 0048 1C       		.uleb128 0x1c
+ 729 0049 0D       		.uleb128 0xd
+ 730 004a 00       		.byte	0
+ 731 004b 00       		.byte	0
+ 732 004c 07       		.uleb128 0x7
+ 733 004d 04       		.uleb128 0x4
+ 734 004e 01       		.byte	0x1
+ 735 004f 0B       		.uleb128 0xb
+ 736 0050 0B       		.uleb128 0xb
+ 737 0051 3A       		.uleb128 0x3a
+ 738 0052 0B       		.uleb128 0xb
+ 739 0053 3B       		.uleb128 0x3b
+ 740 0054 05       		.uleb128 0x5
+ 741 0055 01       		.uleb128 0x1
+ 742 0056 13       		.uleb128 0x13
+ 743 0057 00       		.byte	0
+ 744 0058 00       		.byte	0
+ 745 0059 08       		.uleb128 0x8
+ 746 005a 16       		.uleb128 0x16
+ 747 005b 00       		.byte	0
+ 748 005c 03       		.uleb128 0x3
+ 749 005d 0E       		.uleb128 0xe
+ 750 005e 3A       		.uleb128 0x3a
+ 751 005f 0B       		.uleb128 0xb
+ 752 0060 3B       		.uleb128 0x3b
+ 753 0061 05       		.uleb128 0x5
+ 754 0062 49       		.uleb128 0x49
+ 755 0063 13       		.uleb128 0x13
+ 756 0064 00       		.byte	0
+ 757 0065 00       		.byte	0
+ 758 0066 09       		.uleb128 0x9
+ 759 0067 2E       		.uleb128 0x2e
+ 760 0068 00       		.byte	0
+ 761 0069 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 19
+
+
+ 762 006a 19       		.uleb128 0x19
+ 763 006b 03       		.uleb128 0x3
+ 764 006c 0E       		.uleb128 0xe
+ 765 006d 3A       		.uleb128 0x3a
+ 766 006e 0B       		.uleb128 0xb
+ 767 006f 3B       		.uleb128 0x3b
+ 768 0070 0B       		.uleb128 0xb
+ 769 0071 49       		.uleb128 0x49
+ 770 0072 13       		.uleb128 0x13
+ 771 0073 11       		.uleb128 0x11
+ 772 0074 01       		.uleb128 0x1
+ 773 0075 12       		.uleb128 0x12
+ 774 0076 06       		.uleb128 0x6
+ 775 0077 40       		.uleb128 0x40
+ 776 0078 18       		.uleb128 0x18
+ 777 0079 9642     		.uleb128 0x2116
+ 778 007b 19       		.uleb128 0x19
+ 779 007c 00       		.byte	0
+ 780 007d 00       		.byte	0
+ 781 007e 0A       		.uleb128 0xa
+ 782 007f 2E       		.uleb128 0x2e
+ 783 0080 00       		.byte	0
+ 784 0081 03       		.uleb128 0x3
+ 785 0082 0E       		.uleb128 0xe
+ 786 0083 3A       		.uleb128 0x3a
+ 787 0084 0B       		.uleb128 0xb
+ 788 0085 3B       		.uleb128 0x3b
+ 789 0086 0B       		.uleb128 0xb
+ 790 0087 27       		.uleb128 0x27
+ 791 0088 19       		.uleb128 0x19
+ 792 0089 11       		.uleb128 0x11
+ 793 008a 01       		.uleb128 0x1
+ 794 008b 12       		.uleb128 0x12
+ 795 008c 06       		.uleb128 0x6
+ 796 008d 40       		.uleb128 0x40
+ 797 008e 18       		.uleb128 0x18
+ 798 008f 9642     		.uleb128 0x2116
+ 799 0091 19       		.uleb128 0x19
+ 800 0092 00       		.byte	0
+ 801 0093 00       		.byte	0
+ 802 0094 0B       		.uleb128 0xb
+ 803 0095 2E       		.uleb128 0x2e
+ 804 0096 01       		.byte	0x1
+ 805 0097 03       		.uleb128 0x3
+ 806 0098 0E       		.uleb128 0xe
+ 807 0099 3A       		.uleb128 0x3a
+ 808 009a 0B       		.uleb128 0xb
+ 809 009b 3B       		.uleb128 0x3b
+ 810 009c 0B       		.uleb128 0xb
+ 811 009d 27       		.uleb128 0x27
+ 812 009e 19       		.uleb128 0x19
+ 813 009f 11       		.uleb128 0x11
+ 814 00a0 01       		.uleb128 0x1
+ 815 00a1 12       		.uleb128 0x12
+ 816 00a2 06       		.uleb128 0x6
+ 817 00a3 40       		.uleb128 0x40
+ 818 00a4 18       		.uleb128 0x18
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 20
+
+
+ 819 00a5 9642     		.uleb128 0x2116
+ 820 00a7 19       		.uleb128 0x19
+ 821 00a8 01       		.uleb128 0x1
+ 822 00a9 13       		.uleb128 0x13
+ 823 00aa 00       		.byte	0
+ 824 00ab 00       		.byte	0
+ 825 00ac 0C       		.uleb128 0xc
+ 826 00ad 34       		.uleb128 0x34
+ 827 00ae 00       		.byte	0
+ 828 00af 03       		.uleb128 0x3
+ 829 00b0 0E       		.uleb128 0xe
+ 830 00b1 3A       		.uleb128 0x3a
+ 831 00b2 0B       		.uleb128 0xb
+ 832 00b3 3B       		.uleb128 0x3b
+ 833 00b4 0B       		.uleb128 0xb
+ 834 00b5 49       		.uleb128 0x49
+ 835 00b6 13       		.uleb128 0x13
+ 836 00b7 02       		.uleb128 0x2
+ 837 00b8 18       		.uleb128 0x18
+ 838 00b9 00       		.byte	0
+ 839 00ba 00       		.byte	0
+ 840 00bb 0D       		.uleb128 0xd
+ 841 00bc 2E       		.uleb128 0x2e
+ 842 00bd 01       		.byte	0x1
+ 843 00be 3F       		.uleb128 0x3f
+ 844 00bf 19       		.uleb128 0x19
+ 845 00c0 03       		.uleb128 0x3
+ 846 00c1 0E       		.uleb128 0xe
+ 847 00c2 3A       		.uleb128 0x3a
+ 848 00c3 0B       		.uleb128 0xb
+ 849 00c4 3B       		.uleb128 0x3b
+ 850 00c5 0B       		.uleb128 0xb
+ 851 00c6 27       		.uleb128 0x27
+ 852 00c7 19       		.uleb128 0x19
+ 853 00c8 11       		.uleb128 0x11
+ 854 00c9 01       		.uleb128 0x1
+ 855 00ca 12       		.uleb128 0x12
+ 856 00cb 06       		.uleb128 0x6
+ 857 00cc 40       		.uleb128 0x40
+ 858 00cd 18       		.uleb128 0x18
+ 859 00ce 9642     		.uleb128 0x2116
+ 860 00d0 19       		.uleb128 0x19
+ 861 00d1 01       		.uleb128 0x1
+ 862 00d2 13       		.uleb128 0x13
+ 863 00d3 00       		.byte	0
+ 864 00d4 00       		.byte	0
+ 865 00d5 0E       		.uleb128 0xe
+ 866 00d6 34       		.uleb128 0x34
+ 867 00d7 00       		.byte	0
+ 868 00d8 03       		.uleb128 0x3
+ 869 00d9 0E       		.uleb128 0xe
+ 870 00da 3A       		.uleb128 0x3a
+ 871 00db 0B       		.uleb128 0xb
+ 872 00dc 3B       		.uleb128 0x3b
+ 873 00dd 0B       		.uleb128 0xb
+ 874 00de 49       		.uleb128 0x49
+ 875 00df 13       		.uleb128 0x13
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 21
+
+
+ 876 00e0 3F       		.uleb128 0x3f
+ 877 00e1 19       		.uleb128 0x19
+ 878 00e2 3C       		.uleb128 0x3c
+ 879 00e3 19       		.uleb128 0x19
+ 880 00e4 00       		.byte	0
+ 881 00e5 00       		.byte	0
+ 882 00e6 0F       		.uleb128 0xf
+ 883 00e7 34       		.uleb128 0x34
+ 884 00e8 00       		.byte	0
+ 885 00e9 03       		.uleb128 0x3
+ 886 00ea 0E       		.uleb128 0xe
+ 887 00eb 3A       		.uleb128 0x3a
+ 888 00ec 0B       		.uleb128 0xb
+ 889 00ed 3B       		.uleb128 0x3b
+ 890 00ee 0B       		.uleb128 0xb
+ 891 00ef 49       		.uleb128 0x49
+ 892 00f0 13       		.uleb128 0x13
+ 893 00f1 3F       		.uleb128 0x3f
+ 894 00f2 19       		.uleb128 0x19
+ 895 00f3 02       		.uleb128 0x2
+ 896 00f4 18       		.uleb128 0x18
+ 897 00f5 00       		.byte	0
+ 898 00f6 00       		.byte	0
+ 899 00f7 00       		.byte	0
+ 900              		.section	.debug_aranges,"",%progbits
+ 901 0000 34000000 		.4byte	0x34
+ 902 0004 0200     		.2byte	0x2
+ 903 0006 00000000 		.4byte	.Ldebug_info0
+ 904 000a 04       		.byte	0x4
+ 905 000b 00       		.byte	0
+ 906 000c 0000     		.2byte	0
+ 907 000e 0000     		.2byte	0
+ 908 0010 00000000 		.4byte	.LFB35
+ 909 0014 34000000 		.4byte	.LFE35-.LFB35
+ 910 0018 00000000 		.4byte	.LFB36
+ 911 001c 50000000 		.4byte	.LFE36-.LFB36
+ 912 0020 00000000 		.4byte	.LFB37
+ 913 0024 3A000000 		.4byte	.LFE37-.LFB37
+ 914 0028 00000000 		.4byte	.LFB38
+ 915 002c 50000000 		.4byte	.LFE38-.LFB38
+ 916 0030 00000000 		.4byte	0
+ 917 0034 00000000 		.4byte	0
+ 918              		.section	.debug_ranges,"",%progbits
+ 919              	.Ldebug_ranges0:
+ 920 0000 00000000 		.4byte	.LFB35
+ 921 0004 34000000 		.4byte	.LFE35
+ 922 0008 00000000 		.4byte	.LFB36
+ 923 000c 50000000 		.4byte	.LFE36
+ 924 0010 00000000 		.4byte	.LFB37
+ 925 0014 3A000000 		.4byte	.LFE37
+ 926 0018 00000000 		.4byte	.LFB38
+ 927 001c 50000000 		.4byte	.LFE38
+ 928 0020 00000000 		.4byte	0
+ 929 0024 00000000 		.4byte	0
+ 930              		.section	.debug_line,"",%progbits
+ 931              	.Ldebug_line0:
+ 932 0000 E6000000 		.section	.debug_str,"MS",%progbits,1
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 22
+
+
+ 932      02006D00 
+ 932      00000201 
+ 932      FB0E0D00 
+ 932      01010101 
+ 933              	.LASF82:
+ 934 0000 4359424C 		.ascii	"CYBLE_BLESS_STATE_INVALID\000"
+ 934      455F424C 
+ 934      4553535F 
+ 934      53544154 
+ 934      455F494E 
+ 935              	.LASF23:
+ 936 001a 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
+ 936      455F4556 
+ 936      545F4741 
+ 936      505F5041 
+ 936      53534B45 
+ 937              	.LASF81:
+ 938 003e 4359424C 		.ascii	"CYBLE_BLESS_STATE_HIBERNATE\000"
+ 938      455F424C 
+ 938      4553535F 
+ 938      53544154 
+ 938      455F4849 
+ 939              	.LASF34:
+ 940 005a 4359424C 		.ascii	"CYBLE_EVT_GATTC_ERROR_RSP\000"
+ 940      455F4556 
+ 940      545F4741 
+ 940      5454435F 
+ 940      4552524F 
+ 941              	.LASF29:
+ 942 0074 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_DISCONNECTED\000"
+ 942      455F4556 
+ 942      545F4741 
+ 942      505F4445 
+ 942      56494345 
+ 943              	.LASF87:
+ 944 0096 64657669 		.ascii	"deviceConnected\000"
+ 944      6365436F 
+ 944      6E6E6563 
+ 944      74656400 
+ 945              	.LASF2:
+ 946 00a6 73686F72 		.ascii	"short int\000"
+ 946      7420696E 
+ 946      7400
+ 947              	.LASF26:
+ 948 00b0 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
+ 948      455F4556 
+ 948      545F4741 
+ 948      505F4155 
+ 948      54485F46 
+ 949              	.LASF36:
+ 950 00ca 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
+ 950      455F4556 
+ 950      545F4741 
+ 950      54545F44 
+ 950      4953434F 
+ 951              	.LASF14:
+ 952 00e8 73697A65 		.ascii	"sizetype\000"
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 23
+
+
+ 952      74797065 
+ 952      00
+ 953              	.LASF7:
+ 954 00f1 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 954      206C6F6E 
+ 954      6720756E 
+ 954      7369676E 
+ 954      65642069 
+ 955              	.LASF93:
+ 956 0108 6D61696E 		.ascii	"main\000"
+ 956      00
+ 957              	.LASF76:
+ 958 010d 4359424C 		.ascii	"CYBLE_BLESS_STATE_EVENT_CLOSE\000"
+ 958      455F424C 
+ 958      4553535F 
+ 958      53544154 
+ 958      455F4556 
+ 959              	.LASF78:
+ 960 012b 4359424C 		.ascii	"CYBLE_BLESS_STATE_ECO_ON\000"
+ 960      455F424C 
+ 960      4553535F 
+ 960      53544154 
+ 960      455F4543 
+ 961              	.LASF19:
+ 962 0144 4359424C 		.ascii	"CYBLE_EVT_HCI_STATUS\000"
+ 962      455F4556 
+ 962      545F4843 
+ 962      495F5354 
+ 962      41545553 
+ 963              	.LASF40:
+ 964 0159 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
+ 964      455F4556 
+ 964      545F4741 
+ 964      5454435F 
+ 964      52454144 
+ 965              	.LASF16:
+ 966 017a 4359424C 		.ascii	"CYBLE_EVT_STACK_ON\000"
+ 966      455F4556 
+ 966      545F5354 
+ 966      41434B5F 
+ 966      4F4E00
+ 967              	.LASF37:
+ 968 018d 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
+ 968      455F4556 
+ 968      545F4741 
+ 968      5454535F 
+ 968      58434E48 
+ 969              	.LASF10:
+ 970 01ab 75696E74 		.ascii	"uint16\000"
+ 970      313600
+ 971              	.LASF91:
+ 972 01b2 2E5C6D61 		.ascii	".\\main.c\000"
+ 972      696E2E63 
+ 972      00
+ 973              	.LASF27:
+ 974 01bb 4359424C 		.ascii	"CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP\000"
+ 974      455F4556 
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 24
+
+
+ 974      545F4741 
+ 974      50505F41 
+ 974      44564552 
+ 975              	.LASF33:
+ 976 01e3 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
+ 976      455F4556 
+ 976      545F4741 
+ 976      505F4B45 
+ 976      59494E46 
+ 977              	.LASF45:
+ 978 0207 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_MULTI_RSP\000"
+ 978      455F4556 
+ 978      545F4741 
+ 978      5454435F 
+ 978      52454144 
+ 979              	.LASF54:
+ 980 0226 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
+ 980      455F4556 
+ 980      545F4741 
+ 980      5454535F 
+ 980      48414E44 
+ 981              	.LASF15:
+ 982 0247 4359424C 		.ascii	"CYBLE_EVT_HOST_INVALID\000"
+ 982      455F4556 
+ 982      545F484F 
+ 982      53545F49 
+ 982      4E56414C 
+ 983              	.LASF59:
+ 984 025e 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
+ 984      455F4556 
+ 984      545F4C32 
+ 984      4341505F 
+ 984      43424643 
+ 985              	.LASF79:
+ 986 027c 4359424C 		.ascii	"CYBLE_BLESS_STATE_ECO_STABLE\000"
+ 986      455F424C 
+ 986      4553535F 
+ 986      53544154 
+ 986      455F4543 
+ 987              	.LASF62:
+ 988 0299 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
+ 988      455F4556 
+ 988      545F4C32 
+ 988      4341505F 
+ 988      43424643 
+ 989              	.LASF11:
+ 990 02ba 666C6F61 		.ascii	"float\000"
+ 990      7400
+ 991              	.LASF43:
+ 992 02c0 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
+ 992      455F4556 
+ 992      545F4741 
+ 992      5454435F 
+ 992      52454144 
+ 993              	.LASF47:
+ 994 02d9 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
+ 994      455F4556 
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 25
+
+
+ 994      545F4741 
+ 994      5454435F 
+ 994      57524954 
+ 995              	.LASF6:
+ 996 02f3 6C6F6E67 		.ascii	"long long int\000"
+ 996      206C6F6E 
+ 996      6720696E 
+ 996      7400
+ 997              	.LASF96:
+ 998 0301 48616E64 		.ascii	"HandleLowPowerMode\000"
+ 998      6C654C6F 
+ 998      77506F77 
+ 998      65724D6F 
+ 998      646500
+ 999              	.LASF4:
+ 1000 0314 6C6F6E67 		.ascii	"long int\000"
+ 1000      20696E74 
+ 1000      00
+ 1001              	.LASF53:
+ 1002 031d 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
+ 1002      455F4556 
+ 1002      545F4741 
+ 1002      5454435F 
+ 1002      48414E44 
+ 1003              	.LASF28:
+ 1004 033e 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_CONNECTED\000"
+ 1004      455F4556 
+ 1004      545F4741 
+ 1004      505F4445 
+ 1004      56494345 
+ 1005              	.LASF74:
+ 1006 035d 4359424C 		.ascii	"CYBLE_LP_MODE_T\000"
+ 1006      455F4C50 
+ 1006      5F4D4F44 
+ 1006      455F5400 
+ 1007              	.LASF75:
+ 1008 036d 4359424C 		.ascii	"CYBLE_BLESS_STATE_ACTIVE\000"
+ 1008      455F424C 
+ 1008      4553535F 
+ 1008      53544154 
+ 1008      455F4143 
+ 1009              	.LASF52:
+ 1010 0386 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_NTF\000"
+ 1010      455F4556 
+ 1010      545F4741 
+ 1010      5454435F 
+ 1010      48414E44 
+ 1011              	.LASF77:
+ 1012 03a7 4359424C 		.ascii	"CYBLE_BLESS_STATE_SLEEP\000"
+ 1012      455F424C 
+ 1012      4553535F 
+ 1012      53544154 
+ 1012      455F534C 
+ 1013              	.LASF24:
+ 1014 03bf 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
+ 1014      455F4556 
+ 1014      545F4741 
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 26
+
+
+ 1014      505F5041 
+ 1014      53534B45 
+ 1015              	.LASF71:
+ 1016 03e5 4359424C 		.ascii	"CYBLE_BLESS_DEEPSLEEP\000"
+ 1016      455F424C 
+ 1016      4553535F 
+ 1016      44454550 
+ 1016      534C4545 
+ 1017              	.LASF60:
+ 1018 03fb 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
+ 1018      455F4556 
+ 1018      545F4C32 
+ 1018      4341505F 
+ 1018      43424643 
+ 1019              	.LASF68:
+ 1020 0419 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
+ 1020      455F4556 
+ 1020      545F4D41 
+ 1020      5800
+ 1021              	.LASF9:
+ 1022 0427 75696E74 		.ascii	"uint8\000"
+ 1022      3800
+ 1023              	.LASF84:
+ 1024 042d 736C6964 		.ascii	"sliderPosition\000"
+ 1024      6572506F 
+ 1024      73697469 
+ 1024      6F6E00
+ 1025              	.LASF56:
+ 1026 043c 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
+ 1026      455F4556 
+ 1026      545F4C32 
+ 1026      4341505F 
+ 1026      434F4E4E 
+ 1027              	.LASF1:
+ 1028 0462 756E7369 		.ascii	"unsigned char\000"
+ 1028      676E6564 
+ 1028      20636861 
+ 1028      7200
+ 1029              	.LASF49:
+ 1030 0470 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
+ 1030      455F4556 
+ 1030      545F4741 
+ 1030      5454535F 
+ 1030      50524550 
+ 1031              	.LASF83:
+ 1032 048f 4359424C 		.ascii	"CYBLE_BLESS_STATE_T\000"
+ 1032      455F424C 
+ 1032      4553535F 
+ 1032      53544154 
+ 1032      455F5400 
+ 1033              	.LASF41:
+ 1034 04a3 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
+ 1034      455F4556 
+ 1034      545F4741 
+ 1034      5454435F 
+ 1034      46494E44 
+ 1035              	.LASF0:
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 27
+
+
+ 1036 04c1 7369676E 		.ascii	"signed char\000"
+ 1036      65642063 
+ 1036      68617200 
+ 1037              	.LASF46:
+ 1038 04cd 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
+ 1038      455F4556 
+ 1038      545F4741 
+ 1038      5454535F 
+ 1038      57524954 
+ 1039              	.LASF42:
+ 1040 04e7 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
+ 1040      455F4556 
+ 1040      545F4741 
+ 1040      5454435F 
+ 1040      46494E44 
+ 1041              	.LASF25:
+ 1042 050e 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
+ 1042      455F4556 
+ 1042      545F4741 
+ 1042      505F4155 
+ 1042      54485F43 
+ 1043              	.LASF8:
+ 1044 052a 756E7369 		.ascii	"unsigned int\000"
+ 1044      676E6564 
+ 1044      20696E74 
+ 1044      00
+ 1045              	.LASF35:
+ 1046 0537 4359424C 		.ascii	"CYBLE_EVT_GATT_CONNECT_IND\000"
+ 1046      455F4556 
+ 1046      545F4741 
+ 1046      54545F43 
+ 1046      4F4E4E45 
+ 1047              	.LASF5:
+ 1048 0552 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1048      20756E73 
+ 1048      69676E65 
+ 1048      6420696E 
+ 1048      7400
+ 1049              	.LASF22:
+ 1050 0564 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ\000"
+ 1050      455F4556 
+ 1050      545F4741 
+ 1050      505F4155 
+ 1050      54485F52 
+ 1051              	.LASF61:
+ 1052 057b 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
+ 1052      455F4556 
+ 1052      545F4C32 
+ 1052      4341505F 
+ 1052      43424643 
+ 1053              	.LASF30:
+ 1054 059c 4359424C 		.ascii	"CYBLE_EVT_GAP_ENCRYPT_CHANGE\000"
+ 1054      455F4556 
+ 1054      545F4741 
+ 1054      505F454E 
+ 1054      43525950 
+ 1055              	.LASF86:
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 28
+
+
+ 1056 05b9 626C6573 		.ascii	"blessState\000"
+ 1056      73537461 
+ 1056      746500
+ 1057              	.LASF95:
+ 1058 05c4 48616E64 		.ascii	"HandleCapSenseSlider\000"
+ 1058      6C654361 
+ 1058      7053656E 
+ 1058      7365536C 
+ 1058      69646572 
+ 1059              	.LASF70:
+ 1060 05d9 4359424C 		.ascii	"CYBLE_BLESS_SLEEP\000"
+ 1060      455F424C 
+ 1060      4553535F 
+ 1060      534C4545 
+ 1060      5000
+ 1061              	.LASF94:
+ 1062 05eb 496E6974 		.ascii	"InitializeSystem\000"
+ 1062      69616C69 
+ 1062      7A655379 
+ 1062      7374656D 
+ 1062      00
+ 1063              	.LASF31:
+ 1064 05fc 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
+ 1064      455F4556 
+ 1064      545F4741 
+ 1064      505F434F 
+ 1064      4E4E4543 
+ 1065              	.LASF13:
+ 1066 0625 63686172 		.ascii	"char\000"
+ 1066      00
+ 1067              	.LASF58:
+ 1068 062a 4359424C 		.ascii	"CYBLE_EVT_L2CAP_COMMAND_REJ\000"
+ 1068      455F4556 
+ 1068      545F4C32 
+ 1068      4341505F 
+ 1068      434F4D4D 
+ 1069              	.LASF3:
+ 1070 0646 73686F72 		.ascii	"short unsigned int\000"
+ 1070      7420756E 
+ 1070      7369676E 
+ 1070      65642069 
+ 1070      6E7400
+ 1071              	.LASF44:
+ 1072 0659 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BLOB_RSP\000"
+ 1072      455F4556 
+ 1072      545F4741 
+ 1072      5454435F 
+ 1072      52454144 
+ 1073              	.LASF51:
+ 1074 0677 4359424C 		.ascii	"CYBLE_EVT_GATTC_EXEC_WRITE_RSP\000"
+ 1074      455F4556 
+ 1074      545F4741 
+ 1074      5454435F 
+ 1074      45584543 
+ 1075              	.LASF32:
+ 1076 0696 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_START_STOP\000"
+ 1076      455F4556 
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 29
+
+
+ 1076      545F4741 
+ 1076      50435F53 
+ 1076      43414E5F 
+ 1077              	.LASF67:
+ 1078 06b5 4359424C 		.ascii	"CYBLE_EVT_PENDING_FLASH_WRITE\000"
+ 1078      455F4556 
+ 1078      545F5045 
+ 1078      4E44494E 
+ 1078      475F464C 
+ 1079              	.LASF64:
+ 1080 06d3 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_RX_CREDIT_IND\000"
+ 1080      455F4556 
+ 1080      545F4C32 
+ 1080      4341505F 
+ 1080      43424643 
+ 1081              	.LASF12:
+ 1082 06f6 646F7562 		.ascii	"double\000"
+ 1082      6C6500
+ 1083              	.LASF69:
+ 1084 06fd 4359424C 		.ascii	"CYBLE_BLESS_ACTIVE\000"
+ 1084      455F424C 
+ 1084      4553535F 
+ 1084      41435449 
+ 1084      564500
+ 1085              	.LASF65:
+ 1086 0710 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_TX_CREDIT_IND\000"
+ 1086      455F4556 
+ 1086      545F4C32 
+ 1086      4341505F 
+ 1086      43424643 
+ 1087              	.LASF92:
+ 1088 0733 433A5C55 		.ascii	"C:\\Users\\Chris\\Desktop\\ble lab4 additional 1\\B"
+ 1088      73657273 
+ 1088      5C436872 
+ 1088      69735C44 
+ 1088      65736B74 
+ 1089 0761 4C45204C 		.ascii	"LE Lab 4.cydsn\000"
+ 1089      61622034 
+ 1089      2E637964 
+ 1089      736E00
+ 1090              	.LASF20:
+ 1091 0770 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
+ 1091      455F4556 
+ 1091      545F5354 
+ 1091      41434B5F 
+ 1091      42555359 
+ 1092              	.LASF73:
+ 1093 078c 4359424C 		.ascii	"CYBLE_BLESS_INVALID\000"
+ 1093      455F424C 
+ 1093      4553535F 
+ 1093      494E5641 
+ 1093      4C494400 
+ 1094              	.LASF18:
+ 1095 07a0 4359424C 		.ascii	"CYBLE_EVT_HARDWARE_ERROR\000"
+ 1095      455F4556 
+ 1095      545F4841 
+ 1095      52445741 
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 30
+
+
+ 1095      52455F45 
+ 1096              	.LASF63:
+ 1097 07b9 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_READ\000"
+ 1097      455F4556 
+ 1097      545F4C32 
+ 1097      4341505F 
+ 1097      43424643 
+ 1098              	.LASF57:
+ 1099 07d8 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
+ 1099      455F4556 
+ 1099      545F4C32 
+ 1099      4341505F 
+ 1099      434F4E4E 
+ 1100              	.LASF21:
+ 1101 07fe 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
+ 1101      455F4556 
+ 1101      545F4741 
+ 1101      50435F53 
+ 1101      43414E5F 
+ 1102              	.LASF80:
+ 1103 0822 4359424C 		.ascii	"CYBLE_BLESS_STATE_DEEPSLEEP\000"
+ 1103      455F424C 
+ 1103      4553535F 
+ 1103      53544154 
+ 1103      455F4445 
+ 1104              	.LASF39:
+ 1105 083e 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
+ 1105      455F4556 
+ 1105      545F4741 
+ 1105      5454435F 
+ 1105      52454144 
+ 1106              	.LASF48:
+ 1107 0865 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_CMD_REQ\000"
+ 1107      455F4556 
+ 1107      545F4741 
+ 1107      5454535F 
+ 1107      57524954 
+ 1108              	.LASF38:
+ 1109 0883 4359424C 		.ascii	"CYBLE_EVT_GATTC_XCHNG_MTU_RSP\000"
+ 1109      455F4556 
+ 1109      545F4741 
+ 1109      5454435F 
+ 1109      5843484E 
+ 1110              	.LASF66:
+ 1111 08a1 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
+ 1111      455F4556 
+ 1111      545F4C32 
+ 1111      4341505F 
+ 1111      43424643 
+ 1112              	.LASF17:
+ 1113 08c5 4359424C 		.ascii	"CYBLE_EVT_TIMEOUT\000"
+ 1113      455F4556 
+ 1113      545F5449 
+ 1113      4D454F55 
+ 1113      5400
+ 1114              	.LASF89:
+ 1115 08d7 73687574 		.ascii	"shut_down_led\000"
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\cctWpA4U.s 			page 31
+
+
+ 1115      5F646F77 
+ 1115      6E5F6C65 
+ 1115      6400
+ 1116              	.LASF50:
+ 1117 08e5 4359424C 		.ascii	"CYBLE_EVT_GATTS_EXEC_WRITE_REQ\000"
+ 1117      455F4556 
+ 1117      545F4741 
+ 1117      5454535F 
+ 1117      45584543 
+ 1118              	.LASF85:
+ 1119 0904 736C6565 		.ascii	"sleepMode\000"
+ 1119      704D6F64 
+ 1119      6500
+ 1120              	.LASF88:
+ 1121 090e 73656E64 		.ascii	"sendCapSenseSliderNotifications\000"
+ 1121      43617053 
+ 1121      656E7365 
+ 1121      536C6964 
+ 1121      65724E6F 
+ 1122              	.LASF55:
+ 1123 092e 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
+ 1123      455F4556 
+ 1123      545F4741 
+ 1123      5454535F 
+ 1123      44415441 
+ 1124              	.LASF90:
+ 1125 0952 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 1125      4320342E 
+ 1125      382E3420 
+ 1125      32303134 
+ 1125      30353236 
+ 1126 0985 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 1126      20726576 
+ 1126      6973696F 
+ 1126      6E203231 
+ 1126      31333538 
+ 1127 09b8 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 1127      66756E63 
+ 1127      74696F6E 
+ 1127      2D736563 
+ 1127      74696F6E 
+ 1128              	.LASF72:
+ 1129 09ce 4359424C 		.ascii	"CYBLE_BLESS_HIBERNATE\000"
+ 1129      455F424C 
+ 1129      4553535F 
+ 1129      48494245 
+ 1129      524E4154 
+ 1130              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.468ms
+Loading plugins phase: Elapsed time ==> 0s.171ms
 Initializing data phase: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\BLE Lab 4.cyprj -d CY8C4247LQI-BL483 -s C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\Users\Chris\Desktop\ble lab4 additional 1\BLE Lab 4.cydsn\BLE Lab 4.cyprj -d CY8C4247LQI-BL483 -s C:\Users\Chris\Desktop\ble lab4 additional 1\BLE Lab 4.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE</CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 4s.739ms
+Elaboration phase: Elapsed time ==> 3s.013ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.109ms
+HDL generation phase: Elapsed time ==> 0s.078ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -25,23 +25,23 @@ HDL generation phase: Elapsed time ==> 0s.109ms
 ======================================================================
 Compiling:  BLE Lab 4.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\bin/warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\BLE Lab 4.cyprj -dcpsoc3 BLE Lab 4.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Chris\Desktop\ble lab4 additional 1\BLE Lab 4.cydsn\BLE Lab 4.cyprj -dcpsoc3 BLE Lab 4.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  BLE Lab 4.v
 Program  :   C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\bin/warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\BLE Lab 4.cyprj -dcpsoc3 BLE Lab 4.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Chris\Desktop\ble lab4 additional 1\BLE Lab 4.cydsn\BLE Lab 4.cyprj -dcpsoc3 BLE Lab 4.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  BLE Lab 4.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\BLE Lab 4.cyprj -dcpsoc3 -verilog BLE Lab 4.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Chris\Desktop\ble lab4 additional 1\BLE Lab 4.cydsn\BLE Lab 4.cyprj -dcpsoc3 -verilog BLE Lab 4.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Wed Nov 02 20:11:27 2016
+Thu Nov 03 11:25:10 2016
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 BLE Lab 4.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Wed Nov 02 20:11:27 2016
+Thu Nov 03 11:25:10 2016
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\..\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\..\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\PrISM_v2_20\PrISM_v2_20.v'
@@ -85,11 +85,11 @@ vlogfe:  No errors.
 ======================================================================
 Compiling:  BLE Lab 4.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\BLE Lab 4.cyprj -dcpsoc3 -verilog BLE Lab 4.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Chris\Desktop\ble lab4 additional 1\BLE Lab 4.cydsn\BLE Lab 4.cyprj -dcpsoc3 -verilog BLE Lab 4.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Wed Nov 02 20:11:27 2016
+Thu Nov 03 11:25:10 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -100,9 +100,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\codegentemp\BLE Lab 4.ctl'.
+Linking 'C:\Users\Chris\Desktop\ble lab4 additional 1\BLE Lab 4.cydsn\codegentemp\BLE Lab 4.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
-Linking 'C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\codegentemp\BLE Lab 4.v'.
+Linking 'C:\Users\Chris\Desktop\ble lab4 additional 1\BLE Lab 4.cydsn\codegentemp\BLE Lab 4.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\PrISM_v2_20\PrISM_v2_20.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cypress.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
@@ -118,11 +118,11 @@ tovif:  No errors.
 ======================================================================
 Compiling:  BLE Lab 4.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\BLE Lab 4.cyprj -dcpsoc3 -verilog BLE Lab 4.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Chris\Desktop\ble lab4 additional 1\BLE Lab 4.cydsn\BLE Lab 4.cyprj -dcpsoc3 -verilog BLE Lab 4.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Wed Nov 02 20:11:28 2016
+Thu Nov 03 11:25:10 2016
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -133,9 +133,9 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\codegentemp\BLE Lab 4.ctl'.
+Linking 'C:\Users\Chris\Desktop\ble lab4 additional 1\BLE Lab 4.cydsn\codegentemp\BLE Lab 4.ctl'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
-Linking 'C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\codegentemp\BLE Lab 4.v'.
+Linking 'C:\Users\Chris\Desktop\ble lab4 additional 1\BLE Lab 4.cydsn\codegentemp\BLE Lab 4.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\PrISM_v2_20\PrISM_v2_20.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cypress.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
@@ -178,6 +178,8 @@ Aliasing \CapSense:tmpOE__Cmod_net_0\ to tmpOE__GREEN_net_0
 Aliasing \CapSense:IDAC2:Net_3\ to tmpOE__GREEN_net_0
 Aliasing \CapSense:tmpOE__Sns_net_0\ to tmpOE__GREEN_net_0
 Aliasing \CapSense:IDAC1:Net_3\ to tmpOE__GREEN_net_0
+Aliasing tmpOE__SW2_Switch_net_0 to tmpOE__GREEN_net_0
+Aliasing tmpOE__Button_output_net_0 to tmpOE__GREEN_net_0
 Aliasing \PRS_1:reset_reg\\D\ to \PRS_2:reset_reg\\D\
 Removing Lhs of wire one[7] = tmpOE__GREEN_net_0[1]
 Removing Lhs of wire tmpOE__RED_net_0[10] = tmpOE__GREEN_net_0[1]
@@ -203,11 +205,13 @@ Removing Lhs of wire \CapSense:tmpOE__Cmod_net_0\[167] = tmpOE__GREEN_net_0[1]
 Removing Lhs of wire \CapSense:IDAC2:Net_3\[174] = tmpOE__GREEN_net_0[1]
 Removing Lhs of wire \CapSense:tmpOE__Sns_net_0\[176] = tmpOE__GREEN_net_0[1]
 Removing Lhs of wire \CapSense:IDAC1:Net_3\[182] = tmpOE__GREEN_net_0[1]
-Removing Lhs of wire \PRS_2:reset_reg\\D\[189] = zero[6]
-Removing Lhs of wire \PRS_1:reset_reg\\D\[193] = zero[6]
+Removing Lhs of wire tmpOE__SW2_Switch_net_0[187] = tmpOE__GREEN_net_0[1]
+Removing Lhs of wire tmpOE__Button_output_net_0[193] = tmpOE__GREEN_net_0[1]
+Removing Lhs of wire \PRS_2:reset_reg\\D\[202] = zero[6]
+Removing Lhs of wire \PRS_1:reset_reg\\D\[206] = zero[6]
 
 ------------------------------------------------------
-Aliased 0 equations, 26 wires.
+Aliased 0 equations, 28 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -265,8 +269,8 @@ Circuit simplification results:
 ------------------------------------------------------
 Alias Detection
 ------------------------------------------------------
-Removing Lhs of wire \PRS_2:enable_final_reg\\D\[188] = \PRS_2:ctrl_enable\[21]
-Removing Lhs of wire \PRS_1:enable_final_reg\\D\[192] = \PRS_1:ctrl_enable\[81]
+Removing Lhs of wire \PRS_2:enable_final_reg\\D\[201] = \PRS_2:ctrl_enable\[21]
+Removing Lhs of wire \PRS_1:enable_final_reg\\D\[205] = \PRS_1:ctrl_enable\[81]
 
 ------------------------------------------------------
 Aliased 0 equations, 2 wires.
@@ -297,13 +301,13 @@ topld:  No errors.
 
 CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\bin/warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\BLE Lab 4.cyprj" -dcpsoc3 "BLE Lab 4.v" -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=C:\Users\Chris\Desktop\ble lab4 additional 1\BLE Lab 4.cydsn\BLE Lab 4.cyprj" -dcpsoc3 "BLE Lab 4.v" -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 1s.955ms
+Warp synthesis phase: Elapsed time ==> 0s.983ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V3.1.0.2288, Family: PSoC3, Started at: Wednesday, 02 November 2016 20:11:28
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\BLE Lab 4.cyprj -d CY8C4247LQI-BL483 BLE Lab 4.v -verilog
+cyp3fit: V3.1.0.2288, Family: PSoC3, Started at: Thursday, 03 November 2016 11:25:11
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\Chris\Desktop\ble lab4 additional 1\BLE Lab 4.cydsn\BLE Lab 4.cyprj -d CY8C4247LQI-BL483 BLE Lab 4.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
 Design parsing phase: Elapsed time ==> 0s.031ms
@@ -339,6 +343,8 @@ Done removing unused cells.
         ClockOut: ClockGenBlock:m0s8clockgenblockcell.gen_clk_out_0, EnableOut: Constant 1
 </CYPRESSTAG>
 </CYPRESSTAG>
+ADD: pft.M0040: information: The following 2 pin(s) will be assigned a location by the fitter: Button_output(0), SW2_Switch(0)
+
 
 Removing unused cells resulting from optimization
 Done removing unused cells.
@@ -396,6 +402,42 @@ Design Equations
         Properties:
         {
         }
+
+    Pin : Name = Button_output(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: EITHER
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Button_output(0)__PA ,
+            input => Net_131 ,
+            pad => Button_output(0)_PAD );
 
     Pin : Name = GREEN(0)
         Attributes:
@@ -474,6 +516,42 @@ Design Equations
         Properties:
         {
         }
+
+    Pin : Name = SW2_Switch(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: SYNC
+            Out Sync Option: AUTO
+            Interrupt generated: True
+            Interrupt mode: FALLING
+            Drive mode: RES_PULL_UP
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: True
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: False
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO RefSel: VCC_IO
+            Required Capabilitites: DIGITAL, ROUTABLE, PORT_INTERRUPT
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => SW2_Switch(0)__PA ,
+            fb => Net_131 ,
+            pad => SW2_Switch(0)_PAD );
 
     Pin : Name = \CapSense:Cmod(0)\
         Attributes:
@@ -778,6 +856,14 @@ Design Equations
     Interrupt listing
     ------------------------------------------------------------
 
+    interrupt: Name =Wakeup_ISR
+        PORT MAP (
+            interrupt => Net_133 );
+        Properties:
+        {
+            int_type = "10"
+        }
+
     interrupt: Name =\BLE_1:bless_isr\
         PORT MAP (
             interrupt => \BLE_1:Net_15\ );
@@ -804,7 +890,7 @@ Technology mapping summary
 Resource Type                 : Used : Free :  Max :  % Used
 ============================================================
 Digital clock dividers        :    1 :    3 :    4 :  25.00%
-Pins                          :    9 :   29 :   38 :  23.68%
+Pins                          :   11 :   27 :   38 :  28.95%
 UDB Macrocells                :    6 :   26 :   32 :  18.75%
 UDB Unique Pterms             :    8 :   56 :   64 :  12.50%
 UDB Total Pterms              :    8 :      :      : 
@@ -812,7 +898,7 @@ UDB Datapath Cells            :    2 :    2 :    4 :  50.00%
 UDB Status Cells              :    0 :    4 :    4 :   0.00%
 UDB Control Cells             :    2 :    2 :    4 :  50.00%
             Control Registers :    2 
-Interrupts                    :    2 :   30 :   32 :   6.25%
+Interrupts                    :    3 :   29 :   32 :   9.38%
 Comparator/Opamp Fixed Blocks :    0 :    4 :    4 :   0.00%
 SAR Fixed Blocks              :    0 :    1 :    1 :   0.00%
 CSD Fixed Blocks              :    1 :    0 :    1 : 100.00%
@@ -826,20 +912,20 @@ Serial Communication Blocks   :    0 :    2 :    2 :   0.00%
 Segment LCD Blocks            :    0 :    1 :    1 :   0.00%
 Bluetooth Low Energy Blocks   :    1 :    0 :    1 : 100.00%
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.670ms
-Tech mapping phase: Elapsed time ==> 0s.780ms
+Technology Mapping: Elapsed time ==> 0s.484ms
+Tech mapping phase: Elapsed time ==> 0s.515ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="Analog Placement">
-Elapsed time ==> 0.0313004s
+Elapsed time ==> 0.0185501s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.156ms
+Analog Placement phase: Elapsed time ==> 0s.046ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0038599 secs
+Route success=True, Iterations=1 Elapsed=0.0032032 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.000ms
+Analog Routing phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -870,11 +956,11 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.187ms
+Analog Code Generation phase: Elapsed time ==> 0s.188ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
-I2076: Total run-time: 1.0 sec.
+I2076: Total run-time: 0.8 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -885,33 +971,33 @@ PLD Packing Summary
 ------------------------------------------------------------
             Resource Type : Used : Free :  Max :  % Used
     ====================================================
-                     PLDs :    4 :    4 :    8 :  50.00%
+                     PLDs :    5 :    3 :    8 :  62.50%
 
 <CYPRESSTAG name="PLD Statistics">
 
         PLD Resource Type :     Average/LAB
     =======================================
-                   Inputs :            2.75
-                   Pterms :            2.00
-               Macrocells :            1.50
+                   Inputs :            2.20
+                   Pterms :            1.60
+               Macrocells :            1.20
 </CYPRESSTAG>
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.015ms
+PLD Packing: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.078ms
+Partitioning: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Simulated Annealing">
-Annealing: Elapsed time ==> 0s.015ms
+Annealing: Elapsed time ==> 0s.000ms
 <CYPRESSTAG name="Simulated Annealing Results">
 The seed used for moves was 114161200.
-Inital cost was 37, final cost is 37 (0.00% improvement).</CYPRESSTAG>
+Inital cost was 48, final cost is 48 (0.00% improvement).</CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -921,7 +1007,7 @@ Final Placement Summary
 
        Resource Type :      Count : Avg Inputs : Avg Outputs
     ========================================================
-                 UDB :          2 :       5.50 :       3.00
+                 UDB :          3 :       3.67 :       2.00
 <CYPRESSTAG name="Final Placement Details">
 <CYPRESSTAG name="Component Details">
 
@@ -929,126 +1015,11 @@ Final Placement Summary
 Component Placement Details
 ------------------------------------------------------------
 UDB [UDB=(0,0)] contents:
-LAB@[UDB=(0,0)][LB=0] #macrocells=2, #inputs=3, #pterms=2
+LAB@[UDB=(0,0)][LB=0] #macrocells=1, #inputs=1, #pterms=1
 {
-    [McSlotId=0]:     MacroCell: Name=Net_108, Mode=(D-Register) @ [UDB=(0,0)][LB=0][MC=0]
-        Total # of inputs        : 3
-        Total # of product terms : 2
-        List of special equations: 
-            Clock  = (Net_21_digital) => Global
-            Clock Enable: PosEdge(\PRS_2:enable_final_reg\)
-        Main Equation            : 2 pterms
-        !(
-              !\PRS_2:compare_type0\ * !\PRS_2:ce0\ * !\PRS_2:cl0\
-            + \PRS_2:compare_type0\ * \PRS_2:cl0\
-        );
-        Output = Net_108 (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=__ONE__, Mode=(Combinatorial) @ [UDB=(0,0)][LB=0][MC=1]
-        Total # of inputs        : 0
-        Total # of product terms : 0
-            Clock Enable: True
-        Main Equation            : 0 pterms
-        !(
-            0
-        );
-        Output = __ONE__ (fanout=4)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-LAB@[UDB=(0,0)][LB=1] #macrocells=1, #inputs=1, #pterms=1
-{
-    [McSlotId=0]:     MacroCell: Name=\PRS_2:enable_final_reg\, Mode=(D-Register) @ [UDB=(0,0)][LB=1][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_21_digital) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \PRS_2:ctrl_enable\
-        );
-        Output = \PRS_2:enable_final_reg\ (fanout=2)
-        Properties               : 
-        {
-        }
-
+    [McSlotId=0]: (empty)
     [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
-}
-
-datapathcell: Name =\PRS_2:sC8:PrISMdp:u0\
-    PORT MAP (
-        clock => Net_21_digital ,
-        cs_addr_0 => __ONE__ ,
-        ce0_comb => \PRS_2:ce0\ ,
-        cl0_comb => \PRS_2:cl0\ ,
-        ce1_comb => \PRS_2:ce1\ ,
-        cl1_comb => \PRS_2:cl1\ ,
-        clk_en => \PRS_2:enable_final_reg\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000000000000000101011010100100000000000110000000000000011000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111111111111001000000000001000000000111100000000000000000000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: PosEdge(\PRS_2:enable_final_reg\)
-
-controlcell: Name =\PRS_2:SyncCtl:ControlReg\
-    PORT MAP (
-        clock => Net_21_digital ,
-        control_7 => \PRS_2:control_7\ ,
-        control_6 => \PRS_2:control_6\ ,
-        control_5 => \PRS_2:control_5\ ,
-        control_4 => \PRS_2:control_4\ ,
-        control_3 => \PRS_2:control_3\ ,
-        control_2 => \PRS_2:compare_type1\ ,
-        control_1 => \PRS_2:compare_type0\ ,
-        control_0 => \PRS_2:ctrl_enable\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "00000111"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-UDB [UDB=(0,1)] is empty.
-UDB [UDB=(1,0)] contents:
-LAB@[UDB=(1,0)][LB=0] #macrocells=1, #inputs=1, #pterms=1
-{
-    [McSlotId=0]:     MacroCell: Name=\PRS_1:enable_final_reg\, Mode=(D-Register) @ [UDB=(1,0)][LB=0][MC=0]
+    [McSlotId=2]:     MacroCell: Name=\PRS_1:enable_final_reg\, Mode=(D-Register) @ [UDB=(0,0)][LB=0][MC=2]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -1063,14 +1034,12 @@ LAB@[UDB=(1,0)][LB=0] #macrocells=1, #inputs=1, #pterms=1
         {
         }
 
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
     [McSlotId=3]: (empty)
 }
 
-LAB@[UDB=(1,0)][LB=1] #macrocells=2, #inputs=6, #pterms=4
+LAB@[UDB=(0,0)][LB=1] #macrocells=2, #inputs=6, #pterms=4
 {
-    [McSlotId=0]:     MacroCell: Name=Net_105, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=0]
+    [McSlotId=0]:     MacroCell: Name=Net_105, Mode=(D-Register) @ [UDB=(0,0)][LB=1][MC=0]
         Total # of inputs        : 3
         Total # of product terms : 2
         List of special equations: 
@@ -1086,7 +1055,7 @@ LAB@[UDB=(1,0)][LB=1] #macrocells=2, #inputs=6, #pterms=4
         {
         }
 
-    [McSlotId=1]:     MacroCell: Name=Net_104, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=1]
+    [McSlotId=1]:     MacroCell: Name=Net_104, Mode=(D-Register) @ [UDB=(0,0)][LB=1][MC=1]
         Total # of inputs        : 3
         Total # of product terms : 2
         List of special equations: 
@@ -1164,8 +1133,141 @@ controlcell: Name =\PRS_1:SyncCtl:ControlReg\
     Clock Polarity: Active High
     Clock Enable: True
 
+UDB [UDB=(0,1)] contents:
+LAB@[UDB=(0,1)][LB=0] #macrocells=1, #inputs=0, #pterms=0
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]:     MacroCell: Name=__ONE__, Mode=(Combinatorial) @ [UDB=(0,1)][LB=0][MC=2]
+        Total # of inputs        : 0
+        Total # of product terms : 0
+            Clock Enable: True
+        Main Equation            : 0 pterms
+        !(
+            0
+        );
+        Output = __ONE__ (fanout=4)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]: (empty)
+}
+
+UDB [UDB=(1,0)] contents:
+LAB@[UDB=(1,0)][LB=0] #macrocells=1, #inputs=1, #pterms=1
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\PRS_2:enable_final_reg\, Mode=(D-Register) @ [UDB=(1,0)][LB=0][MC=1]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_21_digital) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \PRS_2:ctrl_enable\
+        );
+        Output = \PRS_2:enable_final_reg\ (fanout=2)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+LAB@[UDB=(1,0)][LB=1] #macrocells=1, #inputs=3, #pterms=2
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]:     MacroCell: Name=Net_108, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=1]
+        Total # of inputs        : 3
+        Total # of product terms : 2
+        List of special equations: 
+            Clock  = (Net_21_digital) => Global
+            Clock Enable: PosEdge(\PRS_2:enable_final_reg\)
+        Main Equation            : 2 pterms
+        !(
+              !\PRS_2:compare_type0\ * !\PRS_2:ce0\ * !\PRS_2:cl0\
+            + \PRS_2:compare_type0\ * \PRS_2:cl0\
+        );
+        Output = Net_108 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
+datapathcell: Name =\PRS_2:sC8:PrISMdp:u0\
+    PORT MAP (
+        clock => Net_21_digital ,
+        cs_addr_0 => __ONE__ ,
+        ce0_comb => \PRS_2:ce0\ ,
+        cl0_comb => \PRS_2:cl0\ ,
+        ce1_comb => \PRS_2:ce1\ ,
+        cl1_comb => \PRS_2:cl1\ ,
+        clk_en => \PRS_2:enable_final_reg\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000000000000101011010100100000000000110000000000000011000000000000000000000000000000000000000000000000000000000000000000000011111111000000001111111111111111001000000000001000000000111100000000000000000000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: PosEdge(\PRS_2:enable_final_reg\)
+
+controlcell: Name =\PRS_2:SyncCtl:ControlReg\
+    PORT MAP (
+        clock => Net_21_digital ,
+        control_7 => \PRS_2:control_7\ ,
+        control_6 => \PRS_2:control_6\ ,
+        control_5 => \PRS_2:control_5\ ,
+        control_4 => \PRS_2:control_4\ ,
+        control_3 => \PRS_2:control_3\ ,
+        control_2 => \PRS_2:compare_type1\ ,
+        control_1 => \PRS_2:compare_type0\ ,
+        control_0 => \PRS_2:ctrl_enable\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "00000111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
 UDB [UDB=(1,1)] is empty.
 Intr hod @ [IntrHod=(0)]: 
+  Intr@ [IntrHod=(0)][IntrId=(0)] 
+    interrupt: Name =Wakeup_ISR
+        PORT MAP (
+            interrupt => Net_133 );
+        Properties:
+        {
+            int_type = "10"
+        }
   Intr@ [IntrHod=(0)][IntrId=(12)] 
     interrupt: Name =\BLE_1:bless_isr\
         PORT MAP (
@@ -1182,7 +1284,153 @@ Intr hod @ [IntrHod=(0)]:
         {
             int_type = "10"
         }
-Port 0 is empty
+Port 0 generates interrupt for logical port:
+    logicalport: Name =SW2_Switch
+        PORT MAP (
+            in_clock_en => tmpOE__GREEN_net_0 ,
+            in_reset => zero ,
+            out_clock_en => tmpOE__GREEN_net_0 ,
+            out_reset => zero ,
+            interrupt => Net_133 ,
+            in_clock => ClockBlock_HFCLK );
+        Properties:
+        {
+            drive_mode = "010"
+            ibuf_enabled = "1"
+            id = "8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba"
+            init_dr_st = "1"
+            input_buffer_sel = "00"
+            input_clk_en = 0
+            input_sync = "1"
+            input_sync_mode = "0"
+            intr_mode = "10"
+            invert_in_clock = 0
+            invert_in_clock_en = 0
+            invert_in_reset = 0
+            invert_out_clock = 0
+            invert_out_clock_en = 0
+            invert_out_reset = 0
+            io_voltage = ""
+            layout_mode = "CONTIGUOUS"
+            oe_conn = "0"
+            oe_reset = 0
+            oe_sync = "0"
+            output_clk_en = 0
+            output_clock_mode = "0"
+            output_conn = "0"
+            output_mode = "0"
+            output_reset = 0
+            output_sync = "0"
+            ovt_hyst_trim = "0"
+            ovt_needed = "0"
+            ovt_slew_control = "00"
+            pa_in_clock = -1
+            pa_in_clock_en = -1
+            pa_in_reset = -1
+            pa_out_clock = -1
+            pa_out_clock_en = -1
+            pa_out_reset = -1
+            pin_aliases = ""
+            pin_mode = "I"
+            por_state = 4
+            port_alias_group = ""
+            port_alias_required = 0
+            sio_group_cnt = 0
+            sio_hifreq = ""
+            sio_hyst = "1"
+            sio_ibuf = "00000000"
+            sio_info = "00"
+            sio_obuf = "00000000"
+            sio_refsel = "00000000"
+            sio_vtrip = "00000000"
+            slew_rate = "0"
+            spanning = 0
+            sw_only = 0
+            use_annotation = "0"
+            vtrip = "00"
+            width = 1
+        }
+    and contains the following IO cells:
+[IoId=0]: 
+Pin : Name = SW2_Switch(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: SYNC
+        Out Sync Option: AUTO
+        Interrupt generated: True
+        Interrupt mode: FALLING
+        Drive mode: RES_PULL_UP
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: True
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: False
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL, ROUTABLE, PORT_INTERRUPT
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => SW2_Switch(0)__PA ,
+        fb => Net_131 ,
+        pad => SW2_Switch(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=1]: 
+Pin : Name = Button_output(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: EITHER
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO RefSel: VCC_IO
+        Required Capabilitites: DIGITAL, ROUTABLE
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Button_output(0)__PA ,
+        input => Net_131 ,
+        pad => Button_output(0)_PAD );
+    Properties:
+    {
+    }
+
 Port 1 is empty
 Port 2 contains the following IO cells:
 [IoId=1]: 
@@ -1493,6 +1741,9 @@ Port Configuration report
      |     |       | Interrupt |                  |                    | 
 Port | Pin | Fixed |      Type |       Drive Mode |               Name | Connections
 -----+-----+-------+-----------+------------------+--------------------+---------------------------
+   0 |   0 |       |   FALLING |      RES_PULL_UP |      SW2_Switch(0) | FB(Net_131)
+     |   1 |       |      NONE |         CMOS_OUT |   Button_output(0) | In(Net_131)
+-----+-----+-------+-----------+------------------+--------------------+---------------------------
    2 |   1 |     * |      NONE |      HI_Z_ANALOG |  \CapSense:Sns(0)\ | Analog(\CapSense:Net_245\)
      |   6 |     * |      NONE |     HI_Z_DIGITAL |             RED(0) | In(Net_104)
 -----+-----+-------+-----------+------------------+--------------------+---------------------------
@@ -1505,31 +1756,31 @@ Port | Pin | Fixed |      Type |       Drive Mode |               Name | Connect
 </CYPRESSTAG>
 </CYPRESSTAG>
 Digital component placer commit/Report: Elapsed time ==> 0s.000ms
-Digital Placement phase: Elapsed time ==> 1s.700ms
+Digital Placement phase: Elapsed time ==> 1s.077ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.326ms
+Digital Routing phase: Elapsed time ==> 0s.530ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream and API generation">
-Bitstream and API generation phase: Elapsed time ==> 0s.530ms
+Bitstream and API generation phase: Elapsed time ==> 0s.187ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream verification">
-Bitstream verification phase: Elapsed time ==> 0s.124ms
+Bitstream verification phase: Elapsed time ==> 0s.031ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in BLE Lab 4_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.655ms
+Static timing analysis phase: Elapsed time ==> 0s.171ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.327ms
+Design database save phase: Elapsed time ==> 0s.171ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 5s.881ms
+cydsfit: Elapsed time ==> 2s.982ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 5s.974ms
-API generation phase: Elapsed time ==> 4s.698ms
+Fitter phase: Elapsed time ==> 3s.045ms
+API generation phase: Elapsed time ==> 1s.107ms
 Dependency generation phase: Elapsed time ==> 0s.015ms
 Cleanup phase: Elapsed time ==> 0s.000ms

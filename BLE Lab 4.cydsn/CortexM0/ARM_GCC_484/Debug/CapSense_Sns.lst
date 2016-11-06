@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
   30:.\Generated_Source\PSoC4/CapSense_Sns.c **** ********************************************************************************
   31:.\Generated_Source\PSoC4/CapSense_Sns.c **** *
   32:.\Generated_Source\PSoC4/CapSense_Sns.c **** * Summary:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 2
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/CapSense_Sns.c **** *  Assign a new value to the digital port's data output register.  
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
   66 003c 0F32     		add	r2, r2, #15
   67 003e 1278     		ldrb	r2, [r2]
   68 0040 1A60     		str	r2, [r3]
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 3
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 3
 
 
   47:.\Generated_Source\PSoC4/CapSense_Sns.c **** }
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
   95 0002 82B0     		sub	sp, sp, #8
   96              		.cfi_def_cfa_offset 16
   97 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 4
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 4
 
 
   98              		.cfi_def_cfa_register 7
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
   92:.\Generated_Source\PSoC4/CapSense_Sns.c **** *  
   93:.\Generated_Source\PSoC4/CapSense_Sns.c **** * Note:
   94:.\Generated_Source\PSoC4/CapSense_Sns.c **** *  Macro CapSense_Sns_ReadPS calls this function. 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 5
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 5
 
 
   95:.\Generated_Source\PSoC4/CapSense_Sns.c **** *  
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  114:.\Generated_Source\PSoC4/CapSense_Sns.c **** *  Returns the current value assigned to the Digital Port's data output register
  115:.\Generated_Source\PSoC4/CapSense_Sns.c **** *  
  116:.\Generated_Source\PSoC4/CapSense_Sns.c **** *******************************************************************************/
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 6
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 6
 
 
  117:.\Generated_Source\PSoC4/CapSense_Sns.c **** uint8 CapSense_Sns_ReadDataReg(void) 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  136:.\Generated_Source\PSoC4/CapSense_Sns.c ****     *
  137:.\Generated_Source\PSoC4/CapSense_Sns.c ****     * Return: 
  138:.\Generated_Source\PSoC4/CapSense_Sns.c ****     *  Returns the value of the interrupt status register
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 7
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 7
 
 
  139:.\Generated_Source\PSoC4/CapSense_Sns.c ****     *  
@@ -418,50 +418,50 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  251 0000 48010000 		.4byte	0x148
  252 0004 0400     		.2byte	0x4
  253 0006 00000000 		.4byte	.Ldebug_abbrev0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 8
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 8
 
 
  254 000a 04       		.byte	0x4
  255 000b 01       		.uleb128 0x1
- 256 000c DA000000 		.4byte	.LASF24
+ 256 000c E8000000 		.4byte	.LASF24
  257 0010 01       		.byte	0x1
- 258 0011 41000000 		.4byte	.LASF25
- 259 0015 DF010000 		.4byte	.LASF26
+ 258 0011 33000000 		.4byte	.LASF25
+ 259 0015 7C010000 		.4byte	.LASF26
  260 0019 00000000 		.4byte	.Ldebug_ranges0+0
  261 001d 00000000 		.4byte	0
  262 0021 00000000 		.4byte	.Ldebug_line0
  263 0025 02       		.uleb128 0x2
  264 0026 01       		.byte	0x1
  265 0027 06       		.byte	0x6
- 266 0028 B9010000 		.4byte	.LASF0
+ 266 0028 F6010000 		.4byte	.LASF0
  267 002c 02       		.uleb128 0x2
  268 002d 01       		.byte	0x1
  269 002e 08       		.byte	0x8
- 270 002f 86000000 		.4byte	.LASF1
+ 270 002f 78000000 		.4byte	.LASF1
  271 0033 02       		.uleb128 0x2
  272 0034 02       		.byte	0x2
  273 0035 05       		.byte	0x5
- 274 0036 A0010000 		.4byte	.LASF2
+ 274 0036 DD010000 		.4byte	.LASF2
  275 003a 02       		.uleb128 0x2
  276 003b 02       		.byte	0x2
  277 003c 07       		.byte	0x7
- 278 003d AC000000 		.4byte	.LASF3
+ 278 003d 9E000000 		.4byte	.LASF3
  279 0041 02       		.uleb128 0x2
  280 0042 04       		.byte	0x4
  281 0043 05       		.byte	0x5
- 282 0044 B0010000 		.4byte	.LASF4
+ 282 0044 ED010000 		.4byte	.LASF4
  283 0048 02       		.uleb128 0x2
  284 0049 04       		.byte	0x4
  285 004a 07       		.byte	0x7
- 286 004b 9A000000 		.4byte	.LASF5
+ 286 004b 8C000000 		.4byte	.LASF5
  287 004f 02       		.uleb128 0x2
  288 0050 08       		.byte	0x8
  289 0051 05       		.byte	0x5
- 290 0052 6E010000 		.4byte	.LASF6
+ 290 0052 00000000 		.4byte	.LASF6
  291 0056 02       		.uleb128 0x2
  292 0057 08       		.byte	0x8
  293 0058 07       		.byte	0x7
- 294 0059 6F000000 		.4byte	.LASF7
+ 294 0059 61000000 		.4byte	.LASF7
  295 005d 03       		.uleb128 0x3
  296 005e 04       		.byte	0x4
  297 005f 05       		.byte	0x5
@@ -469,16 +469,16 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  299 0064 02       		.uleb128 0x2
  300 0065 04       		.byte	0x4
  301 0066 07       		.byte	0x7
- 302 0067 CD000000 		.4byte	.LASF8
+ 302 0067 DB000000 		.4byte	.LASF8
  303 006b 04       		.uleb128 0x4
- 304 006c AA010000 		.4byte	.LASF9
+ 304 006c E7010000 		.4byte	.LASF9
  305 0070 02       		.byte	0x2
  306 0071 A1       		.byte	0xa1
  307 0072 2C000000 		.4byte	0x2c
  308 0076 04       		.uleb128 0x4
- 309 0077 C6000000 		.4byte	.LASF10
+ 309 0077 D4000000 		.4byte	.LASF10
  310 007b 02       		.byte	0x2
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 9
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 9
 
 
  311 007c A3       		.byte	0xa3
@@ -486,24 +486,24 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  313 0081 02       		.uleb128 0x2
  314 0082 04       		.byte	0x4
  315 0083 04       		.byte	0x4
- 316 0084 69000000 		.4byte	.LASF11
+ 316 0084 5B000000 		.4byte	.LASF11
  317 0088 02       		.uleb128 0x2
  318 0089 08       		.byte	0x8
  319 008a 04       		.byte	0x4
- 320 008b BF000000 		.4byte	.LASF12
+ 320 008b CD000000 		.4byte	.LASF12
  321 008f 02       		.uleb128 0x2
  322 0090 01       		.byte	0x1
  323 0091 08       		.byte	0x8
- 324 0092 9B010000 		.4byte	.LASF13
+ 324 0092 D8010000 		.4byte	.LASF13
  325 0096 05       		.uleb128 0x5
- 326 0097 1C000000 		.4byte	.LASF14
+ 326 0097 0E000000 		.4byte	.LASF14
  327 009b 02       		.byte	0x2
  328 009c 4D01     		.2byte	0x14d
  329 009e A2000000 		.4byte	0xa2
  330 00a2 06       		.uleb128 0x6
  331 00a3 76000000 		.4byte	0x76
  332 00a7 07       		.uleb128 0x7
- 333 00a8 5B010000 		.4byte	.LASF15
+ 333 00a8 69010000 		.4byte	.LASF15
  334 00ac 01       		.byte	0x1
  335 00ad 2A       		.byte	0x2a
  336 00ae 00000000 		.4byte	.LFB0
@@ -512,7 +512,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  339 00b7 9C       		.byte	0x9c
  340 00b8 D9000000 		.4byte	0xd9
  341 00bc 08       		.uleb128 0x8
- 342 00bd 3B000000 		.4byte	.LASF17
+ 342 00bd 2D000000 		.4byte	.LASF17
  343 00c1 01       		.byte	0x1
  344 00c2 2A       		.byte	0x2a
  345 00c3 6B000000 		.4byte	0x6b
@@ -520,7 +520,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  347 00c8 91       		.byte	0x91
  348 00c9 6F       		.sleb128 -17
  349 00ca 09       		.uleb128 0x9
- 350 00cb 94000000 		.4byte	.LASF22
+ 350 00cb 86000000 		.4byte	.LASF22
  351 00cf 01       		.byte	0x1
  352 00d0 2C       		.byte	0x2c
  353 00d1 6B000000 		.4byte	0x6b
@@ -529,7 +529,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  356 00d7 77       		.sleb128 -9
  357 00d8 00       		.byte	0
  358 00d9 07       		.uleb128 0x7
- 359 00da C5010000 		.4byte	.LASF16
+ 359 00da 02020000 		.4byte	.LASF16
  360 00de 01       		.byte	0x1
  361 00df 49       		.byte	0x49
  362 00e0 00000000 		.4byte	.LFB1
@@ -538,10 +538,10 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  365 00e9 9C       		.byte	0x9c
  366 00ea FD000000 		.4byte	0xfd
  367 00ee 08       		.uleb128 0x8
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 10
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 10
 
 
- 368 00ef 56010000 		.4byte	.LASF18
+ 368 00ef 64010000 		.4byte	.LASF18
  369 00f3 01       		.byte	0x1
  370 00f4 49       		.byte	0x49
  371 00f5 6B000000 		.4byte	0x6b
@@ -550,7 +550,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  374 00fb 77       		.sleb128 -9
  375 00fc 00       		.byte	0
  376 00fd 0A       		.uleb128 0xa
- 377 00fe 7C010000 		.4byte	.LASF19
+ 377 00fe B9010000 		.4byte	.LASF19
  378 0102 01       		.byte	0x1
  379 0103 61       		.byte	0x61
  380 0104 6B000000 		.4byte	0x6b
@@ -559,7 +559,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  383 0110 01       		.uleb128 0x1
  384 0111 9C       		.byte	0x9c
  385 0112 0A       		.uleb128 0xa
- 386 0113 22000000 		.4byte	.LASF20
+ 386 0113 14000000 		.4byte	.LASF20
  387 0117 01       		.byte	0x1
  388 0118 75       		.byte	0x75
  389 0119 6B000000 		.4byte	0x6b
@@ -568,7 +568,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  392 0125 01       		.uleb128 0x1
  393 0126 9C       		.byte	0x9c
  394 0127 0B       		.uleb128 0xb
- 395 0128 00000000 		.4byte	.LASF21
+ 395 0128 B1000000 		.4byte	.LASF21
  396 012c 01       		.byte	0x1
  397 012d 8D       		.byte	0x8d
  398 012e 6B000000 		.4byte	0x6b
@@ -577,7 +577,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  401 013a 01       		.uleb128 0x1
  402 013b 9C       		.byte	0x9c
  403 013c 09       		.uleb128 0x9
- 404 013d 8E010000 		.4byte	.LASF23
+ 404 013d CB010000 		.4byte	.LASF23
  405 0141 01       		.byte	0x1
  406 0142 8F       		.byte	0x8f
  407 0143 6B000000 		.4byte	0x6b
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  422 0007 03       		.uleb128 0x3
  423 0008 0E       		.uleb128 0xe
  424 0009 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 11
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 11
 
 
  425 000a 0E       		.uleb128 0xe
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  479 0040 13       		.uleb128 0x13
  480 0041 00       		.byte	0
  481 0042 00       		.byte	0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 12
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 12
 
 
  482 0043 06       		.uleb128 0x6
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  536 007a 3B       		.uleb128 0x3b
  537 007b 0B       		.uleb128 0xb
  538 007c 49       		.uleb128 0x49
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 13
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 13
 
 
  539 007d 13       		.uleb128 0x13
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  593 00b5 00       		.byte	0
  594 00b6 00       		.byte	0
  595              		.section	.debug_aranges,"",%progbits
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 14
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 14
 
 
  596 0000 3C000000 		.4byte	0x3c
@@ -821,149 +821,152 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 1
  631      00000201 
  631      FB0E0D00 
  631      01010101 
- 632              	.LASF21:
- 633 0000 43617053 		.ascii	"CapSense_Sns_ClearInterrupt\000"
- 633      656E7365 
- 633      5F536E73 
- 633      5F436C65 
- 633      6172496E 
+ 632              	.LASF6:
+ 633 0000 6C6F6E67 		.ascii	"long long int\000"
+ 633      206C6F6E 
+ 633      6720696E 
+ 633      7400
  634              	.LASF14:
- 635 001c 72656733 		.ascii	"reg32\000"
+ 635 000e 72656733 		.ascii	"reg32\000"
  635      3200
  636              	.LASF20:
- 637 0022 43617053 		.ascii	"CapSense_Sns_ReadDataReg\000"
+ 637 0014 43617053 		.ascii	"CapSense_Sns_ReadDataReg\000"
  637      656E7365 
  637      5F536E73 
  637      5F526561 
  637      64446174 
  638              	.LASF17:
- 639 003b 76616C75 		.ascii	"value\000"
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 15
-
-
+ 639 002d 76616C75 		.ascii	"value\000"
  639      6500
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 15
+
+
  640              	.LASF25:
- 641 0041 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\CapSense_Sns.c\000"
+ 641 0033 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\CapSense_Sns.c\000"
  641      6E657261 
  641      7465645F 
  641      536F7572 
  641      63655C50 
  642              	.LASF11:
- 643 0069 666C6F61 		.ascii	"float\000"
+ 643 005b 666C6F61 		.ascii	"float\000"
  643      7400
  644              	.LASF7:
- 645 006f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 645 0061 6C6F6E67 		.ascii	"long long unsigned int\000"
  645      206C6F6E 
  645      6720756E 
  645      7369676E 
  645      65642069 
  646              	.LASF1:
- 647 0086 756E7369 		.ascii	"unsigned char\000"
+ 647 0078 756E7369 		.ascii	"unsigned char\000"
  647      676E6564 
  647      20636861 
  647      7200
  648              	.LASF22:
- 649 0094 64725661 		.ascii	"drVal\000"
+ 649 0086 64725661 		.ascii	"drVal\000"
  649      6C00
  650              	.LASF5:
- 651 009a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 651 008c 6C6F6E67 		.ascii	"long unsigned int\000"
  651      20756E73 
  651      69676E65 
  651      6420696E 
  651      7400
  652              	.LASF3:
- 653 00ac 73686F72 		.ascii	"short unsigned int\000"
+ 653 009e 73686F72 		.ascii	"short unsigned int\000"
  653      7420756E 
  653      7369676E 
  653      65642069 
  653      6E7400
- 654              	.LASF12:
- 655 00bf 646F7562 		.ascii	"double\000"
- 655      6C6500
- 656              	.LASF10:
- 657 00c6 75696E74 		.ascii	"uint32\000"
- 657      333200
- 658              	.LASF8:
- 659 00cd 756E7369 		.ascii	"unsigned int\000"
- 659      676E6564 
- 659      20696E74 
- 659      00
- 660              	.LASF24:
- 661 00da 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 661      4320342E 
- 661      382E3420 
- 661      32303134 
- 661      30353236 
- 662 010d 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 662      20726576 
- 662      6973696F 
- 662      6E203231 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 16
+ 654              	.LASF21:
+ 655 00b1 43617053 		.ascii	"CapSense_Sns_ClearInterrupt\000"
+ 655      656E7365 
+ 655      5F536E73 
+ 655      5F436C65 
+ 655      6172496E 
+ 656              	.LASF12:
+ 657 00cd 646F7562 		.ascii	"double\000"
+ 657      6C6500
+ 658              	.LASF10:
+ 659 00d4 75696E74 		.ascii	"uint32\000"
+ 659      333200
+ 660              	.LASF8:
+ 661 00db 756E7369 		.ascii	"unsigned int\000"
+ 661      676E6564 
+ 661      20696E74 
+ 661      00
+ 662              	.LASF24:
+ 663 00e8 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 663      4320342E 
+ 663      382E3420 
+ 663      32303134 
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 16
 
 
- 662      31333538 
- 663 0140 30202D66 		.ascii	"0 -ffunction-sections\000"
- 663      66756E63 
- 663      74696F6E 
- 663      2D736563 
- 663      74696F6E 
- 664              	.LASF18:
- 665 0156 6D6F6465 		.ascii	"mode\000"
- 665      00
- 666              	.LASF15:
- 667 015b 43617053 		.ascii	"CapSense_Sns_Write\000"
- 667      656E7365 
- 667      5F536E73 
- 667      5F577269 
- 667      746500
- 668              	.LASF6:
- 669 016e 6C6F6E67 		.ascii	"long long int\000"
- 669      206C6F6E 
- 669      6720696E 
- 669      7400
- 670              	.LASF19:
- 671 017c 43617053 		.ascii	"CapSense_Sns_Read\000"
- 671      656E7365 
- 671      5F536E73 
- 671      5F526561 
- 671      6400
- 672              	.LASF23:
- 673 018e 6D61736B 		.ascii	"maskedStatus\000"
- 673      65645374 
- 673      61747573 
- 673      00
- 674              	.LASF13:
- 675 019b 63686172 		.ascii	"char\000"
- 675      00
- 676              	.LASF2:
- 677 01a0 73686F72 		.ascii	"short int\000"
- 677      7420696E 
- 677      7400
- 678              	.LASF9:
- 679 01aa 75696E74 		.ascii	"uint8\000"
- 679      3800
- 680              	.LASF4:
- 681 01b0 6C6F6E67 		.ascii	"long int\000"
- 681      20696E74 
- 681      00
- 682              	.LASF0:
- 683 01b9 7369676E 		.ascii	"signed char\000"
- 683      65642063 
- 683      68617200 
- 684              	.LASF16:
- 685 01c5 43617053 		.ascii	"CapSense_Sns_SetDriveMode\000"
- 685      656E7365 
- 685      5F536E73 
- 685      5F536574 
- 685      44726976 
- 686              	.LASF26:
- 687 01df 433A5C55 		.ascii	"C:\\Users\\Evan\\Desktop\\BLE Lab 4\\BLE Lab 4.cyds"
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccFUG2cr.s 			page 17
+ 663      30353236 
+ 664 011b 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 664      20726576 
+ 664      6973696F 
+ 664      6E203231 
+ 664      31333538 
+ 665 014e 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 665      66756E63 
+ 665      74696F6E 
+ 665      2D736563 
+ 665      74696F6E 
+ 666              	.LASF18:
+ 667 0164 6D6F6465 		.ascii	"mode\000"
+ 667      00
+ 668              	.LASF15:
+ 669 0169 43617053 		.ascii	"CapSense_Sns_Write\000"
+ 669      656E7365 
+ 669      5F536E73 
+ 669      5F577269 
+ 669      746500
+ 670              	.LASF26:
+ 671 017c 433A5C55 		.ascii	"C:\\Users\\Chris\\Desktop\\ble lab4 additional 1\\B"
+ 671      73657273 
+ 671      5C436872 
+ 671      69735C44 
+ 671      65736B74 
+ 672 01aa 4C45204C 		.ascii	"LE Lab 4.cydsn\000"
+ 672      61622034 
+ 672      2E637964 
+ 672      736E00
+ 673              	.LASF19:
+ 674 01b9 43617053 		.ascii	"CapSense_Sns_Read\000"
+ 674      656E7365 
+ 674      5F536E73 
+ 674      5F526561 
+ 674      6400
+ 675              	.LASF23:
+ 676 01cb 6D61736B 		.ascii	"maskedStatus\000"
+ 676      65645374 
+ 676      61747573 
+ 676      00
+ 677              	.LASF13:
+ 678 01d8 63686172 		.ascii	"char\000"
+ 678      00
+ 679              	.LASF2:
+ 680 01dd 73686F72 		.ascii	"short int\000"
+ 680      7420696E 
+ 680      7400
+ 681              	.LASF9:
+ 682 01e7 75696E74 		.ascii	"uint8\000"
+ 682      3800
+ 683              	.LASF4:
+ 684 01ed 6C6F6E67 		.ascii	"long int\000"
+ 684      20696E74 
+ 684      00
+ 685              	.LASF0:
+ 686 01f6 7369676E 		.ascii	"signed char\000"
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccIPkpXO.s 			page 17
 
 
- 687      73657273 
- 687      5C457661 
- 687      6E5C4465 
- 687      736B746F 
- 688 020d 6E00     		.ascii	"n\000"
+ 686      65642063 
+ 686      68617200 
+ 687              	.LASF16:
+ 688 0202 43617053 		.ascii	"CapSense_Sns_SetDriveMode\000"
+ 688      656E7365 
+ 688      5F536E73 
+ 688      5F536574 
+ 688      44726976 
  689              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

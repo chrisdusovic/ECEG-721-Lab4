@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
   55 0001 01       		.byte	1
   56              		.comm	CapSense_fingerThreshold,1,4
   57              		.comm	CapSense_noiseThreshold,1,4
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 2
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 2
 
 
   58              		.comm	CapSense_negativeNoiseThreshold,1,4
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
   21:.\Generated_Source\PSoC4/CapSense_CSHL.c **** /* SmartSense functions */
   22:.\Generated_Source\PSoC4/CapSense_CSHL.c **** #if (CapSense_TUNING_METHOD == CapSense__TUNING_AUTO)
   23:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     extern void CapSense_UpdateThresholds(uint32 sensor);
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 3
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 3
 
 
   24:.\Generated_Source\PSoC4/CapSense_CSHL.c **** #endif /* (CapSense_TUNING_METHOD == CapSense__TUNING_AUTO) */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
   78:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
   79:.\Generated_Source\PSoC4/CapSense_CSHL.c **** uint8 CapSense_hysteresis[CapSense_WIDGET_PARAM_TBL_SIZE];
   80:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 4
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 4
 
 
   81:.\Generated_Source\PSoC4/CapSense_CSHL.c **** uint8 CapSense_debounce[] = {
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  135:.\Generated_Source\PSoC4/CapSense_CSHL.c **** {
   92              		.loc 1 135 0
   93              		.cfi_startproc
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 5
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 5
 
 
   94 0000 80B5     		push	{r7, lr}
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  129 0034 D318     		add	r3, r2, r3
  130 0036 0022     		mov	r2, #0
  131 0038 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 6
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 6
 
 
  155:.\Generated_Source\PSoC4/CapSense_CSHL.c ****         
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  157              	.L3:
  158              		.align	2
  159              	.L2:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 7
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 7
 
 
  160 0064 00000000 		.word	CapSense_widgetNumber
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  186              		.cfi_def_cfa_offset 16
  187 0004 00AF     		add	r7, sp, #0
  188              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 8
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 8
 
 
  189 0006 7860     		str	r0, [r7, #4]
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  233:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *
  234:.\Generated_Source\PSoC4/CapSense_CSHL.c **** * Parameters:
  235:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *  None
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 9
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 9
 
 
  236:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  254 0024 80BD     		pop	{r7, pc}
  255              		.cfi_endproc
  256              	.LFE37:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 10
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 10
 
 
  257              		.size	CapSense_InitializeAllBaselines, .-CapSense_InitializeAllBaselines
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  278              		.loc 1 288 0
  279 000a C046     		mov	r8, r8
  280              	.L10:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 11
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 11
 
 
  281              		.loc 1 288 0 is_stmt 0 discriminator 1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  317              		.loc 1 304 0 is_stmt 1
  318 0046 BD46     		mov	sp, r7
  319 0048 02B0     		add	sp, sp, #8
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 12
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 12
 
 
  320              		@ sp needed
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  342:.\Generated_Source\PSoC4/CapSense_CSHL.c **** * 
  343:.\Generated_Source\PSoC4/CapSense_CSHL.c **** * Side Effects:
  344:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *  None
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 13
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 13
 
 
  345:.\Generated_Source\PSoC4/CapSense_CSHL.c **** * 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  373 0032 1A80     		strh	r2, [r3]
  363:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
  364:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	#if (CapSense_RAW_FILTER_MASK != 0u)
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 14
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 14
 
 
  365:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	if(CapSense_enableRawFilters != 0u)
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  390:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 			filteredRawData = CapSense_JitterFilter(filteredRawData, CapSense_rawFilterData1[sensor]);
  391:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 			CapSense_rawFilterData1[sensor] = filteredRawData;
  392:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 			
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 15
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 15
 
 
  393:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 		#elif (CapSense_RAW_FILTER_MASK & CapSense_IIR8_FILTER)
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  433 009e 3B1C     		mov	r3, r7
  434 00a0 1233     		add	r3, r3, #18
  435 00a2 391C     		mov	r1, r7
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 16
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 16
 
 
  436 00a4 1031     		add	r1, r1, #16
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  431:.\Generated_Source\PSoC4/CapSense_CSHL.c ****         if(CapSense_lowBaselineResetCnt[sensor] >= CapSense_lowBaselineReset[sensor])
  476              		.loc 1 431 0 is_stmt 1
  477 00e6 4B4A     		ldr	r2, .L29+28
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 17
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 17
 
 
  478 00e8 7B68     		ldr	r3, [r7, #4]
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  515 0124 3B1C     		mov	r3, r7
  516 0126 0E33     		add	r3, r3, #14
  517 0128 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 18
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 18
 
 
  518 012a 9BB2     		uxth	r3, r3
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  462:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 /* Add Raw Data to Baseline */
  463:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 calc += filteredRawData;
  556              		.loc 1 463 0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 19
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 19
 
 
  557 016a 3B1C     		mov	r3, r7
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  595 01aa 0E33     		add	r3, r3, #14
  596 01ac 1B78     		ldrb	r3, [r3]
  597 01ae 9BB2     		uxth	r3, r3
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 20
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 20
 
 
  598 01b0 3A1C     		mov	r2, r7
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  496:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     {
  497:.\Generated_Source\PSoC4/CapSense_CSHL.c ****         /* Signal is zero */
  498:.\Generated_Source\PSoC4/CapSense_CSHL.c ****         CapSense_sensorSignal[sensor] = 0u;
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 21
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 21
 
 
  634              		.loc 1 498 0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  515:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *  subtracting the previous baseline from the current raw count value and stores
  516:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *  it in CapSense_sensorSignal[sensor]. 
  517:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *  If the auto reset option is enabled, the baseline updated regards the noise threshold. 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 22
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 22
 
 
  518:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *  If the auto reset option is disabled, the baseline stops updating. 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  689 0012 181C     		mov	r0, r3
  690 0014 FFF7FEFF 		bl	CapSense_UpdateBaselineNoThreshold
  555:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 23
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 23
 
 
  556:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     #if (CapSense_TOTAL_GENERICS_COUNT)
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  707              		.loc 1 593 0
  708              		.cfi_startproc
  709 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 24
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 24
 
 
  710              		.cfi_def_cfa_offset 8
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  749 0036 BD46     		mov	sp, r7
  750 0038 02B0     		add	sp, sp, #8
  751              		@ sp needed
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 25
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 25
 
 
  752 003a 80BD     		pop	{r7, pc}
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  774 0002 88B0     		sub	sp, sp, #32
  775              		.cfi_def_cfa_offset 40
  776 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 26
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 26
 
 
  777              		.cfi_def_cfa_register 7
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  809 0036 FB69     		ldr	r3, [r7, #28]
  810 0038 181C     		mov	r0, r3
  811 003a FFF7FEFF 		bl	CapSense_UpdateSensorBaseline
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 27
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 27
 
 
  812              	.L40:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  682:.\Generated_Source\PSoC4/CapSense_CSHL.c **** * Side Effects:
  683:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *  None
  684:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 28
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 28
 
 
  685:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *******************************************************************************/
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  702:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *
  703:.\Generated_Source\PSoC4/CapSense_CSHL.c **** * Return:
  704:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *  None.
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 29
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 29
 
 
  705:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  718:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
  719:.\Generated_Source\PSoC4/CapSense_CSHL.c **** /*******************************************************************************
  720:.\Generated_Source\PSoC4/CapSense_CSHL.c **** * Function Name: CapSense_GetDiffCountData
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 30
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 30
 
 
  721:.\Generated_Source\PSoC4/CapSense_CSHL.c **** ********************************************************************************
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  952              		.global	CapSense_SetDiffCountData
  953              		.code	16
  954              		.thumb_func
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 31
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 31
 
 
  955              		.type	CapSense_SetDiffCountData, %function
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  982              		@ sp needed
  983 001e 80BD     		pop	{r7, pc}
  984              	.L57:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 32
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 32
 
 
  985              		.align	2
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1013 000c D318     		add	r3, r2, r3
  1014 000e 1B78     		ldrb	r3, [r3]
  797:.\Generated_Source\PSoC4/CapSense_CSHL.c **** }
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 33
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 33
 
 
  1015              		.loc 1 797 0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1044 0004 00AF     		add	r7, sp, #0
  1045              		.cfi_def_cfa_register 7
  1046 0006 7860     		str	r0, [r7, #4]
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 34
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 34
 
 
  823:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	return (CapSense_noiseThreshold[widget]);
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1073              		.loc 1 850 0
  1074              		.cfi_startproc
  1075 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 35
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 35
 
 
  1076              		.cfi_def_cfa_offset 8
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  871:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *   to the raw count level.
  872:.\Generated_Source\PSoC4/CapSense_CSHL.c **** * 
  873:.\Generated_Source\PSoC4/CapSense_CSHL.c **** * Side Effects:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 36
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 36
 
 
  874:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *  None
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  891:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	*
  892:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	* Summary:
  893:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	*  This API sets the finger threshold value for a widget. 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 37
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 37
 
 
  894:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	*
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1181              		.align	2
  1182              		.global	CapSense_SetNoiseThreshold
  1183              		.code	16
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 38
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 38
 
 
  1184              		.thumb_func
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1210 001a BD46     		mov	sp, r7
  1211 001c 02B0     		add	sp, sp, #8
  1212              		@ sp needed
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 39
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 39
 
 
  1213 001e 80BD     		pop	{r7, pc}
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1241 000a FB1C     		add	r3, r7, #3
  1242 000c 1A70     		strb	r2, [r3]
  968:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 		CapSense_hysteresis[widget] = value;
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 40
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 40
 
 
  1243              		.loc 1 968 0
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  996:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	{
  1270              		.loc 1 996 0
  1271              		.cfi_startproc
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 41
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 41
 
 
  1272 0000 80B5     		push	{r7, lr}
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1012:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	* Return Value: 
 1013:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	*  None
 1014:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	*
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 42
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 42
 
 
 1015:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	* Global Variables:
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1028:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
 1029:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	/*******************************************************************************
 1030:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	* Function Name: CapSense_SetLowBaselineReset
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 43
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 43
 
 
 1031:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	********************************************************************************
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1382              		.cfi_endproc
  1383              	.LFE56:
  1384              		.size	CapSense_SetLowBaselineReset, .-CapSense_SetLowBaselineReset
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 44
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 44
 
 
  1385              		.section	.text.CapSense_CheckIsSensorActive,"ax",%progbits
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1395 0000 80B5     		push	{r7, lr}
  1396              		.cfi_def_cfa_offset 8
  1397              		.cfi_offset 7, -8
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 45
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 45
 
 
  1398              		.cfi_offset 14, -4
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1438 0044 1A70     		strb	r2, [r3]
 1113:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	
 1114:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	    debounceIndex = widget;
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 46
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 46
 
 
  1439              		.loc 1 1114 0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1482 0096 391C     		mov	r1, r7
  1483 0098 0C31     		add	r1, r1, #12
  1484 009a 0978     		ldrb	r1, [r1]
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 47
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 47
 
 
  1485 009c D154     		strb	r1, [r2, r3]
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1527 00e6 FFF7FEFF 		bl	CapSense_SetBitValue
  1528 00ea 07E0     		b	.L95
  1529              	.L96:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 48
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 48
 
 
 1138:.\Generated_Source\PSoC4/CapSense_CSHL.c ****             }
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1573              	.LFE57:
  1574              		.size	CapSense_CheckIsSensorActive, .-CapSense_CheckIsSensorActive
  1575              		.section	.text.CapSense_CheckIsWidgetActive,"ax",%progbits
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 49
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 49
 
 
  1576              		.align	2
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1182:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     uint32 numOfSensors = (uint32)CapSense_numberOfSensors[widget] + rawIndex;
  1597              		.loc 1 1182 0
  1598 000c 0123     		mov	r3, #1
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 50
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 50
 
 
  1599 000e 1A1C     		mov	r2, r3
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1636              	.LFE58:
  1637              		.size	CapSense_CheckIsWidgetActive, .-CapSense_CheckIsWidgetActive
  1638              		.section	.text.CapSense_CheckIsAnyWidgetActive,"ax",%progbits
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 51
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 51
 
 
  1639              		.align	2
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1661 000c 7B60     		str	r3, [r7, #4]
  1662 000e 0BE0     		b	.L108
  1663              	.L110:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 52
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 52
 
 
 1232:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     {
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1245:.\Generated_Source\PSoC4/CapSense_CSHL.c **** /*******************************************************************************
 1246:.\Generated_Source\PSoC4/CapSense_CSHL.c **** * Function Name: CapSense_EnableWidget
 1247:.\Generated_Source\PSoC4/CapSense_CSHL.c **** ********************************************************************************
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 53
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 53
 
 
 1248:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1728              	.L113:
 1277:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     
 1278:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     /* Enable all sensors of widget */
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 54
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 54
 
 
 1279:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     do
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1287:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
 1288:.\Generated_Source\PSoC4/CapSense_CSHL.c **** /*******************************************************************************
 1289:.\Generated_Source\PSoC4/CapSense_CSHL.c **** * Function Name: CapSense_DisableWidget
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 55
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 55
 
 
 1290:.\Generated_Source\PSoC4/CapSense_CSHL.c **** ********************************************************************************
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1800              	.L117:
 1319:.\Generated_Source\PSoC4/CapSense_CSHL.c ****    
 1320:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     /* Disable all sensors of widget */
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 56
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 56
 
 
 1321:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     do
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1329:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
 1330:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
 1331:.\Generated_Source\PSoC4/CapSense_CSHL.c **** #if(CapSense_TOTAL_CENTROIDS_BASIC_COUNT)
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 57
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 57
 
 
 1332:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     /*******************************************************************************
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1386:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 /* Initialize */
 1387:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 i = 0u;
 1388:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 58
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 58
 
 
 1389:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 /* Make slider x2 as Diplexed */
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1443:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                         
 1444:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
 1445:.\Generated_Source\PSoC4/CapSense_CSHL.c ****             /* Check centroid size */
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 59
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 59
 
 
 1446:.\Generated_Source\PSoC4/CapSense_CSHL.c ****             #if (CapSense_IS_NON_DIPLEX_SLIDER)
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1500:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     *  Returns a position value calculated according to the index of the maximum element and API
 1501:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     *  resolution.
 1502:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     *
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 60
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 60
 
 
 1503:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     * Parameters:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1557:.\Generated_Source\PSoC4/CapSense_CSHL.c ****             #if (CapSense_TOTAL_RADIAL_SLIDERS_COUNT > 0u)                
 1558:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 /* Copy Signal to the centroid array */
 1559:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 CapSense_centroid[CapSense_POS] = startOfSlider[maximum];
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 61
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 61
 
 
 1560:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                  
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1614:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 #endif /* (CapSense_IS_DIPLEX_SLIDER && CapSense_IS_NON_DIPLEX_SLIDER) */
 1615:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                         
 1616:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 /* Copy Signal to the centroid array */
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 62
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 62
 
 
 1617:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 #if (CapSense_IS_DIPLEX_SLIDER)
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1671:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                     (uint32) CapSense_centroid[CapSense_POS_PREV];
 1672:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
 1673:.\Generated_Source\PSoC4/CapSense_CSHL.c ****         /* Si+1 + Si + Si-1 */
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 63
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 63
 
 
 1674:.\Generated_Source\PSoC4/CapSense_CSHL.c ****         denominator = (int32) CapSense_centroid[CapSense_POS_PREV] + 
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1728:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     *
 1729:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     * Note:
 1730:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     *  If noise counts on the slider segments are greater than the noise
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 64
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 64
 
 
 1731:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     *  threshold, this subroutine may generate a false centroid result. The noise
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1785:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 /* Check if this linear slider has enabled filters */
 1786:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 if (0u != (posFiltersMask & CapSense_ANY_POS_FILTER))
 1787:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 {
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 65
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 65
 
 
 1788:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                     /* Calculate position to store filters data */
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1842:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                                *           CapSense_LINEAR_SLIDERS_POS_FILTERS_MASK))
 1843:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                                */
 1844:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 66
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 66
 
 
 1845:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                         #if (0u != (CapSense_IIR2_FILTER & CapSense_LINEAR_SLIDERS_POS_FILTERS_MASK
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1899:.\Generated_Source\PSoC4/CapSense_CSHL.c **** #endif /* ((CapSense_TOTAL_RADIAL_SLIDERS_COUNT > 0u) || (CapSense_TOTAL_LINEAR_SLIDERS_COUNT > 0u)
 1900:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
 1901:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 67
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 67
 
 
 1902:.\Generated_Source\PSoC4/CapSense_CSHL.c **** #if((CapSense_TOTAL_RADIAL_SLIDERS_COUNT > 0u) || (CapSense_TOTAL_LINEAR_SLIDERS_COUNT > 0u))
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 1956:.\Generated_Source\PSoC4/CapSense_CSHL.c ****         uint8 count = CapSense_numberOfSensors[widget];
 1957:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
 1958:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 		/* Find Maximum within centroid */      
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 68
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 68
 
 
 1959:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 		#if (CapSense_IS_DIPLEX_SLIDER)        
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2013:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                             }
 2014:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                         #endif /* (0u != (CapSense_MEDIAN_FILTER & 
 2015:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                                *          CapSense_RADIAL_SLIDERS_POS_FILTERS_MASK))
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 69
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 69
 
 
 2016:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                                */
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2070:.\Generated_Source\PSoC4/CapSense_CSHL.c ****         else
 2071:.\Generated_Source\PSoC4/CapSense_CSHL.c ****         {
 2072:.\Generated_Source\PSoC4/CapSense_CSHL.c ****             /* Maximum wasn't found?? */
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 70
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 70
 
 
 2073:.\Generated_Source\PSoC4/CapSense_CSHL.c ****             position = 0xFFFFu;
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2127:.\Generated_Source\PSoC4/CapSense_CSHL.c ****         #if (0u != CapSense_TOUCH_PADS_POS_FILTERS_MASK)
 2128:.\Generated_Source\PSoC4/CapSense_CSHL.c ****             uint8 posXIndex;
 2129:.\Generated_Source\PSoC4/CapSense_CSHL.c ****             uint8 posYIndex;
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 71
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 71
 
 
 2130:.\Generated_Source\PSoC4/CapSense_CSHL.c ****             uint8 firstTimeIndex = CapSense_posFiltersData[widget];
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2184:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                 #if (0u != CapSense_TOUCH_PADS_POS_FILTERS_MASK)
 2185:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                     /* Check if this TP has enabled filters */
 2186:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                     if (0u != (posFiltersMask & CapSense_ANY_POS_FILTER))
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 72
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 72
 
 
 2187:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                     {
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2241:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                                    *          CapSense_TOUCH_PADS_POS_FILTERS_MASK))
 2242:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                                    */
 2243:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 73
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 73
 
 
 2244:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                             #if(0u !=(CapSense_AVERAGING_FILTER & CapSense_TOUCH_PADS_POS_FILTERS_M
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2298:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                                    */
 2299:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
 2300:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                             #if (0u != (CapSense_JITTER_FILTER & CapSense_TOUCH_PADS_POS_FILTERS_MA
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 74
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 74
 
 
 2301:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                                 if (0u != (posFiltersMask & CapSense_JITTER_FILTER))
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2355:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     *  x3:  Before previous value.
 2356:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     *
 2357:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     * Return:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 75
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 75
 
 
 2358:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     *  Returns filtered value.
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1883 0032 3A1C     		mov	r2, r7
  1884 0034 0E32     		add	r2, r2, #14
  1885 0036 1288     		ldrh	r2, [r2]
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 76
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 76
 
 
  1886 0038 1A80     		strh	r2, [r3]
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2386:.\Generated_Source\PSoC4/CapSense_CSHL.c ****       (0u != (CapSense_POS_FILTERS_MASK & CapSense_MEDIAN_FILTER)) || \
 2387:.\Generated_Source\PSoC4/CapSense_CSHL.c ****       ((CapSense_TUNING_METHOD == CapSense__TUNING_AUTO)) ) */
 2388:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 77
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 77
 
 
 2389:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2443:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	*  None.
 2444:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	*
 2445:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	* Side Effects:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 78
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 78
 
 
 2446:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	*  None
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1941 0008 BB1D     		add	r3, r7, #6
  1942 000a 011C     		add	r1, r0, #0
  1943 000c 1980     		strh	r1, [r3]
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 79
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 79
 
 
  1944 000e 3B1D     		add	r3, r7, #4
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2503:.\Generated_Source\PSoC4/CapSense_CSHL.c **** #if ( (0u != (CapSense_RAW_FILTER_MASK & CapSense_JITTER_FILTER)) || \
 2504:.\Generated_Source\PSoC4/CapSense_CSHL.c ****       (0u != (CapSense_POS_FILTERS_MASK & CapSense_JITTER_FILTER)) || \
 2505:.\Generated_Source\PSoC4/CapSense_CSHL.c ****       (0u != (CapSense_TRACKPAD_GEST_POS_FILTERS_MASK & CapSense_JITTER_FILTER)))  
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 80
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 80
 
 
 2506:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     /*******************************************************************************
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2560:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     *  x2:  Previous value.
 2561:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     *
 2562:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     * Return:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 81
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 81
 
 
 2563:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     *  Returns filtered value.
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2617:.\Generated_Source\PSoC4/CapSense_CSHL.c ****         
 2618:.\Generated_Source\PSoC4/CapSense_CSHL.c ****         return ((uint16) tmp);
 2619:.\Generated_Source\PSoC4/CapSense_CSHL.c ****     }
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 82
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 82
 
 
 2620:.\Generated_Source\PSoC4/CapSense_CSHL.c **** #endif /* (CapSense_RAW_FILTER_MASK & CapSense_IIR16_FILTER) */
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2674:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 
 2675:.\Generated_Source\PSoC4/CapSense_CSHL.c ****             /* Find row number with maximal signal value */
 2676:.\Generated_Source\PSoC4/CapSense_CSHL.c ****             for(i = CapSense_rawDataIndex[widget+1u]; i < (CapSense_rawDataIndex[widget+1u] + \
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 83
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 83
 
 
 2677:.\Generated_Source\PSoC4/CapSense_CSHL.c ****                  CapSense_numberOfSensors[widget+1u]); i++)
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  1993              		.cfi_def_cfa_register 7
  1994 0006 7860     		str	r0, [r7, #4]
 2722:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	return((uint32)CapSense_widgetNumber[sensor]);
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 84
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 84
 
 
  1995              		.loc 1 2722 0
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2024              		.cfi_def_cfa_offset 8
  2025              		.cfi_offset 7, -8
  2026              		.cfi_offset 14, -4
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 85
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 85
 
 
  2027 0002 82B0     		sub	sp, sp, #8
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2771:.\Generated_Source\PSoC4/CapSense_CSHL.c **** *******************************************************************************/
 2772:.\Generated_Source\PSoC4/CapSense_CSHL.c **** uint8 CapSense_GetDebounce(uint32 widget)
 2773:.\Generated_Source\PSoC4/CapSense_CSHL.c **** {
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 86
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 86
 
 
  2058              		.loc 1 2773 0
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2791:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	* Global Variables:
 2792:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	*  CapSense_enableRawFilters defines if the filters are enabled or not.
 2793:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	*
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 87
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 87
 
 
 2794:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	* Side Effects:
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
 2817:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	*  CapSense_enableRawFilters defines if the filters are enabled or not.
 2818:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	*
 2819:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	* Side Effects:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 88
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 88
 
 
 2820:.\Generated_Source\PSoC4/CapSense_CSHL.c **** 	*  None
@@ -5262,48 +5262,48 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2157 0006 00000000 		.4byte	.Ldebug_abbrev0
  2158 000a 04       		.byte	0x4
  2159 000b 01       		.uleb128 0x1
- 2160 000c 27060000 		.4byte	.LASF112
+ 2160 000c F7050000 		.4byte	.LASF112
  2161 0010 01       		.byte	0x1
- 2162 0011 6E040000 		.4byte	.LASF113
- 2163 0015 11010000 		.4byte	.LASF114
+ 2162 0011 3E040000 		.4byte	.LASF113
+ 2163 0015 9A070000 		.4byte	.LASF114
  2164 0019 00000000 		.4byte	.Ldebug_ranges0+0
  2165 001d 00000000 		.4byte	0
  2166 0021 00000000 		.4byte	.Ldebug_line0
  2167 0025 02       		.uleb128 0x2
  2168 0026 01       		.byte	0x1
  2169 0027 06       		.byte	0x6
- 2170 0028 F1010000 		.4byte	.LASF0
+ 2170 0028 C1010000 		.4byte	.LASF0
  2171 002c 02       		.uleb128 0x2
  2172 002d 01       		.byte	0x1
  2173 002e 08       		.byte	0x8
- 2174 002f C0060000 		.4byte	.LASF1
+ 2174 002f 90060000 		.4byte	.LASF1
  2175 0033 02       		.uleb128 0x2
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 89
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 89
 
 
  2176 0034 02       		.byte	0x2
  2177 0035 05       		.byte	0x5
- 2178 0036 27070000 		.4byte	.LASF2
+ 2178 0036 F7060000 		.4byte	.LASF2
  2179 003a 02       		.uleb128 0x2
  2180 003b 02       		.byte	0x2
  2181 003c 07       		.byte	0x7
- 2182 003d E2030000 		.4byte	.LASF3
+ 2182 003d B2030000 		.4byte	.LASF3
  2183 0041 02       		.uleb128 0x2
  2184 0042 04       		.byte	0x4
  2185 0043 05       		.byte	0x5
- 2186 0044 5D020000 		.4byte	.LASF4
+ 2186 0044 2D020000 		.4byte	.LASF4
  2187 0048 02       		.uleb128 0x2
  2188 0049 04       		.byte	0x4
  2189 004a 07       		.byte	0x7
- 2190 004b 80030000 		.4byte	.LASF5
+ 2190 004b 50030000 		.4byte	.LASF5
  2191 004f 02       		.uleb128 0x2
  2192 0050 08       		.byte	0x8
  2193 0051 05       		.byte	0x5
- 2194 0052 E3010000 		.4byte	.LASF6
+ 2194 0052 B3010000 		.4byte	.LASF6
  2195 0056 02       		.uleb128 0x2
  2196 0057 08       		.byte	0x8
  2197 0058 07       		.byte	0x7
- 2198 0059 57010000 		.4byte	.LASF7
+ 2198 0059 27010000 		.4byte	.LASF7
  2199 005d 03       		.uleb128 0x3
  2200 005e 04       		.byte	0x4
  2201 005f 05       		.byte	0x5
@@ -5311,9 +5311,9 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2203 0064 02       		.uleb128 0x2
  2204 0065 04       		.byte	0x4
  2205 0066 07       		.byte	0x7
- 2206 0067 73030000 		.4byte	.LASF8
+ 2206 0067 43030000 		.4byte	.LASF8
  2207 006b 04       		.uleb128 0x4
- 2208 006c 86020000 		.4byte	.LASF9
+ 2208 006c 56020000 		.4byte	.LASF9
  2209 0070 02       		.byte	0x2
  2210 0071 A1       		.byte	0xa1
  2211 0072 2C000000 		.4byte	0x2c
@@ -5323,87 +5323,87 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2215 007c A2       		.byte	0xa2
  2216 007d 3A000000 		.4byte	0x3a
  2217 0081 04       		.uleb128 0x4
- 2218 0082 E2020000 		.4byte	.LASF11
+ 2218 0082 B2020000 		.4byte	.LASF11
  2219 0086 02       		.byte	0x2
  2220 0087 A3       		.byte	0xa3
  2221 0088 48000000 		.4byte	0x48
  2222 008c 02       		.uleb128 0x2
  2223 008d 04       		.byte	0x4
  2224 008e 04       		.byte	0x4
- 2225 008f 04060000 		.4byte	.LASF12
+ 2225 008f D4050000 		.4byte	.LASF12
  2226 0093 02       		.uleb128 0x2
  2227 0094 08       		.byte	0x8
  2228 0095 04       		.byte	0x4
- 2229 0096 C5020000 		.4byte	.LASF13
+ 2229 0096 95020000 		.4byte	.LASF13
  2230 009a 02       		.uleb128 0x2
  2231 009b 01       		.byte	0x1
  2232 009c 08       		.byte	0x8
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 90
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 90
 
 
- 2233 009d C5070000 		.4byte	.LASF14
+ 2233 009d 95070000 		.4byte	.LASF14
  2234 00a1 02       		.uleb128 0x2
  2235 00a2 04       		.byte	0x4
  2236 00a3 07       		.byte	0x7
- 2237 00a4 D1040000 		.4byte	.LASF15
+ 2237 00a4 A1040000 		.4byte	.LASF15
  2238 00a8 05       		.uleb128 0x5
  2239 00a9 38       		.byte	0x38
  2240 00aa 03       		.byte	0x3
  2241 00ab 2F       		.byte	0x2f
  2242 00ac 59010000 		.4byte	0x159
  2243 00b0 06       		.uleb128 0x6
- 2244 00b1 6F050000 		.4byte	.LASF16
+ 2244 00b1 3F050000 		.4byte	.LASF16
  2245 00b5 03       		.byte	0x3
  2246 00b6 31       		.byte	0x31
  2247 00b7 59010000 		.4byte	0x159
  2248 00bb 00       		.byte	0
  2249 00bc 06       		.uleb128 0x6
- 2250 00bd 7E050000 		.4byte	.LASF17
+ 2250 00bd 4E050000 		.4byte	.LASF17
  2251 00c1 03       		.byte	0x3
  2252 00c2 32       		.byte	0x32
  2253 00c3 59010000 		.4byte	0x159
  2254 00c7 04       		.byte	0x4
  2255 00c8 06       		.uleb128 0x6
- 2256 00c9 F5030000 		.4byte	.LASF18
+ 2256 00c9 C5030000 		.4byte	.LASF18
  2257 00cd 03       		.byte	0x3
  2258 00ce 33       		.byte	0x33
  2259 00cf 59010000 		.4byte	0x159
  2260 00d3 08       		.byte	0x8
  2261 00d4 06       		.uleb128 0x6
- 2262 00d5 61040000 		.4byte	.LASF19
+ 2262 00d5 31040000 		.4byte	.LASF19
  2263 00d9 03       		.byte	0x3
  2264 00da 34       		.byte	0x34
  2265 00db 59010000 		.4byte	0x159
  2266 00df 0C       		.byte	0xc
  2267 00e0 06       		.uleb128 0x6
- 2268 00e1 38070000 		.4byte	.LASF20
+ 2268 00e1 08070000 		.4byte	.LASF20
  2269 00e5 03       		.byte	0x3
  2270 00e6 35       		.byte	0x35
  2271 00e7 59010000 		.4byte	0x159
  2272 00eb 10       		.byte	0x10
  2273 00ec 06       		.uleb128 0x6
- 2274 00ed 2D020000 		.4byte	.LASF21
+ 2274 00ed FD010000 		.4byte	.LASF21
  2275 00f1 03       		.byte	0x3
  2276 00f2 36       		.byte	0x36
  2277 00f3 5F010000 		.4byte	0x15f
  2278 00f7 14       		.byte	0x14
  2279 00f8 06       		.uleb128 0x6
- 2280 00f9 AD030000 		.4byte	.LASF22
+ 2280 00f9 7D030000 		.4byte	.LASF22
  2281 00fd 03       		.byte	0x3
  2282 00fe 37       		.byte	0x37
  2283 00ff 6A010000 		.4byte	0x16a
  2284 0103 18       		.byte	0x18
  2285 0104 06       		.uleb128 0x6
- 2286 0105 06090000 		.4byte	.LASF23
+ 2286 0105 13090000 		.4byte	.LASF23
  2287 0109 03       		.byte	0x3
  2288 010a 38       		.byte	0x38
  2289 010b 5F010000 		.4byte	0x15f
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 91
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 91
 
 
  2290 010f 1C       		.byte	0x1c
  2291 0110 06       		.uleb128 0x6
- 2292 0111 1D020000 		.4byte	.LASF24
+ 2292 0111 ED010000 		.4byte	.LASF24
  2293 0115 03       		.byte	0x3
  2294 0116 39       		.byte	0x39
  2295 0117 5F010000 		.4byte	0x15f
@@ -5415,25 +5415,25 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2301 0123 7F010000 		.4byte	0x17f
  2302 0127 24       		.byte	0x24
  2303 0128 06       		.uleb128 0x6
- 2304 0129 37080000 		.4byte	.LASF26
+ 2304 0129 44080000 		.4byte	.LASF26
  2305 012d 03       		.byte	0x3
  2306 012e 3B       		.byte	0x3b
  2307 012f 90010000 		.4byte	0x190
  2308 0133 28       		.byte	0x28
  2309 0134 06       		.uleb128 0x6
- 2310 0135 EE060000 		.4byte	.LASF27
+ 2310 0135 BE060000 		.4byte	.LASF27
  2311 0139 03       		.byte	0x3
  2312 013a 3C       		.byte	0x3c
  2313 013b 7F010000 		.4byte	0x17f
  2314 013f 2C       		.byte	0x2c
  2315 0140 06       		.uleb128 0x6
- 2316 0141 BC030000 		.4byte	.LASF28
+ 2316 0141 8C030000 		.4byte	.LASF28
  2317 0145 03       		.byte	0x3
  2318 0146 3D       		.byte	0x3d
  2319 0147 AA010000 		.4byte	0x1aa
  2320 014b 30       		.byte	0x30
  2321 014c 06       		.uleb128 0x6
- 2322 014d 93080000 		.4byte	.LASF29
+ 2322 014d A0080000 		.4byte	.LASF29
  2323 0151 03       		.byte	0x3
  2324 0152 3E       		.byte	0x3e
  2325 0153 C5010000 		.4byte	0x1c5
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2344 017e 00       		.byte	0
  2345 017f 07       		.uleb128 0x7
  2346 0180 04       		.byte	0x4
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 92
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 92
 
 
  2347 0181 70010000 		.4byte	0x170
@@ -5504,40 +5504,40 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2387 01d9 41       		.byte	0x41
  2388 01da 27020000 		.4byte	0x227
  2389 01de 06       		.uleb128 0x6
- 2390 01df 54080000 		.4byte	.LASF31
+ 2390 01df 61080000 		.4byte	.LASF31
  2391 01e3 03       		.byte	0x3
  2392 01e4 43       		.byte	0x43
  2393 01e5 6B000000 		.4byte	0x6b
  2394 01e9 00       		.byte	0
  2395 01ea 06       		.uleb128 0x6
- 2396 01eb 1B090000 		.4byte	.LASF32
+ 2396 01eb 28090000 		.4byte	.LASF32
  2397 01ef 03       		.byte	0x3
  2398 01f0 44       		.byte	0x44
  2399 01f1 6B000000 		.4byte	0x6b
  2400 01f5 01       		.byte	0x1
  2401 01f6 06       		.uleb128 0x6
- 2402 01f7 35030000 		.4byte	.LASF33
+ 2402 01f7 05030000 		.4byte	.LASF33
  2403 01fb 03       		.byte	0x3
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 93
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 93
 
 
  2404 01fc 45       		.byte	0x45
  2405 01fd 6B000000 		.4byte	0x6b
  2406 0201 02       		.byte	0x2
  2407 0202 06       		.uleb128 0x6
- 2408 0203 25030000 		.4byte	.LASF34
+ 2408 0203 F5020000 		.4byte	.LASF34
  2409 0207 03       		.byte	0x3
  2410 0208 46       		.byte	0x46
  2411 0209 76000000 		.4byte	0x76
  2412 020d 04       		.byte	0x4
  2413 020e 06       		.uleb128 0x6
- 2414 020f C3040000 		.4byte	.LASF35
+ 2414 020f 93040000 		.4byte	.LASF35
  2415 0213 03       		.byte	0x3
  2416 0214 47       		.byte	0x47
  2417 0215 76000000 		.4byte	0x76
  2418 0219 06       		.byte	0x6
  2419 021a 06       		.uleb128 0x6
- 2420 021b B1040000 		.4byte	.LASF36
+ 2420 021b 81040000 		.4byte	.LASF36
  2421 021f 03       		.byte	0x3
  2422 0220 48       		.byte	0x48
  2423 0221 27020000 		.4byte	0x227
@@ -5549,12 +5549,12 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2429 022d 08       		.uleb128 0x8
  2430 022e CB010000 		.4byte	0x1cb
  2431 0232 04       		.uleb128 0x4
- 2432 0233 D6050000 		.4byte	.LASF37
+ 2432 0233 A6050000 		.4byte	.LASF37
  2433 0237 03       		.byte	0x3
  2434 0238 49       		.byte	0x49
  2435 0239 D6010000 		.4byte	0x1d6
  2436 023d 0C       		.uleb128 0xc
- 2437 023e 52070000 		.4byte	.LASF38
+ 2437 023e 22070000 		.4byte	.LASF38
  2438 0242 01       		.byte	0x1
  2439 0243 86       		.byte	0x86
  2440 0244 00000000 		.4byte	.LFB35
@@ -5563,7 +5563,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2443 024d 9C       		.byte	0x9c
  2444 024e 6F020000 		.4byte	0x26f
  2445 0252 0D       		.uleb128 0xd
- 2446 0253 04040000 		.4byte	.LASF40
+ 2446 0253 D4030000 		.4byte	.LASF40
  2447 0257 01       		.byte	0x1
  2448 0258 86       		.byte	0x86
  2449 0259 81000000 		.4byte	0x81
@@ -5571,19 +5571,19 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2451 025e 91       		.byte	0x91
  2452 025f 6C       		.sleb128 -20
  2453 0260 0E       		.uleb128 0xe
- 2454 0261 31070000 		.4byte	.LASF42
+ 2454 0261 01070000 		.4byte	.LASF42
  2455 0265 01       		.byte	0x1
  2456 0266 8A       		.byte	0x8a
  2457 0267 6B000000 		.4byte	0x6b
  2458 026b 02       		.uleb128 0x2
  2459 026c 91       		.byte	0x91
  2460 026d 77       		.sleb128 -9
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 94
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 94
 
 
  2461 026e 00       		.byte	0
  2462 026f 0F       		.uleb128 0xf
- 2463 0270 13050000 		.4byte	.LASF39
+ 2463 0270 E3040000 		.4byte	.LASF39
  2464 0274 01       		.byte	0x1
  2465 0275 D2       		.byte	0xd2
  2466 0276 00000000 		.4byte	.LFB36
@@ -5592,7 +5592,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2469 027f 9C       		.byte	0x9c
  2470 0280 93020000 		.4byte	0x293
  2471 0284 0D       		.uleb128 0xd
- 2472 0285 04040000 		.4byte	.LASF40
+ 2472 0285 D4030000 		.4byte	.LASF40
  2473 0289 01       		.byte	0x1
  2474 028a D2       		.byte	0xd2
  2475 028b 81000000 		.4byte	0x81
@@ -5601,7 +5601,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2478 0291 74       		.sleb128 -12
  2479 0292 00       		.byte	0
  2480 0293 0F       		.uleb128 0xf
- 2481 0294 CE060000 		.4byte	.LASF41
+ 2481 0294 9E060000 		.4byte	.LASF41
  2482 0298 01       		.byte	0x1
  2483 0299 F7       		.byte	0xf7
  2484 029a 00000000 		.4byte	.LFB37
@@ -5619,7 +5619,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2496 02b3 74       		.sleb128 -12
  2497 02b4 00       		.byte	0
  2498 02b5 11       		.uleb128 0x11
- 2499 02b6 9F010000 		.4byte	.LASF43
+ 2499 02b6 6F010000 		.4byte	.LASF43
  2500 02ba 01       		.byte	0x1
  2501 02bb 1A01     		.2byte	0x11a
  2502 02bd 00000000 		.4byte	.LFB38
@@ -5636,9 +5636,9 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2513 02d6 91       		.byte	0x91
  2514 02d7 74       		.sleb128 -12
  2515 02d8 13       		.uleb128 0x13
- 2516 02d9 42070000 		.4byte	.LASF44
+ 2516 02d9 12070000 		.4byte	.LASF44
  2517 02dd 01       		.byte	0x1
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 95
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 95
 
 
  2518 02de 1D01     		.2byte	0x11d
@@ -5648,7 +5648,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2522 02e6 70       		.sleb128 -16
  2523 02e7 00       		.byte	0
  2524 02e8 11       		.uleb128 0x11
- 2525 02e9 F0040000 		.4byte	.LASF45
+ 2525 02e9 C0040000 		.4byte	.LASF45
  2526 02ed 01       		.byte	0x1
  2527 02ee 5B01     		.2byte	0x15b
  2528 02f0 00000000 		.4byte	.LFB39
@@ -5657,7 +5657,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2531 02f9 9C       		.byte	0x9c
  2532 02fa 68030000 		.4byte	0x368
  2533 02fe 14       		.uleb128 0x14
- 2534 02ff 04040000 		.4byte	.LASF40
+ 2534 02ff D4030000 		.4byte	.LASF40
  2535 0303 01       		.byte	0x1
  2536 0304 5B01     		.2byte	0x15b
  2537 0306 81000000 		.4byte	0x81
@@ -5665,7 +5665,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2539 030b 91       		.byte	0x91
  2540 030c 5C       		.sleb128 -36
  2541 030d 13       		.uleb128 0x13
- 2542 030e 5C040000 		.4byte	.LASF46
+ 2542 030e 2C040000 		.4byte	.LASF46
  2543 0312 01       		.byte	0x1
  2544 0313 5D01     		.2byte	0x15d
  2545 0315 81000000 		.4byte	0x81
@@ -5673,7 +5673,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2547 031a 91       		.byte	0x91
  2548 031b 60       		.sleb128 -32
  2549 031c 13       		.uleb128 0x13
- 2550 031d 42080000 		.4byte	.LASF47
+ 2550 031d 4F080000 		.4byte	.LASF47
  2551 0321 01       		.byte	0x1
  2552 0322 5E01     		.2byte	0x15e
  2553 0324 81000000 		.4byte	0x81
@@ -5681,7 +5681,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2555 0329 91       		.byte	0x91
  2556 032a 6C       		.sleb128 -20
  2557 032b 13       		.uleb128 0x13
- 2558 032c 13090000 		.4byte	.LASF48
+ 2558 032c 20090000 		.4byte	.LASF48
  2559 0330 01       		.byte	0x1
  2560 0331 5F01     		.2byte	0x15f
  2561 0333 76000000 		.4byte	0x76
@@ -5697,8 +5697,8 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2571 0347 91       		.byte	0x91
  2572 0348 68       		.sleb128 -24
  2573 0349 13       		.uleb128 0x13
- 2574 034a 31070000 		.4byte	.LASF42
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 96
+ 2574 034a 01070000 		.4byte	.LASF42
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 96
 
 
  2575 034e 01       		.byte	0x1
@@ -5708,7 +5708,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2579 0356 91       		.byte	0x91
  2580 0357 67       		.sleb128 -25
  2581 0358 13       		.uleb128 0x13
- 2582 0359 18070000 		.4byte	.LASF50
+ 2582 0359 E8060000 		.4byte	.LASF50
  2583 035d 01       		.byte	0x1
  2584 035e 6201     		.2byte	0x162
  2585 0360 6B000000 		.4byte	0x6b
@@ -5717,7 +5717,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2588 0366 66       		.sleb128 -26
  2589 0367 00       		.byte	0
  2590 0368 11       		.uleb128 0x11
- 2591 0369 3E040000 		.4byte	.LASF51
+ 2591 0369 0E040000 		.4byte	.LASF51
  2592 036d 01       		.byte	0x1
  2593 036e 1A02     		.2byte	0x21a
  2594 0370 00000000 		.4byte	.LFB40
@@ -5726,7 +5726,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2597 0379 9C       		.byte	0x9c
  2598 037a 8E030000 		.4byte	0x38e
  2599 037e 14       		.uleb128 0x14
- 2600 037f 04040000 		.4byte	.LASF40
+ 2600 037f D4030000 		.4byte	.LASF40
  2601 0383 01       		.byte	0x1
  2602 0384 1A02     		.2byte	0x21a
  2603 0386 81000000 		.4byte	0x81
@@ -5735,7 +5735,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2606 038c 74       		.sleb128 -12
  2607 038d 00       		.byte	0
  2608 038e 11       		.uleb128 0x11
- 2609 038f C3010000 		.4byte	.LASF52
+ 2609 038f 93010000 		.4byte	.LASF52
  2610 0393 01       		.byte	0x1
  2611 0394 5002     		.2byte	0x250
  2612 0396 00000000 		.4byte	.LFB41
@@ -5752,13 +5752,13 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2623 03af 91       		.byte	0x91
  2624 03b0 74       		.sleb128 -12
  2625 03b1 13       		.uleb128 0x13
- 2626 03b2 42070000 		.4byte	.LASF44
+ 2626 03b2 12070000 		.4byte	.LASF44
  2627 03b6 01       		.byte	0x1
  2628 03b7 5302     		.2byte	0x253
  2629 03b9 81000000 		.4byte	0x81
  2630 03bd 02       		.uleb128 0x2
  2631 03be 91       		.byte	0x91
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 97
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 97
 
 
  2632 03bf 70       		.sleb128 -16
@@ -5773,7 +5773,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2641 03d2 9C       		.byte	0x9c
  2642 03d3 30040000 		.4byte	0x430
  2643 03d7 14       		.uleb128 0x14
- 2644 03d8 31070000 		.4byte	.LASF42
+ 2644 03d8 01070000 		.4byte	.LASF42
  2645 03dc 01       		.byte	0x1
  2646 03dd 7D02     		.2byte	0x27d
  2647 03df 81000000 		.4byte	0x81
@@ -5781,7 +5781,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2649 03e4 91       		.byte	0x91
  2650 03e5 5C       		.sleb128 -36
  2651 03e6 13       		.uleb128 0x13
- 2652 03e7 64070000 		.4byte	.LASF54
+ 2652 03e7 34070000 		.4byte	.LASF54
  2653 03eb 01       		.byte	0x1
  2654 03ec 7F02     		.2byte	0x27f
  2655 03ee 81000000 		.4byte	0x81
@@ -5789,7 +5789,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2657 03f3 91       		.byte	0x91
  2658 03f4 70       		.sleb128 -16
  2659 03f5 13       		.uleb128 0x13
- 2660 03f6 01080000 		.4byte	.LASF55
+ 2660 03f6 0E080000 		.4byte	.LASF55
  2661 03fa 01       		.byte	0x1
  2662 03fb 8002     		.2byte	0x280
  2663 03fd 81000000 		.4byte	0x81
@@ -5797,7 +5797,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2665 0402 91       		.byte	0x91
  2666 0403 6C       		.sleb128 -20
  2667 0404 13       		.uleb128 0x13
- 2668 0405 68030000 		.4byte	.LASF56
+ 2668 0405 38030000 		.4byte	.LASF56
  2669 0409 01       		.byte	0x1
  2670 040a 8102     		.2byte	0x281
  2671 040c 81000000 		.4byte	0x81
@@ -5813,19 +5813,19 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2681 041e 91       		.byte	0x91
  2682 041f 74       		.sleb128 -12
  2683 0420 13       		.uleb128 0x13
- 2684 0421 42070000 		.4byte	.LASF44
+ 2684 0421 12070000 		.4byte	.LASF44
  2685 0425 01       		.byte	0x1
  2686 0426 8302     		.2byte	0x283
  2687 0428 81000000 		.4byte	0x81
  2688 042c 02       		.uleb128 0x2
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 98
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 98
 
 
  2689 042d 91       		.byte	0x91
  2690 042e 64       		.sleb128 -28
  2691 042f 00       		.byte	0
  2692 0430 15       		.uleb128 0x15
- 2693 0431 3E020000 		.4byte	.LASF59
+ 2693 0431 0E020000 		.4byte	.LASF59
  2694 0435 01       		.byte	0x1
  2695 0436 AE02     		.2byte	0x2ae
  2696 0438 76000000 		.4byte	0x76
@@ -5835,7 +5835,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2700 0445 9C       		.byte	0x9c
  2701 0446 5A040000 		.4byte	0x45a
  2702 044a 14       		.uleb128 0x14
- 2703 044b 04040000 		.4byte	.LASF40
+ 2703 044b D4030000 		.4byte	.LASF40
  2704 044f 01       		.byte	0x1
  2705 0450 AE02     		.2byte	0x2ae
  2706 0452 81000000 		.4byte	0x81
@@ -5844,7 +5844,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2709 0458 74       		.sleb128 -12
  2710 0459 00       		.byte	0
  2711 045a 16       		.uleb128 0x16
- 2712 045b FF060000 		.4byte	.LASF57
+ 2712 045b CF060000 		.4byte	.LASF57
  2713 045f 01       		.byte	0x1
  2714 0460 C902     		.2byte	0x2c9
  2715 0462 00000000 		.4byte	.LFB44
@@ -5853,7 +5853,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2718 046b 9C       		.byte	0x9c
  2719 046c 8F040000 		.4byte	0x48f
  2720 0470 14       		.uleb128 0x14
- 2721 0471 04040000 		.4byte	.LASF40
+ 2721 0471 D4030000 		.4byte	.LASF40
  2722 0475 01       		.byte	0x1
  2723 0476 C902     		.2byte	0x2c9
  2724 0478 81000000 		.4byte	0x81
@@ -5861,7 +5861,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2726 047d 91       		.byte	0x91
  2727 047e 74       		.sleb128 -12
  2728 047f 14       		.uleb128 0x14
- 2729 0480 DD030000 		.4byte	.LASF58
+ 2729 0480 AD030000 		.4byte	.LASF58
  2730 0484 01       		.byte	0x1
  2731 0485 C902     		.2byte	0x2c9
  2732 0487 76000000 		.4byte	0x76
@@ -5870,7 +5870,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2735 048d 72       		.sleb128 -14
  2736 048e 00       		.byte	0
  2737 048f 15       		.uleb128 0x15
- 2738 0490 97040000 		.4byte	.LASF60
+ 2738 0490 67040000 		.4byte	.LASF60
  2739 0494 01       		.byte	0x1
  2740 0495 E402     		.2byte	0x2e4
  2741 0497 6B000000 		.4byte	0x6b
@@ -5878,12 +5878,12 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2743 049f 1C000000 		.4byte	.LFE45-.LFB45
  2744 04a3 01       		.uleb128 0x1
  2745 04a4 9C       		.byte	0x9c
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 99
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 99
 
 
  2746 04a5 B9040000 		.4byte	0x4b9
  2747 04a9 14       		.uleb128 0x14
- 2748 04aa 04040000 		.4byte	.LASF40
+ 2748 04aa D4030000 		.4byte	.LASF40
  2749 04ae 01       		.byte	0x1
  2750 04af E402     		.2byte	0x2e4
  2751 04b1 81000000 		.4byte	0x81
@@ -5892,7 +5892,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2754 04b7 74       		.sleb128 -12
  2755 04b8 00       		.byte	0
  2756 04b9 16       		.uleb128 0x16
- 2757 04ba 79080000 		.4byte	.LASF61
+ 2757 04ba 86080000 		.4byte	.LASF61
  2758 04be 01       		.byte	0x1
  2759 04bf FF02     		.2byte	0x2ff
  2760 04c1 00000000 		.4byte	.LFB46
@@ -5901,7 +5901,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2763 04ca 9C       		.byte	0x9c
  2764 04cb EE040000 		.4byte	0x4ee
  2765 04cf 14       		.uleb128 0x14
- 2766 04d0 04040000 		.4byte	.LASF40
+ 2766 04d0 D4030000 		.4byte	.LASF40
  2767 04d4 01       		.byte	0x1
  2768 04d5 FF02     		.2byte	0x2ff
  2769 04d7 81000000 		.4byte	0x81
@@ -5909,7 +5909,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2771 04dc 91       		.byte	0x91
  2772 04dd 74       		.sleb128 -12
  2773 04de 14       		.uleb128 0x14
- 2774 04df 45030000 		.4byte	.LASF62
+ 2774 04df 15030000 		.4byte	.LASF62
  2775 04e3 01       		.byte	0x1
  2776 04e4 FF02     		.2byte	0x2ff
  2777 04e6 6B000000 		.4byte	0x6b
@@ -5918,7 +5918,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2780 04ec 73       		.sleb128 -13
  2781 04ed 00       		.byte	0
  2782 04ee 15       		.uleb128 0x15
- 2783 04ef 1B080000 		.4byte	.LASF63
+ 2783 04ef 28080000 		.4byte	.LASF63
  2784 04f3 01       		.byte	0x1
  2785 04f4 1A03     		.2byte	0x31a
  2786 04f6 6B000000 		.4byte	0x6b
@@ -5928,7 +5928,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2790 0503 9C       		.byte	0x9c
  2791 0504 18050000 		.4byte	0x518
  2792 0508 14       		.uleb128 0x14
- 2793 0509 31070000 		.4byte	.LASF42
+ 2793 0509 01070000 		.4byte	.LASF42
  2794 050d 01       		.byte	0x1
  2795 050e 1A03     		.2byte	0x31a
  2796 0510 81000000 		.4byte	0x81
@@ -5937,8 +5937,8 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2799 0516 74       		.sleb128 -12
  2800 0517 00       		.byte	0
  2801 0518 15       		.uleb128 0x15
- 2802 0519 84010000 		.4byte	.LASF64
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 100
+ 2802 0519 54010000 		.4byte	.LASF64
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 100
 
 
  2803 051d 01       		.byte	0x1
@@ -5950,7 +5950,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2809 052d 9C       		.byte	0x9c
  2810 052e 42050000 		.4byte	0x542
  2811 0532 14       		.uleb128 0x14
- 2812 0533 31070000 		.4byte	.LASF42
+ 2812 0533 01070000 		.4byte	.LASF42
  2813 0537 01       		.byte	0x1
  2814 0538 3503     		.2byte	0x335
  2815 053a 81000000 		.4byte	0x81
@@ -5959,7 +5959,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2818 0540 74       		.sleb128 -12
  2819 0541 00       		.byte	0
  2820 0542 15       		.uleb128 0x15
- 2821 0543 E4070000 		.4byte	.LASF65
+ 2821 0543 F1070000 		.4byte	.LASF65
  2822 0547 01       		.byte	0x1
  2823 0548 5103     		.2byte	0x351
  2824 054a 6B000000 		.4byte	0x6b
@@ -5969,7 +5969,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2828 0557 9C       		.byte	0x9c
  2829 0558 6C050000 		.4byte	0x56c
  2830 055c 14       		.uleb128 0x14
- 2831 055d 31070000 		.4byte	.LASF42
+ 2831 055d 01070000 		.4byte	.LASF42
  2832 0561 01       		.byte	0x1
  2833 0562 5103     		.2byte	0x351
  2834 0564 81000000 		.4byte	0x81
@@ -5988,7 +5988,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2847 0581 9C       		.byte	0x9c
  2848 0582 96050000 		.4byte	0x596
  2849 0586 14       		.uleb128 0x14
- 2850 0587 31070000 		.4byte	.LASF42
+ 2850 0587 01070000 		.4byte	.LASF42
  2851 058b 01       		.byte	0x1
  2852 058c 6D03     		.2byte	0x36d
  2853 058e 81000000 		.4byte	0x81
@@ -5997,8 +5997,8 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2856 0594 74       		.sleb128 -12
  2857 0595 00       		.byte	0
  2858 0596 16       		.uleb128 0x16
- 2859 0597 F4020000 		.4byte	.LASF67
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 101
+ 2859 0597 C4020000 		.4byte	.LASF67
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 101
 
 
  2860 059b 01       		.byte	0x1
@@ -6009,7 +6009,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2865 05a7 9C       		.byte	0x9c
  2866 05a8 CB050000 		.4byte	0x5cb
  2867 05ac 14       		.uleb128 0x14
- 2868 05ad 31070000 		.4byte	.LASF42
+ 2868 05ad 01070000 		.4byte	.LASF42
  2869 05b1 01       		.byte	0x1
  2870 05b2 8E03     		.2byte	0x38e
  2871 05b4 81000000 		.4byte	0x81
@@ -6017,7 +6017,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2873 05b9 91       		.byte	0x91
  2874 05ba 74       		.sleb128 -12
  2875 05bb 14       		.uleb128 0x14
- 2876 05bc 45030000 		.4byte	.LASF62
+ 2876 05bc 15030000 		.4byte	.LASF62
  2877 05c0 01       		.byte	0x1
  2878 05c1 8E03     		.2byte	0x38e
  2879 05c3 6B000000 		.4byte	0x6b
@@ -6026,7 +6026,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2882 05c9 73       		.sleb128 -13
  2883 05ca 00       		.byte	0
  2884 05cb 16       		.uleb128 0x16
- 2885 05cc 92070000 		.4byte	.LASF68
+ 2885 05cc 62070000 		.4byte	.LASF68
  2886 05d0 01       		.byte	0x1
  2887 05d1 AA03     		.2byte	0x3aa
  2888 05d3 00000000 		.4byte	.LFB52
@@ -6035,7 +6035,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2891 05dc 9C       		.byte	0x9c
  2892 05dd 00060000 		.4byte	0x600
  2893 05e1 14       		.uleb128 0x14
- 2894 05e2 31070000 		.4byte	.LASF42
+ 2894 05e2 01070000 		.4byte	.LASF42
  2895 05e6 01       		.byte	0x1
  2896 05e7 AA03     		.2byte	0x3aa
  2897 05e9 81000000 		.4byte	0x81
@@ -6043,7 +6043,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2899 05ee 91       		.byte	0x91
  2900 05ef 74       		.sleb128 -12
  2901 05f0 14       		.uleb128 0x14
- 2902 05f1 45030000 		.4byte	.LASF62
+ 2902 05f1 15030000 		.4byte	.LASF62
  2903 05f5 01       		.byte	0x1
  2904 05f6 AA03     		.2byte	0x3aa
  2905 05f8 6B000000 		.4byte	0x6b
@@ -6052,19 +6052,19 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2908 05fe 73       		.sleb128 -13
  2909 05ff 00       		.byte	0
  2910 0600 16       		.uleb128 0x16
- 2911 0601 35050000 		.4byte	.LASF69
+ 2911 0601 05050000 		.4byte	.LASF69
  2912 0605 01       		.byte	0x1
  2913 0606 C603     		.2byte	0x3c6
  2914 0608 00000000 		.4byte	.LFB53
  2915 060c 24000000 		.4byte	.LFE53-.LFB53
  2916 0610 01       		.uleb128 0x1
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 102
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 102
 
 
  2917 0611 9C       		.byte	0x9c
  2918 0612 35060000 		.4byte	0x635
  2919 0616 14       		.uleb128 0x14
- 2920 0617 31070000 		.4byte	.LASF42
+ 2920 0617 01070000 		.4byte	.LASF42
  2921 061b 01       		.byte	0x1
  2922 061c C603     		.2byte	0x3c6
  2923 061e 81000000 		.4byte	0x81
@@ -6072,7 +6072,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2925 0623 91       		.byte	0x91
  2926 0624 74       		.sleb128 -12
  2927 0625 14       		.uleb128 0x14
- 2928 0626 45030000 		.4byte	.LASF62
+ 2928 0626 15030000 		.4byte	.LASF62
  2929 062a 01       		.byte	0x1
  2930 062b C603     		.2byte	0x3c6
  2931 062d 6B000000 		.4byte	0x6b
@@ -6090,7 +6090,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2943 0646 9C       		.byte	0x9c
  2944 0647 6A060000 		.4byte	0x66a
  2945 064b 14       		.uleb128 0x14
- 2946 064c 31070000 		.4byte	.LASF42
+ 2946 064c 01070000 		.4byte	.LASF42
  2947 0650 01       		.byte	0x1
  2948 0651 E303     		.2byte	0x3e3
  2949 0653 81000000 		.4byte	0x81
@@ -6098,7 +6098,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2951 0658 91       		.byte	0x91
  2952 0659 74       		.sleb128 -12
  2953 065a 14       		.uleb128 0x14
- 2954 065b 45030000 		.4byte	.LASF62
+ 2954 065b 15030000 		.4byte	.LASF62
  2955 065f 01       		.byte	0x1
  2956 0660 E303     		.2byte	0x3e3
  2957 0662 6B000000 		.4byte	0x6b
@@ -6107,7 +6107,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2960 0668 73       		.sleb128 -13
  2961 0669 00       		.byte	0
  2962 066a 16       		.uleb128 0x16
- 2963 066b 10030000 		.4byte	.LASF71
+ 2963 066b E0020000 		.4byte	.LASF71
  2964 066f 01       		.byte	0x1
  2965 0670 FF03     		.2byte	0x3ff
  2966 0672 00000000 		.4byte	.LFB55
@@ -6116,9 +6116,9 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2969 067b 9C       		.byte	0x9c
  2970 067c 9F060000 		.4byte	0x69f
  2971 0680 14       		.uleb128 0x14
- 2972 0681 31070000 		.4byte	.LASF42
+ 2972 0681 01070000 		.4byte	.LASF42
  2973 0685 01       		.byte	0x1
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 103
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 103
 
 
  2974 0686 FF03     		.2byte	0x3ff
@@ -6127,7 +6127,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2977 068d 91       		.byte	0x91
  2978 068e 74       		.sleb128 -12
  2979 068f 14       		.uleb128 0x14
- 2980 0690 45030000 		.4byte	.LASF62
+ 2980 0690 15030000 		.4byte	.LASF62
  2981 0694 01       		.byte	0x1
  2982 0695 FF03     		.2byte	0x3ff
  2983 0697 6B000000 		.4byte	0x6b
@@ -6136,7 +6136,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2986 069d 73       		.sleb128 -13
  2987 069e 00       		.byte	0
  2988 069f 16       		.uleb128 0x16
- 2989 06a0 4B030000 		.4byte	.LASF72
+ 2989 06a0 1B030000 		.4byte	.LASF72
  2990 06a4 01       		.byte	0x1
  2991 06a5 1B04     		.2byte	0x41b
  2992 06a7 00000000 		.4byte	.LFB56
@@ -6145,7 +6145,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  2995 06b0 9C       		.byte	0x9c
  2996 06b1 D4060000 		.4byte	0x6d4
  2997 06b5 14       		.uleb128 0x14
- 2998 06b6 04040000 		.4byte	.LASF40
+ 2998 06b6 D4030000 		.4byte	.LASF40
  2999 06ba 01       		.byte	0x1
  3000 06bb 1B04     		.2byte	0x41b
  3001 06bd 81000000 		.4byte	0x81
@@ -6153,7 +6153,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3003 06c2 91       		.byte	0x91
  3004 06c3 74       		.sleb128 -12
  3005 06c4 14       		.uleb128 0x14
- 3006 06c5 45030000 		.4byte	.LASF62
+ 3006 06c5 15030000 		.4byte	.LASF62
  3007 06c9 01       		.byte	0x1
  3008 06ca 1B04     		.2byte	0x41b
  3009 06cc 6B000000 		.4byte	0x6b
@@ -6162,7 +6162,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3012 06d2 73       		.sleb128 -13
  3013 06d3 00       		.byte	0
  3014 06d4 17       		.uleb128 0x17
- 3015 06d5 52050000 		.4byte	.LASF73
+ 3015 06d5 22050000 		.4byte	.LASF73
  3016 06d9 01       		.byte	0x1
  3017 06da 4904     		.2byte	0x449
  3018 06dc 81000000 		.4byte	0x81
@@ -6172,18 +6172,18 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3022 06e9 9C       		.byte	0x9c
  3023 06ea 49070000 		.4byte	0x749
  3024 06ee 14       		.uleb128 0x14
- 3025 06ef 04040000 		.4byte	.LASF40
+ 3025 06ef D4030000 		.4byte	.LASF40
  3026 06f3 01       		.byte	0x1
  3027 06f4 4904     		.2byte	0x449
  3028 06f6 81000000 		.4byte	0x81
  3029 06fa 02       		.uleb128 0x2
  3030 06fb 91       		.byte	0x91
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 104
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 104
 
 
  3031 06fc 6C       		.sleb128 -20
  3032 06fd 13       		.uleb128 0x13
- 3033 06fe 31070000 		.4byte	.LASF42
+ 3033 06fe 01070000 		.4byte	.LASF42
  3034 0702 01       		.byte	0x1
  3035 0703 4B04     		.2byte	0x44b
  3036 0705 6B000000 		.4byte	0x6b
@@ -6191,7 +6191,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3038 070a 91       		.byte	0x91
  3039 070b 77       		.sleb128 -9
  3040 070c 13       		.uleb128 0x13
- 3041 070d BA040000 		.4byte	.LASF74
+ 3041 070d 8A040000 		.4byte	.LASF74
  3042 0711 01       		.byte	0x1
  3043 0712 4C04     		.2byte	0x44c
  3044 0714 6B000000 		.4byte	0x6b
@@ -6199,7 +6199,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3046 0719 91       		.byte	0x91
  3047 071a 74       		.sleb128 -12
  3048 071b 13       		.uleb128 0x13
- 3049 071c 0D080000 		.4byte	.LASF75
+ 3049 071c 1A080000 		.4byte	.LASF75
  3050 0720 01       		.byte	0x1
  3051 0721 4D04     		.2byte	0x44d
  3052 0723 6B000000 		.4byte	0x6b
@@ -6215,7 +6215,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3062 0737 91       		.byte	0x91
  3063 0738 76       		.sleb128 -10
  3064 0739 13       		.uleb128 0x13
- 3065 073a E9020000 		.4byte	.LASF77
+ 3065 073a B9020000 		.4byte	.LASF77
  3066 073e 01       		.byte	0x1
  3067 073f 5004     		.2byte	0x450
  3068 0741 6B000000 		.4byte	0x6b
@@ -6224,7 +6224,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3071 0747 75       		.sleb128 -11
  3072 0748 00       		.byte	0
  3073 0749 17       		.uleb128 0x17
- 3074 074a A3060000 		.4byte	.LASF78
+ 3074 074a 73060000 		.4byte	.LASF78
  3075 074e 01       		.byte	0x1
  3076 074f 9B04     		.2byte	0x49b
  3077 0751 81000000 		.4byte	0x81
@@ -6234,18 +6234,18 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3081 075e 9C       		.byte	0x9c
  3082 075f A0070000 		.4byte	0x7a0
  3083 0763 14       		.uleb128 0x14
- 3084 0764 31070000 		.4byte	.LASF42
+ 3084 0764 01070000 		.4byte	.LASF42
  3085 0768 01       		.byte	0x1
  3086 0769 9B04     		.2byte	0x49b
  3087 076b 81000000 		.4byte	0x81
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 105
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 105
 
 
  3088 076f 02       		.uleb128 0x2
  3089 0770 91       		.byte	0x91
  3090 0771 64       		.sleb128 -28
  3091 0772 13       		.uleb128 0x13
- 3092 0773 14020000 		.4byte	.LASF79
+ 3092 0773 E4010000 		.4byte	.LASF79
  3093 0777 01       		.byte	0x1
  3094 0778 9D04     		.2byte	0x49d
  3095 077a 81000000 		.4byte	0x81
@@ -6253,7 +6253,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3097 077f 91       		.byte	0x91
  3098 0780 74       		.sleb128 -12
  3099 0781 13       		.uleb128 0x13
- 3100 0782 47080000 		.4byte	.LASF80
+ 3100 0782 54080000 		.4byte	.LASF80
  3101 0786 01       		.byte	0x1
  3102 0787 9E04     		.2byte	0x49e
  3103 0789 81000000 		.4byte	0x81
@@ -6261,7 +6261,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3105 078e 91       		.byte	0x91
  3106 078f 6C       		.sleb128 -20
  3107 0790 13       		.uleb128 0x13
- 3108 0791 57020000 		.4byte	.LASF81
+ 3108 0791 27020000 		.4byte	.LASF81
  3109 0795 01       		.byte	0x1
  3110 0796 9F04     		.2byte	0x49f
  3111 0798 81000000 		.4byte	0x81
@@ -6270,7 +6270,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3114 079e 70       		.sleb128 -16
  3115 079f 00       		.byte	0
  3116 07a0 17       		.uleb128 0x17
- 3117 07a1 66020000 		.4byte	.LASF82
+ 3117 07a1 36020000 		.4byte	.LASF82
  3118 07a5 01       		.byte	0x1
  3119 07a6 C904     		.2byte	0x4c9
  3120 07a8 81000000 		.4byte	0x81
@@ -6288,7 +6288,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3132 07c5 91       		.byte	0x91
  3133 07c6 74       		.sleb128 -12
  3134 07c7 13       		.uleb128 0x13
- 3135 07c8 57020000 		.4byte	.LASF81
+ 3135 07c8 27020000 		.4byte	.LASF81
  3136 07cc 01       		.byte	0x1
  3137 07cd CD04     		.2byte	0x4cd
  3138 07cf 81000000 		.4byte	0x81
@@ -6297,8 +6297,8 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3141 07d5 70       		.sleb128 -16
  3142 07d6 00       		.byte	0
  3143 07d7 11       		.uleb128 0x11
- 3144 07d8 DA040000 		.4byte	.LASF83
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 106
+ 3144 07d8 AA040000 		.4byte	.LASF83
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 106
 
 
  3145 07dc 01       		.byte	0x1
@@ -6309,7 +6309,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3150 07e8 9C       		.byte	0x9c
  3151 07e9 1B080000 		.4byte	0x81b
  3152 07ed 14       		.uleb128 0x14
- 3153 07ee 31070000 		.4byte	.LASF42
+ 3153 07ee 01070000 		.4byte	.LASF42
  3154 07f2 01       		.byte	0x1
  3155 07f3 F804     		.2byte	0x4f8
  3156 07f5 81000000 		.4byte	0x81
@@ -6317,7 +6317,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3158 07fa 91       		.byte	0x91
  3159 07fb 6C       		.sleb128 -20
  3160 07fc 13       		.uleb128 0x13
- 3161 07fd 14020000 		.4byte	.LASF79
+ 3161 07fd E4010000 		.4byte	.LASF79
  3162 0801 01       		.byte	0x1
  3163 0802 FB04     		.2byte	0x4fb
  3164 0804 6B000000 		.4byte	0x6b
@@ -6325,7 +6325,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3166 0809 91       		.byte	0x91
  3167 080a 77       		.sleb128 -9
  3168 080b 13       		.uleb128 0x13
- 3169 080c 47080000 		.4byte	.LASF80
+ 3169 080c 54080000 		.4byte	.LASF80
  3170 0810 01       		.byte	0x1
  3171 0811 FC04     		.2byte	0x4fc
  3172 0813 6B000000 		.4byte	0x6b
@@ -6334,7 +6334,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3175 0819 76       		.sleb128 -10
  3176 081a 00       		.byte	0
  3177 081b 11       		.uleb128 0x11
- 3178 081c FD010000 		.4byte	.LASF84
+ 3178 081c CD010000 		.4byte	.LASF84
  3179 0820 01       		.byte	0x1
  3180 0821 2305     		.2byte	0x523
  3181 0823 00000000 		.4byte	.LFB61
@@ -6343,7 +6343,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3184 082c 9C       		.byte	0x9c
  3185 082d 5F080000 		.4byte	0x85f
  3186 0831 14       		.uleb128 0x14
- 3187 0832 31070000 		.4byte	.LASF42
+ 3187 0832 01070000 		.4byte	.LASF42
  3188 0836 01       		.byte	0x1
  3189 0837 2305     		.2byte	0x523
  3190 0839 81000000 		.4byte	0x81
@@ -6351,18 +6351,18 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3192 083e 91       		.byte	0x91
  3193 083f 6C       		.sleb128 -20
  3194 0840 13       		.uleb128 0x13
- 3195 0841 14020000 		.4byte	.LASF79
+ 3195 0841 E4010000 		.4byte	.LASF79
  3196 0845 01       		.byte	0x1
  3197 0846 2505     		.2byte	0x525
  3198 0848 6B000000 		.4byte	0x6b
  3199 084c 02       		.uleb128 0x2
  3200 084d 91       		.byte	0x91
  3201 084e 77       		.sleb128 -9
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 107
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 107
 
 
  3202 084f 13       		.uleb128 0x13
- 3203 0850 47080000 		.4byte	.LASF80
+ 3203 0850 54080000 		.4byte	.LASF80
  3204 0854 01       		.byte	0x1
  3205 0855 2605     		.2byte	0x526
  3206 0857 6B000000 		.4byte	0x6b
@@ -6371,7 +6371,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3209 085d 76       		.sleb128 -10
  3210 085e 00       		.byte	0
  3211 085f 15       		.uleb128 0x15
- 3212 0860 41010000 		.4byte	.LASF85
+ 3212 0860 11010000 		.4byte	.LASF85
  3213 0864 01       		.byte	0x1
  3214 0865 3F09     		.2byte	0x93f
  3215 0867 76000000 		.4byte	0x76
@@ -6414,11 +6414,11 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3252 08b1 76       		.sleb128 -10
  3253 08b2 00       		.byte	0
  3254 08b3 15       		.uleb128 0x15
- 3255 08b4 F2080000 		.4byte	.LASF86
+ 3255 08b4 FF080000 		.4byte	.LASF86
  3256 08b8 01       		.byte	0x1
  3257 08b9 B709     		.2byte	0x9b7
  3258 08bb 76000000 		.4byte	0x76
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 108
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 108
 
 
  3259 08bf 00000000 		.4byte	.LFB63
@@ -6452,7 +6452,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3287 08f7 74       		.sleb128 -12
  3288 08f8 00       		.byte	0
  3289 08f9 15       		.uleb128 0x15
- 3290 08fa A2080000 		.4byte	.LASF87
+ 3290 08fa AF080000 		.4byte	.LASF87
  3291 08fe 01       		.byte	0x1
  3292 08ff A00A     		.2byte	0xaa0
  3293 0901 81000000 		.4byte	0x81
@@ -6462,7 +6462,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3297 090e 9C       		.byte	0x9c
  3298 090f 23090000 		.4byte	0x923
  3299 0913 14       		.uleb128 0x14
- 3300 0914 04040000 		.4byte	.LASF40
+ 3300 0914 D4030000 		.4byte	.LASF40
  3301 0918 01       		.byte	0x1
  3302 0919 A00A     		.2byte	0xaa0
  3303 091b 81000000 		.4byte	0x81
@@ -6471,20 +6471,20 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3306 0921 74       		.sleb128 -12
  3307 0922 00       		.byte	0
  3308 0923 15       		.uleb128 0x15
- 3309 0924 0A060000 		.4byte	.LASF88
+ 3309 0924 DA050000 		.4byte	.LASF88
  3310 0928 01       		.byte	0x1
  3311 0929 BA0A     		.2byte	0xaba
  3312 092b 6B000000 		.4byte	0x6b
  3313 092f 00000000 		.4byte	.LFB65
  3314 0933 1C000000 		.4byte	.LFE65-.LFB65
  3315 0937 01       		.uleb128 0x1
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 109
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 109
 
 
  3316 0938 9C       		.byte	0x9c
  3317 0939 4D090000 		.4byte	0x94d
  3318 093d 14       		.uleb128 0x14
- 3319 093e 04040000 		.4byte	.LASF40
+ 3319 093e D4030000 		.4byte	.LASF40
  3320 0942 01       		.byte	0x1
  3321 0943 BA0A     		.2byte	0xaba
  3322 0945 81000000 		.4byte	0x81
@@ -6503,7 +6503,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3335 0962 9C       		.byte	0x9c
  3336 0963 77090000 		.4byte	0x977
  3337 0967 14       		.uleb128 0x14
- 3338 0968 31070000 		.4byte	.LASF42
+ 3338 0968 01070000 		.4byte	.LASF42
  3339 096c 01       		.byte	0x1
  3340 096d D40A     		.2byte	0xad4
  3341 096f 81000000 		.4byte	0x81
@@ -6512,7 +6512,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3344 0975 74       		.sleb128 -12
  3345 0976 00       		.byte	0
  3346 0977 19       		.uleb128 0x19
- 3347 0978 BB080000 		.4byte	.LASF90
+ 3347 0978 C8080000 		.4byte	.LASF90
  3348 097c 01       		.byte	0x1
  3349 097d EE0A     		.2byte	0xaee
  3350 097f 00000000 		.4byte	.LFB67
@@ -6520,7 +6520,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3352 0987 01       		.uleb128 0x1
  3353 0988 9C       		.byte	0x9c
  3354 0989 19       		.uleb128 0x19
- 3355 098a A6020000 		.4byte	.LASF91
+ 3355 098a 76020000 		.4byte	.LASF91
  3356 098e 01       		.byte	0x1
  3357 098f 070B     		.2byte	0xb07
  3358 0991 00000000 		.4byte	.LFB68
@@ -6535,10 +6535,10 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3367 09a9 01       		.byte	0x1
  3368 09aa 00       		.byte	0
  3369 09ab 0E       		.uleb128 0xe
- 3370 09ac D9080000 		.4byte	.LASF92
+ 3370 09ac E6080000 		.4byte	.LASF92
  3371 09b0 01       		.byte	0x1
  3372 09b1 55       		.byte	0x55
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 110
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 110
 
 
  3373 09b2 9B090000 		.4byte	0x99b
@@ -6553,7 +6553,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3382 09ca 00       		.byte	0
  3383 09cb 00       		.byte	0
  3384 09cc 1C       		.uleb128 0x1c
- 3385 09cd 66080000 		.4byte	.LASF93
+ 3385 09cd 73080000 		.4byte	.LASF93
  3386 09d1 01       		.byte	0x1
  3387 09d2 2C       		.byte	0x2c
  3388 09d3 BC090000 		.4byte	0x9bc
@@ -6565,19 +6565,19 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3394 09e5 00       		.byte	0
  3395 09e6 00       		.byte	0
  3396 09e7 1C       		.uleb128 0x1c
- 3397 09e8 0B040000 		.4byte	.LASF94
+ 3397 09e8 DB030000 		.4byte	.LASF94
  3398 09ec 01       		.byte	0x1
  3399 09ed 2D       		.byte	0x2d
  3400 09ee D7090000 		.4byte	0x9d7
  3401 09f2 1C       		.uleb128 0x1c
- 3402 09f3 CC020000 		.4byte	.LASF95
+ 3402 09f3 9C020000 		.4byte	.LASF95
  3403 09f7 01       		.byte	0x1
  3404 09f8 2E       		.byte	0x2e
  3405 09f9 FD090000 		.4byte	0x9fd
  3406 09fd 08       		.uleb128 0x8
  3407 09fe D7090000 		.4byte	0x9d7
  3408 0a02 1D       		.uleb128 0x1d
- 3409 0a03 AD070000 		.4byte	.LASF96
+ 3409 0a03 7D070000 		.4byte	.LASF96
  3410 0a07 01       		.byte	0x1
  3411 0a08 34       		.byte	0x34
  3412 0a09 BC090000 		.4byte	0x9bc
@@ -6585,7 +6585,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3414 0a0e 03       		.byte	0x3
  3415 0a0f 00000000 		.4byte	CapSense_sensorBaseline
  3416 0a13 1D       		.uleb128 0x1d
- 3417 0a14 92030000 		.4byte	.LASF97
+ 3417 0a14 62030000 		.4byte	.LASF97
  3418 0a18 01       		.byte	0x1
  3419 0a19 35       		.byte	0x35
  3420 0a1a D7090000 		.4byte	0x9d7
@@ -6593,12 +6593,12 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3422 0a1f 03       		.byte	0x3
  3423 0a20 00000000 		.4byte	CapSense_sensorBaselineLow
  3424 0a24 1D       		.uleb128 0x1d
- 3425 0a25 6E010000 		.4byte	.LASF98
+ 3425 0a25 3E010000 		.4byte	.LASF98
  3426 0a29 01       		.byte	0x1
  3427 0a2a 36       		.byte	0x36
  3428 0a2b D7090000 		.4byte	0x9d7
  3429 0a2f 05       		.uleb128 0x5
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 111
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 111
 
 
  3430 0a30 03       		.byte	0x3
@@ -6612,7 +6612,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3438 0a41 03       		.byte	0x3
  3439 0a42 00000000 		.4byte	CapSense_sensorOnMask
  3440 0a46 1D       		.uleb128 0x1d
- 3441 0a47 75070000 		.4byte	.LASF100
+ 3441 0a47 45070000 		.4byte	.LASF100
  3442 0a4b 01       		.byte	0x1
  3443 0a4c 39       		.byte	0x39
  3444 0a4d D7090000 		.4byte	0x9d7
@@ -6620,7 +6620,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3446 0a52 03       		.byte	0x3
  3447 0a53 00000000 		.4byte	CapSense_lowBaselineResetCnt
  3448 0a57 1D       		.uleb128 0x1d
- 3449 0a58 8C020000 		.4byte	.LASF101
+ 3449 0a58 5C020000 		.4byte	.LASF101
  3450 0a5c 01       		.byte	0x1
  3451 0a5d 3A       		.byte	0x3a
  3452 0a5e D7090000 		.4byte	0x9d7
@@ -6628,7 +6628,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3454 0a63 03       		.byte	0x3
  3455 0a64 00000000 		.4byte	CapSense_lowBaselineReset
  3456 0a68 1D       		.uleb128 0x1d
- 3457 0a69 A5050000 		.4byte	.LASF102
+ 3457 0a69 75050000 		.4byte	.LASF102
  3458 0a6d 01       		.byte	0x1
  3459 0a6e 49       		.byte	0x49
  3460 0a6f D7090000 		.4byte	0x9d7
@@ -6636,7 +6636,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3462 0a74 03       		.byte	0x3
  3463 0a75 00000000 		.4byte	CapSense_fingerThreshold
  3464 0a79 1D       		.uleb128 0x1d
- 3465 0a7a 8D050000 		.4byte	.LASF103
+ 3465 0a7a 5D050000 		.4byte	.LASF103
  3466 0a7e 01       		.byte	0x1
  3467 0a7f 4B       		.byte	0x4b
  3468 0a80 D7090000 		.4byte	0x9d7
@@ -6644,7 +6644,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3470 0a85 03       		.byte	0x3
  3471 0a86 00000000 		.4byte	CapSense_noiseThreshold
  3472 0a8a 1D       		.uleb128 0x1d
- 3473 0a8b 2B090000 		.4byte	.LASF104
+ 3473 0a8b 38090000 		.4byte	.LASF104
  3474 0a8f 01       		.byte	0x1
  3475 0a90 4D       		.byte	0x4d
  3476 0a91 D7090000 		.4byte	0x9d7
@@ -6658,12 +6658,12 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3484 0aa2 D7090000 		.4byte	0x9d7
  3485 0aa6 05       		.uleb128 0x5
  3486 0aa7 03       		.byte	0x3
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 112
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 112
 
 
  3487 0aa8 00000000 		.4byte	CapSense_hysteresis
  3488 0aac 1D       		.uleb128 0x1d
- 3489 0aad CB030000 		.4byte	.LASF106
+ 3489 0aad 9B030000 		.4byte	.LASF106
  3490 0ab1 01       		.byte	0x1
  3491 0ab2 51       		.byte	0x51
  3492 0ab3 D7090000 		.4byte	0x9d7
@@ -6681,7 +6681,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3504 0ace 08       		.uleb128 0x8
  3505 0acf D7090000 		.4byte	0x9d7
  3506 0ad3 1D       		.uleb128 0x1d
- 3507 0ad4 25040000 		.4byte	.LASF108
+ 3507 0ad4 F5030000 		.4byte	.LASF108
  3508 0ad8 01       		.byte	0x1
  3509 0ad9 5D       		.byte	0x5d
  3510 0ada E40A0000 		.4byte	0xae4
@@ -6691,7 +6691,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3514 0ae4 08       		.uleb128 0x8
  3515 0ae5 D7090000 		.4byte	0x9d7
  3516 0ae9 1D       		.uleb128 0x1d
- 3517 0aea BE050000 		.4byte	.LASF109
+ 3517 0aea 8E050000 		.4byte	.LASF109
  3518 0aee 01       		.byte	0x1
  3519 0aef 27       		.byte	0x27
  3520 0af0 BC090000 		.4byte	0x9bc
@@ -6699,12 +6699,12 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3522 0af5 03       		.byte	0x3
  3523 0af6 00000000 		.4byte	CapSense_rawFilterData1
  3524 0afa 1C       		.uleb128 0x1c
- 3525 0afb F4050000 		.4byte	.LASF110
+ 3525 0afb C4050000 		.4byte	.LASF110
  3526 0aff 01       		.byte	0x1
  3527 0b00 41       		.byte	0x41
  3528 0b01 32020000 		.4byte	0x232
  3529 0b05 1D       		.uleb128 0x1d
- 3530 0b06 CA070000 		.4byte	.LASF111
+ 3530 0b06 D7070000 		.4byte	.LASF111
  3531 0b0a 01       		.byte	0x1
  3532 0b0b 45       		.byte	0x45
  3533 0b0c 6B000000 		.4byte	0x6b
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3541 0001 11       		.uleb128 0x11
  3542 0002 01       		.byte	0x1
  3543 0003 25       		.uleb128 0x25
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 113
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 113
 
 
  3544 0004 0E       		.uleb128 0xe
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3598 003a 0B       		.uleb128 0xb
  3599 003b 3A       		.uleb128 0x3a
  3600 003c 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 114
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 114
 
 
  3601 003d 3B       		.uleb128 0x3b
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3655 0073 00       		.byte	0
  3656 0074 0B       		.uleb128 0xb
  3657 0075 15       		.uleb128 0x15
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 115
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 115
 
 
  3658 0076 01       		.byte	0x1
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3712 00ad 3B       		.uleb128 0x3b
  3713 00ae 0B       		.uleb128 0xb
  3714 00af 49       		.uleb128 0x49
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 116
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 116
 
 
  3715 00b0 13       		.uleb128 0x13
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3769 00e7 3B       		.uleb128 0x3b
  3770 00e8 05       		.uleb128 0x5
  3771 00e9 27       		.uleb128 0x27
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 117
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 117
 
 
  3772 00ea 19       		.uleb128 0x19
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3826 0121 02       		.uleb128 0x2
  3827 0122 18       		.uleb128 0x18
  3828 0123 00       		.byte	0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 118
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 118
 
 
  3829 0124 00       		.byte	0
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3883 015c 2E       		.uleb128 0x2e
  3884 015d 01       		.byte	0x1
  3885 015e 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 119
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 119
 
 
  3886 015f 19       		.uleb128 0x19
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3940 0196 06       		.uleb128 0x6
  3941 0197 40       		.uleb128 0x40
  3942 0198 18       		.uleb128 0x18
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 120
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 120
 
 
  3943 0199 9742     		.uleb128 0x2117
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  3997 01d0 00       		.byte	0
  3998 01d1 00       		.byte	0
  3999 01d2 00       		.byte	0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 121
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 121
 
 
  4000              		.section	.debug_aranges,"",%progbits
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  4054 00c8 00000000 		.4byte	.LFB58
  4055 00cc 44000000 		.4byte	.LFE58-.LFB58
  4056 00d0 00000000 		.4byte	.LFB59
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 122
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 122
 
 
  4057 00d4 38000000 		.4byte	.LFE59-.LFB59
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  4111 007c 1C000000 		.4byte	.LFE50
  4112 0080 00000000 		.4byte	.LFB51
  4113 0084 24000000 		.4byte	.LFE51
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 123
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 123
 
 
  4114 0088 00000000 		.4byte	.LFB52
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  4158      5F687973 
  4158      74657265 
  4158      73697300 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 124
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 124
 
 
  4159              	.LASF107:
@@ -7432,577 +7432,580 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 1
  4176      5F476574 
  4176      4465626F 
  4176      756E6365 
- 4177              	.LASF114:
- 4178 0111 433A5C55 		.ascii	"C:\\Users\\Evan\\Desktop\\BLE Lab 4\\BLE Lab 4.cyds"
- 4178      73657273 
- 4178      5C457661 
- 4178      6E5C4465 
- 4178      736B746F 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 125
+ 4177              	.LASF85:
+ 4178 0111 43617053 		.ascii	"CapSense_MedianFilter\000"
+ 4178      656E7365 
+ 4178      5F4D6564 
+ 4178      69616E46 
+ 4178      696C7465 
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 125
 
 
- 4179 013f 6E00     		.ascii	"n\000"
- 4180              	.LASF85:
- 4181 0141 43617053 		.ascii	"CapSense_MedianFilter\000"
- 4181      656E7365 
- 4181      5F4D6564 
- 4181      69616E46 
- 4181      696C7465 
- 4182              	.LASF7:
- 4183 0157 6C6F6E67 		.ascii	"long long unsigned int\000"
- 4183      206C6F6E 
- 4183      6720756E 
- 4183      7369676E 
- 4183      65642069 
- 4184              	.LASF98:
- 4185 016e 43617053 		.ascii	"CapSense_sensorSignal\000"
- 4185      656E7365 
- 4185      5F73656E 
- 4185      736F7253 
- 4185      69676E61 
- 4186              	.LASF64:
- 4187 0184 43617053 		.ascii	"CapSense_GetNoiseThreshold\000"
- 4187      656E7365 
- 4187      5F476574 
- 4187      4E6F6973 
- 4187      65546872 
- 4188              	.LASF43:
- 4189 019f 43617053 		.ascii	"CapSense_InitializeEnabledBaselines\000"
- 4189      656E7365 
- 4189      5F496E69 
- 4189      7469616C 
- 4189      697A6545 
- 4190              	.LASF52:
- 4191 01c3 43617053 		.ascii	"CapSense_UpdateEnabledBaselines\000"
- 4191      656E7365 
- 4191      5F557064 
- 4191      61746545 
- 4191      6E61626C 
- 4192              	.LASF6:
- 4193 01e3 6C6F6E67 		.ascii	"long long int\000"
- 4193      206C6F6E 
- 4193      6720696E 
- 4193      7400
- 4194              	.LASF0:
- 4195 01f1 7369676E 		.ascii	"signed char\000"
- 4195      65642063 
- 4195      68617200 
- 4196              	.LASF84:
- 4197 01fd 43617053 		.ascii	"CapSense_DisableWidget\000"
- 4197      656E7365 
- 4197      5F446973 
- 4197      61626C65 
- 4197      57696467 
- 4198              	.LASF79:
- 4199 0214 72617749 		.ascii	"rawIndex\000"
- 4199      6E646578 
- 4199      00
- 4200              	.LASF24:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 126
+ 4179              	.LASF7:
+ 4180 0127 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 4180      206C6F6E 
+ 4180      6720756E 
+ 4180      7369676E 
+ 4180      65642069 
+ 4181              	.LASF98:
+ 4182 013e 43617053 		.ascii	"CapSense_sensorSignal\000"
+ 4182      656E7365 
+ 4182      5F73656E 
+ 4182      736F7253 
+ 4182      69676E61 
+ 4183              	.LASF64:
+ 4184 0154 43617053 		.ascii	"CapSense_GetNoiseThreshold\000"
+ 4184      656E7365 
+ 4184      5F476574 
+ 4184      4E6F6973 
+ 4184      65546872 
+ 4185              	.LASF43:
+ 4186 016f 43617053 		.ascii	"CapSense_InitializeEnabledBaselines\000"
+ 4186      656E7365 
+ 4186      5F496E69 
+ 4186      7469616C 
+ 4186      697A6545 
+ 4187              	.LASF52:
+ 4188 0193 43617053 		.ascii	"CapSense_UpdateEnabledBaselines\000"
+ 4188      656E7365 
+ 4188      5F557064 
+ 4188      61746545 
+ 4188      6E61626C 
+ 4189              	.LASF6:
+ 4190 01b3 6C6F6E67 		.ascii	"long long int\000"
+ 4190      206C6F6E 
+ 4190      6720696E 
+ 4190      7400
+ 4191              	.LASF0:
+ 4192 01c1 7369676E 		.ascii	"signed char\000"
+ 4192      65642063 
+ 4192      68617200 
+ 4193              	.LASF84:
+ 4194 01cd 43617053 		.ascii	"CapSense_DisableWidget\000"
+ 4194      656E7365 
+ 4194      5F446973 
+ 4194      61626C65 
+ 4194      57696467 
+ 4195              	.LASF79:
+ 4196 01e4 72617749 		.ascii	"rawIndex\000"
+ 4196      6E646578 
+ 4196      00
+ 4197              	.LASF24:
+ 4198 01ed 6E756D62 		.ascii	"numberOfSensors\000"
+ 4198      65724F66 
+ 4198      53656E73 
+ 4198      6F727300 
+ 4199              	.LASF21:
+ 4200 01fd 77696467 		.ascii	"widgetNubmersTbl\000"
+ 4200      65744E75 
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 126
 
 
- 4201 021d 6E756D62 		.ascii	"numberOfSensors\000"
- 4201      65724F66 
- 4201      53656E73 
- 4201      6F727300 
- 4202              	.LASF21:
- 4203 022d 77696467 		.ascii	"widgetNubmersTbl\000"
- 4203      65744E75 
- 4203      626D6572 
- 4203      7354626C 
- 4203      00
- 4204              	.LASF59:
- 4205 023e 43617053 		.ascii	"CapSense_GetBaselineData\000"
- 4205      656E7365 
- 4205      5F476574 
- 4205      42617365 
- 4205      6C696E65 
- 4206              	.LASF81:
- 4207 0257 73746174 		.ascii	"state\000"
- 4207      6500
- 4208              	.LASF4:
- 4209 025d 6C6F6E67 		.ascii	"long int\000"
- 4209      20696E74 
- 4209      00
- 4210              	.LASF82:
- 4211 0266 43617053 		.ascii	"CapSense_CheckIsAnyWidgetActive\000"
- 4211      656E7365 
- 4211      5F436865 
- 4211      636B4973 
- 4211      416E7957 
- 4212              	.LASF9:
- 4213 0286 75696E74 		.ascii	"uint8\000"
- 4213      3800
- 4214              	.LASF101:
- 4215 028c 43617053 		.ascii	"CapSense_lowBaselineReset\000"
- 4215      656E7365 
- 4215      5F6C6F77 
- 4215      42617365 
- 4215      6C696E65 
- 4216              	.LASF91:
- 4217 02a6 43617053 		.ascii	"CapSense_DisableRawDataFilters\000"
- 4217      656E7365 
- 4217      5F446973 
- 4217      61626C65 
- 4217      52617744 
- 4218              	.LASF13:
- 4219 02c5 646F7562 		.ascii	"double\000"
- 4219      6C6500
- 4220              	.LASF95:
- 4221 02cc 43617053 		.ascii	"CapSense_widgetNumber\000"
- 4221      656E7365 
- 4221      5F776964 
- 4221      6765744E 
- 4221      756D6265 
- 4222              	.LASF11:
- 4223 02e2 75696E74 		.ascii	"uint32\000"
- 4223      333200
- 4224              	.LASF77:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 127
+ 4200      626D6572 
+ 4200      7354626C 
+ 4200      00
+ 4201              	.LASF59:
+ 4202 020e 43617053 		.ascii	"CapSense_GetBaselineData\000"
+ 4202      656E7365 
+ 4202      5F476574 
+ 4202      42617365 
+ 4202      6C696E65 
+ 4203              	.LASF81:
+ 4204 0227 73746174 		.ascii	"state\000"
+ 4204      6500
+ 4205              	.LASF4:
+ 4206 022d 6C6F6E67 		.ascii	"long int\000"
+ 4206      20696E74 
+ 4206      00
+ 4207              	.LASF82:
+ 4208 0236 43617053 		.ascii	"CapSense_CheckIsAnyWidgetActive\000"
+ 4208      656E7365 
+ 4208      5F436865 
+ 4208      636B4973 
+ 4208      416E7957 
+ 4209              	.LASF9:
+ 4210 0256 75696E74 		.ascii	"uint8\000"
+ 4210      3800
+ 4211              	.LASF101:
+ 4212 025c 43617053 		.ascii	"CapSense_lowBaselineReset\000"
+ 4212      656E7365 
+ 4212      5F6C6F77 
+ 4212      42617365 
+ 4212      6C696E65 
+ 4213              	.LASF91:
+ 4214 0276 43617053 		.ascii	"CapSense_DisableRawDataFilters\000"
+ 4214      656E7365 
+ 4214      5F446973 
+ 4214      61626C65 
+ 4214      52617744 
+ 4215              	.LASF13:
+ 4216 0295 646F7562 		.ascii	"double\000"
+ 4216      6C6500
+ 4217              	.LASF95:
+ 4218 029c 43617053 		.ascii	"CapSense_widgetNumber\000"
+ 4218      656E7365 
+ 4218      5F776964 
+ 4218      6765744E 
+ 4218      756D6265 
+ 4219              	.LASF11:
+ 4220 02b2 75696E74 		.ascii	"uint32\000"
+ 4220      333200
+ 4221              	.LASF77:
+ 4222 02b9 68797374 		.ascii	"hysteresis\000"
+ 4222      65726573 
+ 4222      697300
+ 4223              	.LASF67:
+ 4224 02c4 43617053 		.ascii	"CapSense_SetFingerThreshold\000"
+ 4224      656E7365 
+ 4224      5F536574 
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 127
 
 
- 4225 02e9 68797374 		.ascii	"hysteresis\000"
- 4225      65726573 
- 4225      697300
- 4226              	.LASF67:
- 4227 02f4 43617053 		.ascii	"CapSense_SetFingerThreshold\000"
- 4227      656E7365 
- 4227      5F536574 
- 4227      46696E67 
- 4227      65725468 
- 4228              	.LASF71:
- 4229 0310 43617053 		.ascii	"CapSense_SetDebounce\000"
- 4229      656E7365 
- 4229      5F536574 
- 4229      4465626F 
- 4229      756E6365 
- 4230              	.LASF34:
- 4231 0325 73656E73 		.ascii	"sensetivitySeed\000"
- 4231      65746976 
- 4231      69747953 
- 4231      65656400 
- 4232              	.LASF33:
- 4233 0335 746F7461 		.ascii	"totalSensorsNum\000"
- 4233      6C53656E 
- 4233      736F7273 
- 4233      4E756D00 
- 4234              	.LASF62:
- 4235 0345 76616C75 		.ascii	"value\000"
- 4235      6500
- 4236              	.LASF72:
- 4237 034b 43617053 		.ascii	"CapSense_SetLowBaselineReset\000"
- 4237      656E7365 
- 4237      5F536574 
- 4237      4C6F7742 
- 4237      6173656C 
- 4238              	.LASF56:
- 4239 0368 6C617374 		.ascii	"lastSensor\000"
- 4239      53656E73 
- 4239      6F7200
- 4240              	.LASF8:
- 4241 0373 756E7369 		.ascii	"unsigned int\000"
- 4241      676E6564 
- 4241      20696E74 
- 4241      00
- 4242              	.LASF5:
- 4243 0380 6C6F6E67 		.ascii	"long unsigned int\000"
- 4243      20756E73 
- 4243      69676E65 
- 4243      6420696E 
- 4243      7400
- 4244              	.LASF97:
- 4245 0392 43617053 		.ascii	"CapSense_sensorBaselineLow\000"
- 4245      656E7365 
- 4245      5F73656E 
- 4245      736F7242 
- 4245      6173656C 
- 4246              	.LASF22:
- 4247 03ad 7265736F 		.ascii	"resolutionsTbl\000"
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 128
+ 4224      46696E67 
+ 4224      65725468 
+ 4225              	.LASF71:
+ 4226 02e0 43617053 		.ascii	"CapSense_SetDebounce\000"
+ 4226      656E7365 
+ 4226      5F536574 
+ 4226      4465626F 
+ 4226      756E6365 
+ 4227              	.LASF34:
+ 4228 02f5 73656E73 		.ascii	"sensetivitySeed\000"
+ 4228      65746976 
+ 4228      69747953 
+ 4228      65656400 
+ 4229              	.LASF33:
+ 4230 0305 746F7461 		.ascii	"totalSensorsNum\000"
+ 4230      6C53656E 
+ 4230      736F7273 
+ 4230      4E756D00 
+ 4231              	.LASF62:
+ 4232 0315 76616C75 		.ascii	"value\000"
+ 4232      6500
+ 4233              	.LASF72:
+ 4234 031b 43617053 		.ascii	"CapSense_SetLowBaselineReset\000"
+ 4234      656E7365 
+ 4234      5F536574 
+ 4234      4C6F7742 
+ 4234      6173656C 
+ 4235              	.LASF56:
+ 4236 0338 6C617374 		.ascii	"lastSensor\000"
+ 4236      53656E73 
+ 4236      6F7200
+ 4237              	.LASF8:
+ 4238 0343 756E7369 		.ascii	"unsigned int\000"
+ 4238      676E6564 
+ 4238      20696E74 
+ 4238      00
+ 4239              	.LASF5:
+ 4240 0350 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4240      20756E73 
+ 4240      69676E65 
+ 4240      6420696E 
+ 4240      7400
+ 4241              	.LASF97:
+ 4242 0362 43617053 		.ascii	"CapSense_sensorBaselineLow\000"
+ 4242      656E7365 
+ 4242      5F73656E 
+ 4242      736F7242 
+ 4242      6173656C 
+ 4243              	.LASF22:
+ 4244 037d 7265736F 		.ascii	"resolutionsTbl\000"
+ 4244      6C757469 
+ 4244      6F6E7354 
+ 4244      626C00
+ 4245              	.LASF28:
+ 4246 038c 70747247 		.ascii	"ptrGetBitValue\000"
+ 4246      65744269 
+ 4246      7456616C 
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 128
 
 
- 4247      6C757469 
- 4247      6F6E7354 
- 4247      626C00
- 4248              	.LASF28:
- 4249 03bc 70747247 		.ascii	"ptrGetBitValue\000"
- 4249      65744269 
- 4249      7456616C 
- 4249      756500
- 4250              	.LASF106:
- 4251 03cb 43617053 		.ascii	"CapSense_debounce\000"
- 4251      656E7365 
- 4251      5F646562 
- 4251      6F756E63 
- 4251      6500
- 4252              	.LASF58:
- 4253 03dd 64617461 		.ascii	"data\000"
- 4253      00
- 4254              	.LASF3:
- 4255 03e2 73686F72 		.ascii	"short unsigned int\000"
- 4255      7420756E 
- 4255      7369676E 
- 4255      65642069 
- 4255      6E7400
- 4256              	.LASF18:
- 4257 03f5 73656E73 		.ascii	"sensetivityTbl\000"
- 4257      65746976 
- 4257      69747954 
- 4257      626C00
- 4258              	.LASF40:
- 4259 0404 73656E73 		.ascii	"sensor\000"
- 4259      6F7200
- 4260              	.LASF94:
- 4261 040b 43617053 		.ascii	"CapSense_sensorEnableMask\000"
- 4261      656E7365 
- 4261      5F73656E 
- 4261      736F7245 
- 4261      6E61626C 
- 4262              	.LASF108:
- 4263 0425 43617053 		.ascii	"CapSense_numberOfSensors\000"
- 4263      656E7365 
- 4263      5F6E756D 
- 4263      6265724F 
- 4263      6653656E 
- 4264              	.LASF51:
- 4265 043e 43617053 		.ascii	"CapSense_UpdateSensorBaseline\000"
- 4265      656E7365 
- 4265      5F557064 
- 4265      61746553 
- 4265      656E736F 
- 4266              	.LASF46:
- 4267 045c 63616C63 		.ascii	"calc\000"
- 4267      00
- 4268              	.LASF19:
- 4269 0461 63686172 		.ascii	"chargeDivTbl\000"
- 4269      67654469 
- 4269      7654626C 
- 4269      00
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 129
+ 4246      756500
+ 4247              	.LASF106:
+ 4248 039b 43617053 		.ascii	"CapSense_debounce\000"
+ 4248      656E7365 
+ 4248      5F646562 
+ 4248      6F756E63 
+ 4248      6500
+ 4249              	.LASF58:
+ 4250 03ad 64617461 		.ascii	"data\000"
+ 4250      00
+ 4251              	.LASF3:
+ 4252 03b2 73686F72 		.ascii	"short unsigned int\000"
+ 4252      7420756E 
+ 4252      7369676E 
+ 4252      65642069 
+ 4252      6E7400
+ 4253              	.LASF18:
+ 4254 03c5 73656E73 		.ascii	"sensetivityTbl\000"
+ 4254      65746976 
+ 4254      69747954 
+ 4254      626C00
+ 4255              	.LASF40:
+ 4256 03d4 73656E73 		.ascii	"sensor\000"
+ 4256      6F7200
+ 4257              	.LASF94:
+ 4258 03db 43617053 		.ascii	"CapSense_sensorEnableMask\000"
+ 4258      656E7365 
+ 4258      5F73656E 
+ 4258      736F7245 
+ 4258      6E61626C 
+ 4259              	.LASF108:
+ 4260 03f5 43617053 		.ascii	"CapSense_numberOfSensors\000"
+ 4260      656E7365 
+ 4260      5F6E756D 
+ 4260      6265724F 
+ 4260      6653656E 
+ 4261              	.LASF51:
+ 4262 040e 43617053 		.ascii	"CapSense_UpdateSensorBaseline\000"
+ 4262      656E7365 
+ 4262      5F557064 
+ 4262      61746553 
+ 4262      656E736F 
+ 4263              	.LASF46:
+ 4264 042c 63616C63 		.ascii	"calc\000"
+ 4264      00
+ 4265              	.LASF19:
+ 4266 0431 63686172 		.ascii	"chargeDivTbl\000"
+ 4266      67654469 
+ 4266      7654626C 
+ 4266      00
+ 4267              	.LASF113:
+ 4268 043e 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\CapSense_CSHL.c\000"
+ 4268      6E657261 
+ 4268      7465645F 
+ 4268      536F7572 
+ 4268      63655C50 
+ 4269              	.LASF60:
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 129
 
 
- 4270              	.LASF113:
- 4271 046e 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\CapSense_CSHL.c\000"
- 4271      6E657261 
- 4271      7465645F 
- 4271      536F7572 
- 4271      63655C50 
- 4272              	.LASF60:
- 4273 0497 43617053 		.ascii	"CapSense_GetDiffCountData\000"
- 4273      656E7365 
- 4273      5F476574 
- 4273      44696666 
- 4273      436F756E 
- 4274              	.LASF36:
- 4275 04b1 706F696E 		.ascii	"pointers\000"
- 4275      74657273 
- 4275      00
- 4276              	.LASF74:
- 4277 04ba 6465626F 		.ascii	"debounce\000"
- 4277      756E6365 
- 4277      00
- 4278              	.LASF35:
- 4279 04c3 6866636C 		.ascii	"hfclkFreq_MHz\000"
- 4279      6B467265 
- 4279      715F4D48 
- 4279      7A00
- 4280              	.LASF15:
- 4281 04d1 73697A65 		.ascii	"sizetype\000"
- 4281      74797065 
- 4281      00
- 4282              	.LASF83:
- 4283 04da 43617053 		.ascii	"CapSense_EnableWidget\000"
- 4283      656E7365 
- 4283      5F456E61 
- 4283      626C6557 
- 4283      69646765 
- 4284              	.LASF45:
- 4285 04f0 43617053 		.ascii	"CapSense_UpdateBaselineNoThreshold\000"
- 4285      656E7365 
- 4285      5F557064 
- 4285      61746542 
- 4285      6173656C 
- 4286              	.LASF39:
- 4287 0513 43617053 		.ascii	"CapSense_InitializeSensorBaseline\000"
- 4287      656E7365 
- 4287      5F496E69 
- 4287      7469616C 
- 4287      697A6553 
- 4288              	.LASF69:
- 4289 0535 43617053 		.ascii	"CapSense_SetFingerHysteresis\000"
- 4289      656E7365 
- 4289      5F536574 
- 4289      46696E67 
- 4289      65724879 
- 4290              	.LASF73:
- 4291 0552 43617053 		.ascii	"CapSense_CheckIsSensorActive\000"
- 4291      656E7365 
- 4291      5F436865 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 130
+ 4270 0467 43617053 		.ascii	"CapSense_GetDiffCountData\000"
+ 4270      656E7365 
+ 4270      5F476574 
+ 4270      44696666 
+ 4270      436F756E 
+ 4271              	.LASF36:
+ 4272 0481 706F696E 		.ascii	"pointers\000"
+ 4272      74657273 
+ 4272      00
+ 4273              	.LASF74:
+ 4274 048a 6465626F 		.ascii	"debounce\000"
+ 4274      756E6365 
+ 4274      00
+ 4275              	.LASF35:
+ 4276 0493 6866636C 		.ascii	"hfclkFreq_MHz\000"
+ 4276      6B467265 
+ 4276      715F4D48 
+ 4276      7A00
+ 4277              	.LASF15:
+ 4278 04a1 73697A65 		.ascii	"sizetype\000"
+ 4278      74797065 
+ 4278      00
+ 4279              	.LASF83:
+ 4280 04aa 43617053 		.ascii	"CapSense_EnableWidget\000"
+ 4280      656E7365 
+ 4280      5F456E61 
+ 4280      626C6557 
+ 4280      69646765 
+ 4281              	.LASF45:
+ 4282 04c0 43617053 		.ascii	"CapSense_UpdateBaselineNoThreshold\000"
+ 4282      656E7365 
+ 4282      5F557064 
+ 4282      61746542 
+ 4282      6173656C 
+ 4283              	.LASF39:
+ 4284 04e3 43617053 		.ascii	"CapSense_InitializeSensorBaseline\000"
+ 4284      656E7365 
+ 4284      5F496E69 
+ 4284      7469616C 
+ 4284      697A6553 
+ 4285              	.LASF69:
+ 4286 0505 43617053 		.ascii	"CapSense_SetFingerHysteresis\000"
+ 4286      656E7365 
+ 4286      5F536574 
+ 4286      46696E67 
+ 4286      65724879 
+ 4287              	.LASF73:
+ 4288 0522 43617053 		.ascii	"CapSense_CheckIsSensorActive\000"
+ 4288      656E7365 
+ 4288      5F436865 
+ 4288      636B4973 
+ 4288      53656E73 
+ 4289              	.LASF16:
+ 4290 053f 69646163 		.ascii	"idac1LevelsTbl\000"
+ 4290      314C6576 
+ 4290      656C7354 
+ 4290      626C00
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 130
 
 
- 4291      636B4973 
- 4291      53656E73 
- 4292              	.LASF16:
- 4293 056f 69646163 		.ascii	"idac1LevelsTbl\000"
- 4293      314C6576 
- 4293      656C7354 
- 4293      626C00
- 4294              	.LASF17:
- 4295 057e 69646163 		.ascii	"idac2LevelsTbl\000"
- 4295      324C6576 
- 4295      656C7354 
- 4295      626C00
- 4296              	.LASF103:
- 4297 058d 43617053 		.ascii	"CapSense_noiseThreshold\000"
- 4297      656E7365 
- 4297      5F6E6F69 
- 4297      73655468 
- 4297      72657368 
- 4298              	.LASF102:
- 4299 05a5 43617053 		.ascii	"CapSense_fingerThreshold\000"
- 4299      656E7365 
- 4299      5F66696E 
- 4299      67657254 
- 4299      68726573 
- 4300              	.LASF109:
- 4301 05be 43617053 		.ascii	"CapSense_rawFilterData1\000"
- 4301      656E7365 
- 4301      5F726177 
- 4301      46696C74 
- 4301      65724461 
- 4302              	.LASF37:
- 4303 05d6 43617053 		.ascii	"CapSense_CONFIG_TYPE_P4_v2_10\000"
- 4303      656E7365 
- 4303      5F434F4E 
- 4303      4649475F 
- 4303      54595045 
- 4304              	.LASF110:
- 4305 05f4 43617053 		.ascii	"CapSense_config\000"
- 4305      656E7365 
- 4305      5F636F6E 
- 4305      66696700 
- 4306              	.LASF12:
- 4307 0604 666C6F61 		.ascii	"float\000"
- 4307      7400
- 4308              	.LASF88:
- 4309 060a 43617053 		.ascii	"CapSense_GetLowBaselineReset\000"
- 4309      656E7365 
- 4309      5F476574 
- 4309      4C6F7742 
- 4309      6173656C 
- 4310              	.LASF112:
- 4311 0627 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 4311      4320342E 
- 4311      382E3420 
- 4311      32303134 
- 4311      30353236 
- 4312 065a 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 131
+ 4291              	.LASF17:
+ 4292 054e 69646163 		.ascii	"idac2LevelsTbl\000"
+ 4292      324C6576 
+ 4292      656C7354 
+ 4292      626C00
+ 4293              	.LASF103:
+ 4294 055d 43617053 		.ascii	"CapSense_noiseThreshold\000"
+ 4294      656E7365 
+ 4294      5F6E6F69 
+ 4294      73655468 
+ 4294      72657368 
+ 4295              	.LASF102:
+ 4296 0575 43617053 		.ascii	"CapSense_fingerThreshold\000"
+ 4296      656E7365 
+ 4296      5F66696E 
+ 4296      67657254 
+ 4296      68726573 
+ 4297              	.LASF109:
+ 4298 058e 43617053 		.ascii	"CapSense_rawFilterData1\000"
+ 4298      656E7365 
+ 4298      5F726177 
+ 4298      46696C74 
+ 4298      65724461 
+ 4299              	.LASF37:
+ 4300 05a6 43617053 		.ascii	"CapSense_CONFIG_TYPE_P4_v2_10\000"
+ 4300      656E7365 
+ 4300      5F434F4E 
+ 4300      4649475F 
+ 4300      54595045 
+ 4301              	.LASF110:
+ 4302 05c4 43617053 		.ascii	"CapSense_config\000"
+ 4302      656E7365 
+ 4302      5F636F6E 
+ 4302      66696700 
+ 4303              	.LASF12:
+ 4304 05d4 666C6F61 		.ascii	"float\000"
+ 4304      7400
+ 4305              	.LASF88:
+ 4306 05da 43617053 		.ascii	"CapSense_GetLowBaselineReset\000"
+ 4306      656E7365 
+ 4306      5F476574 
+ 4306      4C6F7742 
+ 4306      6173656C 
+ 4307              	.LASF112:
+ 4308 05f7 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 4308      4320342E 
+ 4308      382E3420 
+ 4308      32303134 
+ 4308      30353236 
+ 4309 062a 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 4309      20726576 
+ 4309      6973696F 
+ 4309      6E203231 
+ 4309      31333538 
+ 4310 065d 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 4310      66756E63 
+ 4310      74696F6E 
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 131
 
 
- 4312      20726576 
- 4312      6973696F 
- 4312      6E203231 
- 4312      31333538 
- 4313 068d 30202D66 		.ascii	"0 -ffunction-sections\000"
- 4313      66756E63 
- 4313      74696F6E 
- 4313      2D736563 
- 4313      74696F6E 
- 4314              	.LASF78:
- 4315 06a3 43617053 		.ascii	"CapSense_CheckIsWidgetActive\000"
- 4315      656E7365 
- 4315      5F436865 
- 4315      636B4973 
- 4315      57696467 
- 4316              	.LASF1:
- 4317 06c0 756E7369 		.ascii	"unsigned char\000"
- 4317      676E6564 
- 4317      20636861 
- 4317      7200
- 4318              	.LASF41:
- 4319 06ce 43617053 		.ascii	"CapSense_InitializeAllBaselines\000"
- 4319      656E7365 
- 4319      5F496E69 
- 4319      7469616C 
- 4319      697A6541 
- 4320              	.LASF27:
- 4321 06ee 70747252 		.ascii	"ptrReadSensorRaw\000"
- 4321      65616453 
- 4321      656E736F 
- 4321      72526177 
- 4321      00
- 4322              	.LASF57:
- 4323 06ff 43617053 		.ascii	"CapSense_SetBaselineData\000"
- 4323      656E7365 
- 4323      5F536574 
- 4323      42617365 
- 4323      6C696E65 
- 4324              	.LASF50:
- 4325 0718 6E6F6973 		.ascii	"noiseThreshold\000"
- 4325      65546872 
- 4325      6573686F 
- 4325      6C6400
- 4326              	.LASF2:
- 4327 0727 73686F72 		.ascii	"short int\000"
- 4327      7420696E 
- 4327      7400
- 4328              	.LASF42:
- 4329 0731 77696467 		.ascii	"widget\000"
- 4329      657400
- 4330              	.LASF20:
- 4331 0738 6D6F6444 		.ascii	"modDivTbl\000"
- 4331      69765462 
- 4331      6C00
- 4332              	.LASF44:
- 4333 0742 69735365 		.ascii	"isSensorEnabled\000"
- 4333      6E736F72 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 132
+ 4310      2D736563 
+ 4310      74696F6E 
+ 4311              	.LASF78:
+ 4312 0673 43617053 		.ascii	"CapSense_CheckIsWidgetActive\000"
+ 4312      656E7365 
+ 4312      5F436865 
+ 4312      636B4973 
+ 4312      57696467 
+ 4313              	.LASF1:
+ 4314 0690 756E7369 		.ascii	"unsigned char\000"
+ 4314      676E6564 
+ 4314      20636861 
+ 4314      7200
+ 4315              	.LASF41:
+ 4316 069e 43617053 		.ascii	"CapSense_InitializeAllBaselines\000"
+ 4316      656E7365 
+ 4316      5F496E69 
+ 4316      7469616C 
+ 4316      697A6541 
+ 4317              	.LASF27:
+ 4318 06be 70747252 		.ascii	"ptrReadSensorRaw\000"
+ 4318      65616453 
+ 4318      656E736F 
+ 4318      72526177 
+ 4318      00
+ 4319              	.LASF57:
+ 4320 06cf 43617053 		.ascii	"CapSense_SetBaselineData\000"
+ 4320      656E7365 
+ 4320      5F536574 
+ 4320      42617365 
+ 4320      6C696E65 
+ 4321              	.LASF50:
+ 4322 06e8 6E6F6973 		.ascii	"noiseThreshold\000"
+ 4322      65546872 
+ 4322      6573686F 
+ 4322      6C6400
+ 4323              	.LASF2:
+ 4324 06f7 73686F72 		.ascii	"short int\000"
+ 4324      7420696E 
+ 4324      7400
+ 4325              	.LASF42:
+ 4326 0701 77696467 		.ascii	"widget\000"
+ 4326      657400
+ 4327              	.LASF20:
+ 4328 0708 6D6F6444 		.ascii	"modDivTbl\000"
+ 4328      69765462 
+ 4328      6C00
+ 4329              	.LASF44:
+ 4330 0712 69735365 		.ascii	"isSensorEnabled\000"
+ 4330      6E736F72 
+ 4330      456E6162 
+ 4330      6C656400 
+ 4331              	.LASF38:
+ 4332 0722 43617053 		.ascii	"CapSense_BaseInit\000"
+ 4332      656E7365 
+ 4332      5F426173 
+ 4332      65496E69 
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 132
 
 
- 4333      456E6162 
- 4333      6C656400 
- 4334              	.LASF38:
- 4335 0752 43617053 		.ascii	"CapSense_BaseInit\000"
- 4335      656E7365 
- 4335      5F426173 
- 4335      65496E69 
- 4335      7400
- 4336              	.LASF54:
- 4337 0764 73656E73 		.ascii	"sensorsPerWidget\000"
- 4337      6F727350 
- 4337      65725769 
- 4337      64676574 
- 4337      00
- 4338              	.LASF100:
- 4339 0775 43617053 		.ascii	"CapSense_lowBaselineResetCnt\000"
- 4339      656E7365 
- 4339      5F6C6F77 
- 4339      42617365 
- 4339      6C696E65 
- 4340              	.LASF68:
- 4341 0792 43617053 		.ascii	"CapSense_SetNoiseThreshold\000"
- 4341      656E7365 
- 4341      5F536574 
- 4341      4E6F6973 
- 4341      65546872 
- 4342              	.LASF96:
- 4343 07ad 43617053 		.ascii	"CapSense_sensorBaseline\000"
- 4343      656E7365 
- 4343      5F73656E 
- 4343      736F7242 
- 4343      6173656C 
- 4344              	.LASF14:
- 4345 07c5 63686172 		.ascii	"char\000"
- 4345      00
+ 4332      7400
+ 4333              	.LASF54:
+ 4334 0734 73656E73 		.ascii	"sensorsPerWidget\000"
+ 4334      6F727350 
+ 4334      65725769 
+ 4334      64676574 
+ 4334      00
+ 4335              	.LASF100:
+ 4336 0745 43617053 		.ascii	"CapSense_lowBaselineResetCnt\000"
+ 4336      656E7365 
+ 4336      5F6C6F77 
+ 4336      42617365 
+ 4336      6C696E65 
+ 4337              	.LASF68:
+ 4338 0762 43617053 		.ascii	"CapSense_SetNoiseThreshold\000"
+ 4338      656E7365 
+ 4338      5F536574 
+ 4338      4E6F6973 
+ 4338      65546872 
+ 4339              	.LASF96:
+ 4340 077d 43617053 		.ascii	"CapSense_sensorBaseline\000"
+ 4340      656E7365 
+ 4340      5F73656E 
+ 4340      736F7242 
+ 4340      6173656C 
+ 4341              	.LASF14:
+ 4342 0795 63686172 		.ascii	"char\000"
+ 4342      00
+ 4343              	.LASF114:
+ 4344 079a 433A5C55 		.ascii	"C:\\Users\\Chris\\Desktop\\ble lab4 additional 1\\B"
+ 4344      73657273 
+ 4344      5C436872 
+ 4344      69735C44 
+ 4344      65736B74 
+ 4345 07c8 4C45204C 		.ascii	"LE Lab 4.cydsn\000"
+ 4345      61622034 
+ 4345      2E637964 
+ 4345      736E00
  4346              	.LASF111:
- 4347 07ca 43617053 		.ascii	"CapSense_enableRawFilters\000"
+ 4347 07d7 43617053 		.ascii	"CapSense_enableRawFilters\000"
  4347      656E7365 
  4347      5F656E61 
  4347      626C6552 
  4347      61774669 
  4348              	.LASF65:
- 4349 07e4 43617053 		.ascii	"CapSense_GetFingerHysteresis\000"
+ 4349 07f1 43617053 		.ascii	"CapSense_GetFingerHysteresis\000"
  4349      656E7365 
  4349      5F476574 
  4349      46696E67 
  4349      65724879 
  4350              	.LASF55:
- 4351 0801 66697273 		.ascii	"firstSensor\000"
+ 4351 080e 66697273 		.ascii	"firstSensor\000"
  4351      7453656E 
  4351      736F7200 
  4352              	.LASF75:
- 4353 080d 6465626F 		.ascii	"debounceIndex\000"
+ 4353 081a 6465626F 		.ascii	"debounceIndex\000"
  4353      756E6365 
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 133
+
+
  4353      496E6465 
  4353      7800
  4354              	.LASF63:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 133
-
-
- 4355 081b 43617053 		.ascii	"CapSense_GetFingerThreshold\000"
+ 4355 0828 43617053 		.ascii	"CapSense_GetFingerThreshold\000"
  4355      656E7365 
  4355      5F476574 
  4355      46696E67 
  4355      65725468 
  4356              	.LASF26:
- 4357 0837 70747250 		.ascii	"ptrPreScan\000"
+ 4357 0844 70747250 		.ascii	"ptrPreScan\000"
  4357      72655363 
  4357      616E00
  4358              	.LASF47:
- 4359 0842 7369676E 		.ascii	"sign\000"
+ 4359 084f 7369676E 		.ascii	"sign\000"
  4359      00
  4360              	.LASF80:
- 4361 0847 6E756D4F 		.ascii	"numOfSensors\000"
+ 4361 0854 6E756D4F 		.ascii	"numOfSensors\000"
  4361      6653656E 
  4361      736F7273 
  4361      00
  4362              	.LASF31:
- 4363 0854 746F7461 		.ascii	"totalScanslotsNum\000"
+ 4363 0861 746F7461 		.ascii	"totalScanslotsNum\000"
  4363      6C536361 
  4363      6E736C6F 
  4363      74734E75 
  4363      6D00
  4364              	.LASF93:
- 4365 0866 43617053 		.ascii	"CapSense_sensorRaw\000"
+ 4365 0873 43617053 		.ascii	"CapSense_sensorRaw\000"
  4365      656E7365 
  4365      5F73656E 
  4365      736F7252 
  4365      617700
  4366              	.LASF61:
- 4367 0879 43617053 		.ascii	"CapSense_SetDiffCountData\000"
+ 4367 0886 43617053 		.ascii	"CapSense_SetDiffCountData\000"
  4367      656E7365 
  4367      5F536574 
  4367      44696666 
  4367      436F756E 
  4368              	.LASF29:
- 4369 0893 70747253 		.ascii	"ptrSetBitValue\000"
+ 4369 08a0 70747253 		.ascii	"ptrSetBitValue\000"
  4369      65744269 
  4369      7456616C 
  4369      756500
  4370              	.LASF87:
- 4371 08a2 43617053 		.ascii	"CapSense_GetWidgetNumber\000"
+ 4371 08af 43617053 		.ascii	"CapSense_GetWidgetNumber\000"
  4371      656E7365 
  4371      5F476574 
  4371      57696467 
  4371      65744E75 
  4372              	.LASF90:
- 4373 08bb 43617053 		.ascii	"CapSense_EnableRawDataFilters\000"
+ 4373 08c8 43617053 		.ascii	"CapSense_EnableRawDataFilters\000"
  4373      656E7365 
  4373      5F456E61 
  4373      626C6552 
  4373      61774461 
  4374              	.LASF92:
- 4375 08d9 43617053 		.ascii	"CapSense_debounceCounter\000"
+ 4375 08e6 43617053 		.ascii	"CapSense_debounceCounter\000"
+ARM GAS  C:\Users\Chris\AppData\Local\Temp\ccEXQgca.s 			page 134
+
+
  4375      656E7365 
  4375      5F646562 
  4375      6F756E63 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccMCPYPA.s 			page 134
-
-
  4375      65436F75 
  4376              	.LASF86:
- 4377 08f2 43617053 		.ascii	"CapSense_IIR4Filter\000"
+ 4377 08ff 43617053 		.ascii	"CapSense_IIR4Filter\000"
  4377      656E7365 
  4377      5F494952 
  4377      3446696C 
  4377      74657200 
  4378              	.LASF23:
- 4379 0906 72617744 		.ascii	"rawDataIndex\000"
+ 4379 0913 72617744 		.ascii	"rawDataIndex\000"
  4379      61746149 
  4379      6E646578 
  4379      00
  4380              	.LASF48:
- 4381 0913 74656D70 		.ascii	"tempRaw\000"
+ 4381 0920 74656D70 		.ascii	"tempRaw\000"
  4381      52617700 
  4382              	.LASF32:
- 4383 091b 746F7461 		.ascii	"totalWidgetsNum\000"
+ 4383 0928 746F7461 		.ascii	"totalWidgetsNum\000"
  4383      6C576964 
  4383      67657473 
  4383      4E756D00 
  4384              	.LASF104:
- 4385 092b 43617053 		.ascii	"CapSense_negativeNoiseThreshold\000"
+ 4385 0938 43617053 		.ascii	"CapSense_negativeNoiseThreshold\000"
  4385      656E7365 
  4385      5F6E6567 
  4385      61746976 

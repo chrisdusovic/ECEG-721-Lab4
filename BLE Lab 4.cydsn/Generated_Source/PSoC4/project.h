@@ -47,6 +47,11 @@
 #include <CapSense_SMS.h>
 #include <CapSense_PVT.h>
 #include <CapSense_IP.h>
+#include <SW2_Switch.h>
+#include <SW2_Switch_aliases.h>
+#include <Button_output.h>
+#include <Button_output_aliases.h>
+#include <Wakeup_ISR.h>
 #include <BLE_1_bless_isr.h>
 #include <CapSense_SampleClk.h>
 #include <CapSense_Sns.h>

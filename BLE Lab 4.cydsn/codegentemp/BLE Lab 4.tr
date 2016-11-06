@@ -30,7 +30,7 @@ Clock: CyLFCLK                  | N/A                   | Target: 0.03 MHz   |
 Clock: CyRouted1                | N/A                   | Target: 12.00 MHz  | 
 Clock: CySYSCLK                 | N/A                   | Target: 12.00 MHz  | 
 Clock: CyWCO                    | N/A                   | Target: 0.03 MHz   | 
-Clock: PRS_Clock                | Frequency: 87.50 MHz  | Target: 1.00 MHz   | 
+Clock: PRS_Clock                | Frequency: 87.58 MHz  | Target: 1.00 MHz   | 
 
  =====================================================================
                     End of Clock Frequency Summary
@@ -43,7 +43,7 @@ Clock: PRS_Clock                | Frequency: 87.50 MHz  | Target: 1.00 MHz   |
 
 Launch Clock  Capture Clock  Constraint(R-R)  Slack(R-R)  Constraint(R-F)  Slack(R-F)  Constraint(F-F)  Slack(F-F)  Constraint(F-R)  Slack(F-R)  
 ------------  -------------  ---------------  ----------  ---------------  ----------  ---------------  ----------  ---------------  ----------  
-PRS_Clock     PRS_Clock      1e+006           988572      N/A              N/A         N/A              N/A         N/A              N/A         
+PRS_Clock     PRS_Clock      1e+006           988582      N/A              N/A         N/A              N/A         N/A              N/A         
 
  =====================================================================
                     End of Clock Relationship Summary
@@ -66,11 +66,12 @@ Port Name  Setup to Clk  Clock Name:Phase
 -----------------------3.2::Clock to Out
 ----------------------------------------
 
-Port Name     Clock to Out  Clock Name:Phase  
-------------  ------------  ----------------  
-BLUE(0)_PAD   22430         PRS_Clock:R       
-GREEN(0)_PAD  22778         PRS_Clock:R       
-RED(0)_PAD    23812         PRS_Clock:R       
+Port Name             Clock to Out  Clock Name:Phase  
+--------------------  ------------  ----------------  
+BLUE(0)_PAD           22024         PRS_Clock:R       
+Button_output(0)_PAD  22523         CyHFCLK:R         
+GREEN(0)_PAD          22771         PRS_Clock:R       
+RED(0)_PAD            23772         PRS_Clock:R       
 
 
                          3.3::Pad to Pad
@@ -88,14 +89,14 @@ Port Name (Source)  Port Name (Destination)  Delay
 4.1::Critical Path Report for PRS_Clock
 ***************************************
 Clock: PRS_Clock
-Frequency: 87.50 MHz | Target: 1.00 MHz
+Frequency: 87.58 MHz | Target: 1.00 MHz
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \PRS_2:sC8:PrISMdp:u0\/cl0_comb
 Path End       : Net_108/main_2
 Capture Clock  : Net_108/clock_0
-Path slack     : 988572p
+Path slack     : 988582p
 
 Capture Clock Arrival Time                               0
 + Clock path delay                                       0
@@ -106,9 +107,9 @@ End-of-path required time (ps)                      996490
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       7918
++ Data path delay                       7908
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           7918
+End-of-path arrival time (ps)           7908
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -121,8 +122,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                         model name     delay     AT   slack  edge  Fanout
 -------------------------------  -------------  -----  -----  ------  ----  ------
-\PRS_2:sC8:PrISMdp:u0\/cl0_comb  datapathcell2   5680   5680  988572  RISE       1
-Net_108/main_2                   macrocell3      2238   7918  988572  RISE       1
+\PRS_2:sC8:PrISMdp:u0\/cl0_comb  datapathcell2   5680   5680  988582  RISE       1
+Net_108/main_2                   macrocell3      2228   7908  988582  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -151,7 +152,7 @@ Net_108/clock_0                                           macrocell3            
 Path Begin     : \PRS_2:sC8:PrISMdp:u0\/cl0_comb
 Path End       : Net_108/main_2
 Capture Clock  : Net_108/clock_0
-Path slack     : 988572p
+Path slack     : 988582p
 
 Capture Clock Arrival Time                               0
 + Clock path delay                                       0
@@ -162,9 +163,9 @@ End-of-path required time (ps)                      996490
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       7918
++ Data path delay                       7908
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           7918
+End-of-path arrival time (ps)           7908
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -177,8 +178,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                         model name     delay     AT   slack  edge  Fanout
 -------------------------------  -------------  -----  -----  ------  ----  ------
-\PRS_2:sC8:PrISMdp:u0\/cl0_comb  datapathcell2   5680   5680  988572  RISE       1
-Net_108/main_2                   macrocell3      2238   7918  988572  RISE       1
+\PRS_2:sC8:PrISMdp:u0\/cl0_comb  datapathcell2   5680   5680  988582  RISE       1
+Net_108/main_2                   macrocell3      2228   7908  988582  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -203,7 +204,7 @@ Net_108/clock_0                                           macrocell3            
 Path Begin     : \PRS_2:sC8:PrISMdp:u0\/cl0_comb
 Path End       : Net_108/main_2
 Capture Clock  : Net_108/clock_0
-Path slack     : 988572p
+Path slack     : 988582p
 
 Capture Clock Arrival Time                               0
 + Clock path delay                                       0
@@ -214,9 +215,9 @@ End-of-path required time (ps)                      996490
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       7918
++ Data path delay                       7908
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           7918
+End-of-path arrival time (ps)           7908
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -229,8 +230,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                         model name     delay     AT   slack  edge  Fanout
 -------------------------------  -------------  -----  -----  ------  ----  ------
-\PRS_2:sC8:PrISMdp:u0\/cl0_comb  datapathcell2   5680   5680  988572  RISE       1
-Net_108/main_2                   macrocell3      2238   7918  988572  RISE       1
+\PRS_2:sC8:PrISMdp:u0\/cl0_comb  datapathcell2   5680   5680  988582  RISE       1
+Net_108/main_2                   macrocell3      2228   7908  988582  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -247,7 +248,7 @@ Net_108/clock_0                                           macrocell3            
 Path Begin     : \PRS_1:sC8:PrISMdp:u0\/cl0_comb
 Path End       : Net_104/main_2
 Capture Clock  : Net_104/clock_0
-Path slack     : 988581p
+Path slack     : 988583p
 
 Capture Clock Arrival Time                               0
 + Clock path delay                                       0
@@ -258,9 +259,9 @@ End-of-path required time (ps)                      996490
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       7909
++ Data path delay                       7907
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           7909
+End-of-path arrival time (ps)           7907
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -273,8 +274,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                         model name     delay     AT   slack  edge  Fanout
 -------------------------------  -------------  -----  -----  ------  ----  ------
-\PRS_1:sC8:PrISMdp:u0\/cl0_comb  datapathcell1   5680   5680  988581  RISE       1
-Net_104/main_2                   macrocell1      2229   7909  988581  RISE       1
+\PRS_1:sC8:PrISMdp:u0\/cl0_comb  datapathcell1   5680   5680  988583  RISE       1
+Net_104/main_2                   macrocell1      2227   7907  988583  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -288,54 +289,10 @@ Net_104/clock_0                                           macrocell1            
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin     : \PRS_2:sC8:PrISMdp:u0\/ce0_comb
-Path End       : Net_108/main_1
-Capture Clock  : Net_108/clock_0
-Path slack     : 989190p
-
-Capture Clock Arrival Time                               0
-+ Clock path delay                                       0
-+ Cycle adjust (PRS_Clock:R#1 vs. PRS_Clock:R#2)   1000000
-- Setup time                                         -3510
-------------------------------------------------   ------- 
-End-of-path required time (ps)                      996490
-
-Launch Clock Arrival Time                      0
-+ Clock path delay                         0
-+ Data path delay                       7300
--------------------------------------   ---- 
-End-of-path arrival time (ps)           7300
- 
-Launch Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\PRS_2:sC8:PrISMdp:u0\/clock                              datapathcell2              0      0  RISE       1
-
-Data path
-pin name                         model name     delay     AT   slack  edge  Fanout
--------------------------------  -------------  -----  -----  ------  ----  ------
-\PRS_2:sC8:PrISMdp:u0\/ce0_comb  datapathcell2   5060   5060  989190  RISE       1
-Net_108/main_1                   macrocell3      2240   7300  989190  RISE       1
-
-Capture Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-Net_108/clock_0                                           macrocell3                 0      0  RISE       1
-
-
-
-++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
 Path Begin     : \PRS_1:sC8:PrISMdp:u0\/ce0_comb
 Path End       : Net_104/main_1
 Capture Clock  : Net_104/clock_0
-Path slack     : 989198p
+Path slack     : 989197p
 
 Capture Clock Arrival Time                               0
 + Clock path delay                                       0
@@ -346,9 +303,9 @@ End-of-path required time (ps)                      996490
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       7292
++ Data path delay                       7293
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           7292
+End-of-path arrival time (ps)           7293
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -361,8 +318,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                         model name     delay     AT   slack  edge  Fanout
 -------------------------------  -------------  -----  -----  ------  ----  ------
-\PRS_1:sC8:PrISMdp:u0\/ce0_comb  datapathcell1   5060   5060  989198  RISE       1
-Net_104/main_1                   macrocell1      2232   7292  989198  RISE       1
+\PRS_1:sC8:PrISMdp:u0\/ce0_comb  datapathcell1   5060   5060  989197  RISE       1
+Net_104/main_1                   macrocell1      2233   7293  989197  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -371,6 +328,50 @@ ClockBlock/udb_div_0                                      m0s8clockblockcell    
 ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
 ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
 Net_104/clock_0                                           macrocell1                 0      0  RISE       1
+
+
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \PRS_2:sC8:PrISMdp:u0\/ce0_comb
+Path End       : Net_108/main_1
+Capture Clock  : Net_108/clock_0
+Path slack     : 989201p
+
+Capture Clock Arrival Time                               0
++ Clock path delay                                       0
++ Cycle adjust (PRS_Clock:R#1 vs. PRS_Clock:R#2)   1000000
+- Setup time                                         -3510
+------------------------------------------------   ------- 
+End-of-path required time (ps)                      996490
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       7289
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           7289
+ 
+Launch Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\PRS_2:sC8:PrISMdp:u0\/clock                              datapathcell2              0      0  RISE       1
+
+Data path
+pin name                         model name     delay     AT   slack  edge  Fanout
+-------------------------------  -------------  -----  -----  ------  ----  ------
+\PRS_2:sC8:PrISMdp:u0\/ce0_comb  datapathcell2   5060   5060  989201  RISE       1
+Net_108/main_1                   macrocell3      2229   7289  989201  RISE       1
+
+Capture Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+Net_108/clock_0                                           macrocell3                 0      0  RISE       1
 
 
 
@@ -420,9 +421,9 @@ Net_105/clock_0                                           macrocell2            
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin     : \PRS_1:SyncCtl:ControlReg\/control_0
-Path End       : \PRS_1:enable_final_reg\/main_0
-Capture Clock  : \PRS_1:enable_final_reg\/clock_0
+Path Begin     : \PRS_2:SyncCtl:ControlReg\/control_0
+Path End       : \PRS_2:enable_final_reg\/main_0
+Capture Clock  : \PRS_2:enable_final_reg\/clock_0
 Path slack     : 991647p
 
 Capture Clock Arrival Time                               0
@@ -444,57 +445,13 @@ pin name                                                  model name            
 ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
 ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
 ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\PRS_1:SyncCtl:ControlReg\/clock                          controlcell1               0      0  RISE       1
-
-Data path
-pin name                              model name    delay     AT   slack  edge  Fanout
-------------------------------------  ------------  -----  -----  ------  ----  ------
-\PRS_1:SyncCtl:ControlReg\/control_0  controlcell1   2580   2580  991647  RISE       1
-\PRS_1:enable_final_reg\/main_0       macrocell4     2263   4843  991647  RISE       1
-
-Capture Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\PRS_1:enable_final_reg\/clock_0                          macrocell4                 0      0  RISE       1
-
-
-
-++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin     : \PRS_2:SyncCtl:ControlReg\/control_0
-Path End       : \PRS_2:enable_final_reg\/main_0
-Capture Clock  : \PRS_2:enable_final_reg\/clock_0
-Path slack     : 991659p
-
-Capture Clock Arrival Time                               0
-+ Clock path delay                                       0
-+ Cycle adjust (PRS_Clock:R#1 vs. PRS_Clock:R#2)   1000000
-- Setup time                                         -3510
-------------------------------------------------   ------- 
-End-of-path required time (ps)                      996490
-
-Launch Clock Arrival Time                      0
-+ Clock path delay                         0
-+ Data path delay                       4831
--------------------------------------   ---- 
-End-of-path arrival time (ps)           4831
- 
-Launch Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
 \PRS_2:SyncCtl:ControlReg\/clock                          controlcell2               0      0  RISE       1
 
 Data path
 pin name                              model name    delay     AT   slack  edge  Fanout
 ------------------------------------  ------------  -----  -----  ------  ----  ------
-\PRS_2:SyncCtl:ControlReg\/control_0  controlcell2   2580   2580  991659  RISE       1
-\PRS_2:enable_final_reg\/main_0       macrocell5     2251   4831  991659  RISE       1
+\PRS_2:SyncCtl:ControlReg\/control_0  controlcell2   2580   2580  991647  RISE       1
+\PRS_2:enable_final_reg\/main_0       macrocell5     2263   4843  991647  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -506,12 +463,12 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 
 
 
-++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \PRS_2:SyncCtl:ControlReg\/control_1
 Path End       : Net_108/main_0
 Capture Clock  : Net_108/clock_0
-Path slack     : 991661p
+Path slack     : 991662p
 
 Capture Clock Arrival Time                               0
 + Clock path delay                                       0
@@ -522,9 +479,9 @@ End-of-path required time (ps)                      996490
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       4829
++ Data path delay                       4828
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           4829
+End-of-path arrival time (ps)           4828
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -537,8 +494,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                              model name    delay     AT   slack  edge  Fanout
 ------------------------------------  ------------  -----  -----  ------  ----  ------
-\PRS_2:SyncCtl:ControlReg\/control_1  controlcell2   2580   2580  991661  RISE       1
-Net_108/main_0                        macrocell3     2249   4829  991661  RISE       1
+\PRS_2:SyncCtl:ControlReg\/control_1  controlcell2   2580   2580  991662  RISE       1
+Net_108/main_0                        macrocell3     2248   4828  991662  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -550,7 +507,7 @@ Net_108/clock_0                                           macrocell3            
 
 
 
-++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \PRS_1:SyncCtl:ControlReg\/control_1
 Path End       : Net_104/main_0
@@ -594,12 +551,12 @@ Net_104/clock_0                                           macrocell1            
 
 
 
-++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \PRS_1:SyncCtl:ControlReg\/control_2
 Path End       : Net_105/main_0
 Capture Clock  : Net_105/clock_0
-Path slack     : 991668p
+Path slack     : 991664p
 
 Capture Clock Arrival Time                               0
 + Clock path delay                                       0
@@ -610,9 +567,9 @@ End-of-path required time (ps)                      996490
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       4822
++ Data path delay                       4826
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           4822
+End-of-path arrival time (ps)           4826
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -625,8 +582,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                              model name    delay     AT   slack  edge  Fanout
 ------------------------------------  ------------  -----  -----  ------  ----  ------
-\PRS_1:SyncCtl:ControlReg\/control_2  controlcell1   2580   2580  991668  RISE       1
-Net_105/main_0                        macrocell2     2242   4822  991668  RISE       1
+\PRS_1:SyncCtl:ControlReg\/control_2  controlcell1   2580   2580  991664  RISE       1
+Net_105/main_0                        macrocell2     2246   4826  991664  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -638,100 +595,56 @@ Net_105/clock_0                                           macrocell2            
 
 
 
+++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \PRS_1:SyncCtl:ControlReg\/control_0
+Path End       : \PRS_1:enable_final_reg\/main_0
+Capture Clock  : \PRS_1:enable_final_reg\/clock_0
+Path slack     : 991665p
+
+Capture Clock Arrival Time                               0
++ Clock path delay                                       0
++ Cycle adjust (PRS_Clock:R#1 vs. PRS_Clock:R#2)   1000000
+- Setup time                                         -3510
+------------------------------------------------   ------- 
+End-of-path required time (ps)                      996490
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       4825
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           4825
+ 
+Launch Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\PRS_1:SyncCtl:ControlReg\/clock                          controlcell1               0      0  RISE       1
+
+Data path
+pin name                              model name    delay     AT   slack  edge  Fanout
+------------------------------------  ------------  -----  -----  ------  ----  ------
+\PRS_1:SyncCtl:ControlReg\/control_0  controlcell1   2580   2580  991665  RISE       1
+\PRS_1:enable_final_reg\/main_0       macrocell4     2245   4825  991665  RISE       1
+
+Capture Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\PRS_1:enable_final_reg\/clock_0                          macrocell4                 0      0  RISE       1
+
+
+
 ++++ Path 11 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin     : \PRS_2:enable_final_reg\/q
-Path End       : Net_108/clk_en
-Capture Clock  : Net_108/clock_0
-Path slack     : 994393p
-
-Capture Clock Arrival Time                               0
-+ Clock path delay                                       0
-+ Cycle adjust (PRS_Clock:R#1 vs. PRS_Clock:R#2)   1000000
-- Setup time                                         -2100
-------------------------------------------------   ------- 
-End-of-path required time (ps)                      997900
-
-Launch Clock Arrival Time                      0
-+ Clock path delay                         0
-+ Data path delay                       3507
--------------------------------------   ---- 
-End-of-path arrival time (ps)           3507
- 
-Launch Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\PRS_2:enable_final_reg\/clock_0                          macrocell5                 0      0  RISE       1
-
-Data path
-pin name                    model name   delay     AT   slack  edge  Fanout
---------------------------  -----------  -----  -----  ------  ----  ------
-\PRS_2:enable_final_reg\/q  macrocell5    1250   1250  994393  RISE       1
-Net_108/clk_en              macrocell3    2257   3507  994393  RISE       1
-
-Capture Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-Net_108/clock_0                                           macrocell3                 0      0  RISE       1
-
-
-
-++++ Path 12 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin     : \PRS_2:enable_final_reg\/q
-Path End       : \PRS_2:sC8:PrISMdp:u0\/clk_en
-Capture Clock  : \PRS_2:sC8:PrISMdp:u0\/clock
-Path slack     : 994393p
-
-Capture Clock Arrival Time                               0
-+ Clock path delay                                       0
-+ Cycle adjust (PRS_Clock:R#1 vs. PRS_Clock:R#2)   1000000
-- Setup time                                         -2100
-------------------------------------------------   ------- 
-End-of-path required time (ps)                      997900
-
-Launch Clock Arrival Time                      0
-+ Clock path delay                         0
-+ Data path delay                       3507
--------------------------------------   ---- 
-End-of-path arrival time (ps)           3507
- 
-Launch Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\PRS_2:enable_final_reg\/clock_0                          macrocell5                 0      0  RISE       1
-
-Data path
-pin name                       model name     delay     AT   slack  edge  Fanout
------------------------------  -------------  -----  -----  ------  ----  ------
-\PRS_2:enable_final_reg\/q     macrocell5      1250   1250  994393  RISE       1
-\PRS_2:sC8:PrISMdp:u0\/clk_en  datapathcell2   2257   3507  994393  RISE       1
-
-Capture Clock Path
-pin name                                                  model name             delay     AT  edge  Fanout
---------------------------------------------------------  ---------------------  -----  -----  ----  ------
-ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
-ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
-ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\PRS_2:sC8:PrISMdp:u0\/clock                              datapathcell2              0      0  RISE       1
-
-
-
-++++ Path 13 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \PRS_1:enable_final_reg\/q
 Path End       : Net_104/clk_en
 Capture Clock  : Net_104/clock_0
-Path slack     : 994402p
+Path slack     : 994374p
 
 Capture Clock Arrival Time                               0
 + Clock path delay                                       0
@@ -742,9 +655,9 @@ End-of-path required time (ps)                      997900
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       3498
++ Data path delay                       3526
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           3498
+End-of-path arrival time (ps)           3526
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -757,8 +670,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                    model name   delay     AT   slack  edge  Fanout
 --------------------------  -----------  -----  -----  ------  ----  ------
-\PRS_1:enable_final_reg\/q  macrocell4    1250   1250  994402  RISE       1
-Net_104/clk_en              macrocell1    2248   3498  994402  RISE       1
+\PRS_1:enable_final_reg\/q  macrocell4    1250   1250  994374  RISE       1
+Net_104/clk_en              macrocell1    2276   3526  994374  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -770,12 +683,12 @@ Net_104/clock_0                                           macrocell1            
 
 
 
-++++ Path 14 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 12 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \PRS_1:enable_final_reg\/q
 Path End       : Net_105/clk_en
 Capture Clock  : Net_105/clock_0
-Path slack     : 994402p
+Path slack     : 994374p
 
 Capture Clock Arrival Time                               0
 + Clock path delay                                       0
@@ -786,9 +699,9 @@ End-of-path required time (ps)                      997900
 
 Launch Clock Arrival Time                      0
 + Clock path delay                         0
-+ Data path delay                       3498
++ Data path delay                       3526
 -------------------------------------   ---- 
-End-of-path arrival time (ps)           3498
+End-of-path arrival time (ps)           3526
  
 Launch Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -801,8 +714,8 @@ ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell 
 Data path
 pin name                    model name   delay     AT   slack  edge  Fanout
 --------------------------  -----------  -----  -----  ------  ----  ------
-\PRS_1:enable_final_reg\/q  macrocell4    1250   1250  994402  RISE       1
-Net_105/clk_en              macrocell2    2248   3498  994402  RISE       1
+\PRS_1:enable_final_reg\/q  macrocell4    1250   1250  994374  RISE       1
+Net_105/clk_en              macrocell2    2276   3526  994374  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -814,11 +727,55 @@ Net_105/clock_0                                           macrocell2            
 
 
 
-++++ Path 15 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 13 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin     : \PRS_1:enable_final_reg\/q
 Path End       : \PRS_1:sC8:PrISMdp:u0\/clk_en
 Capture Clock  : \PRS_1:sC8:PrISMdp:u0\/clock
+Path slack     : 994374p
+
+Capture Clock Arrival Time                               0
++ Clock path delay                                       0
++ Cycle adjust (PRS_Clock:R#1 vs. PRS_Clock:R#2)   1000000
+- Setup time                                         -2100
+------------------------------------------------   ------- 
+End-of-path required time (ps)                      997900
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       3526
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           3526
+ 
+Launch Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\PRS_1:enable_final_reg\/clock_0                          macrocell4                 0      0  RISE       1
+
+Data path
+pin name                       model name     delay     AT   slack  edge  Fanout
+-----------------------------  -------------  -----  -----  ------  ----  ------
+\PRS_1:enable_final_reg\/q     macrocell4      1250   1250  994374  RISE       1
+\PRS_1:sC8:PrISMdp:u0\/clk_en  datapathcell1   2276   3526  994374  RISE       1
+
+Capture Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\PRS_1:sC8:PrISMdp:u0\/clock                              datapathcell1              0      0  RISE       1
+
+
+
+++++ Path 14 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \PRS_2:enable_final_reg\/q
+Path End       : Net_108/clk_en
+Capture Clock  : Net_108/clock_0
 Path slack     : 994402p
 
 Capture Clock Arrival Time                               0
@@ -840,13 +797,13 @@ pin name                                                  model name            
 ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
 ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
 ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\PRS_1:enable_final_reg\/clock_0                          macrocell4                 0      0  RISE       1
+\PRS_2:enable_final_reg\/clock_0                          macrocell5                 0      0  RISE       1
 
 Data path
-pin name                       model name     delay     AT   slack  edge  Fanout
------------------------------  -------------  -----  -----  ------  ----  ------
-\PRS_1:enable_final_reg\/q     macrocell4      1250   1250  994402  RISE       1
-\PRS_1:sC8:PrISMdp:u0\/clk_en  datapathcell1   2248   3498  994402  RISE       1
+pin name                    model name   delay     AT   slack  edge  Fanout
+--------------------------  -----------  -----  -----  ------  ----  ------
+\PRS_2:enable_final_reg\/q  macrocell5    1250   1250  994402  RISE       1
+Net_108/clk_en              macrocell3    2248   3498  994402  RISE       1
 
 Capture Clock Path
 pin name                                                  model name             delay     AT  edge  Fanout
@@ -854,7 +811,51 @@ pin name                                                  model name            
 ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
 ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
 ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
-\PRS_1:sC8:PrISMdp:u0\/clock                              datapathcell1              0      0  RISE       1
+Net_108/clock_0                                           macrocell3                 0      0  RISE       1
+
+
+
+++++ Path 15 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : \PRS_2:enable_final_reg\/q
+Path End       : \PRS_2:sC8:PrISMdp:u0\/clk_en
+Capture Clock  : \PRS_2:sC8:PrISMdp:u0\/clock
+Path slack     : 994402p
+
+Capture Clock Arrival Time                               0
++ Clock path delay                                       0
++ Cycle adjust (PRS_Clock:R#1 vs. PRS_Clock:R#2)   1000000
+- Setup time                                         -2100
+------------------------------------------------   ------- 
+End-of-path required time (ps)                      997900
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       3498
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           3498
+ 
+Launch Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\PRS_2:enable_final_reg\/clock_0                          macrocell5                 0      0  RISE       1
+
+Data path
+pin name                       model name     delay     AT   slack  edge  Fanout
+-----------------------------  -------------  -----  -----  ------  ----  ------
+\PRS_2:enable_final_reg\/q     macrocell5      1250   1250  994402  RISE       1
+\PRS_2:sC8:PrISMdp:u0\/clk_en  datapathcell2   2248   3498  994402  RISE       1
+
+Capture Clock Path
+pin name                                                  model name             delay     AT  edge  Fanout
+--------------------------------------------------------  ---------------------  -----  -----  ----  ------
+ClockBlock/udb_div_0                                      m0s8clockblockcell         0      0  RISE       1
+ClockGenBlock/gen_clk_in_0                                m0s8clockgenblockcell      0      0  RISE       1
+ClockGenBlock/gen_clk_out_0                               m0s8clockgenblockcell      0      0  RISE       1
+\PRS_2:sC8:PrISMdp:u0\/clock                              datapathcell2              0      0  RISE       1
 
 
 ===================================================================== 

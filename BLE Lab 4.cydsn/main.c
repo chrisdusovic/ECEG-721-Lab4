@@ -46,11 +46,14 @@
 #include <BLEApplications.h>
 
 
+uint8 shut_down_led = TRUE;
+
 /*****************************************************************************
 * Function Prototypes
 *****************************************************************************/
 static void InitializeSystem(void);
 static void HandleCapSenseSlider(void);
+void HandleLowPowerMode(void);
 
 
 /*****************************************************************************
@@ -98,6 +101,8 @@ int main()
 				HandleCapSenseSlider();
 			}
 		}
+        
+        HandleLowPowerMode();
     }	
 }
 
@@ -195,6 +200,68 @@ void HandleCapSenseSlider(void)
 
 		}	
 	}	
+}
+
+void HandleLowPowerMode(void)
+{
+	// Local variable to store the status of BLESS Hardware block
+	CYBLE_LP_MODE_T sleepMode;
+	CYBLE_BLESS_STATE_T blessState;
+
+    /* Put CapSense to Sleep*/
+	CapSense_Sleep();
+	
+	/* Put BLESS into Deep Sleep and check the return status */
+	sleepMode = CyBle_EnterLPM(CYBLE_BLESS_DEEPSLEEP);
+	
+	/* Disable global interrupt to prevent changes from any other interrupt ISR */
+	CyGlobalIntDisable;
+
+	/* Check the Status of BLESS */
+	blessState = CyBle_GetBleSsState();
+
+	if(sleepMode == CYBLE_BLESS_DEEPSLEEP)
+	{
+	    /* If the ECO has started or the BLESS can go to Deep Sleep, then place CPU 
+		* to Deep Sleep */
+//		if(blessState == CYBLE_BLESS_STATE_ECO_ON || blessState == CYBLE_BLESS_STATE_DEEPSLEEP)
+//	    {
+//			if(shut_down_led)
+//			{
+//				/* Place CPU to Deep sleep only when the RGB PrISM module is not 
+//				* active (indicated by flag 'shut_down_led'). 
+//				* If RGB PrISM is active, then the CPU should only be placed in 
+//				* Sleep to allow the SysTick to function and control the color 
+//				* and Intensity */
+//		        CySysPmDeepSleep();
+//			}
+//			else
+//			{
+//				/* If the system is controlling RGB LED, then PrISM needs to be running. 
+//				* Put CPU to sleep only */
+//				CySysPmSleep();
+//			}
+//	 	}
+        if(blessState == CYBLE_BLESS_STATE_ECO_ON)
+        {
+            CySysPmSleep();
+        }
+	}
+	else
+	{
+	    if(blessState != CYBLE_BLESS_STATE_EVENT_CLOSE)
+	    {
+			/* If the BLESS hardware block cannot go to Deep Sleep and BLE Event has not 
+			* closed yet, then place CPU to Sleep */
+	        CySysPmSleep();
+	    }
+	}
+	
+	/* Re-enable global interrupt mask after wakeup */
+	CyGlobalIntEnable;
+	
+	/* Wakeup CapSense Block */
+	CapSense_Wakeup();
 }
 
 /* [] END OF FILE */

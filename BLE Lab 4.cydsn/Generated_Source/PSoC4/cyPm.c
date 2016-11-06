@@ -77,49 +77,49 @@ void CySysPmSleep(void)
 *******************************************************************************/
 void CySysPmDeepSleep(void)
 {
-    uint8 interruptState;
-    #if(CY_IP_SRSSV2)
-        volatile uint32 clkSelectReg;
-    #endif /* (CY_IP_SRSSV2) */
-
-    interruptState = CyEnterCriticalSection();
-
-    #if(CY_IP_SRSSV2)
-        /* Device enters DeepSleep mode when CPU asserts SLEEPDEEP signal */
-        CY_PM_PWR_CONTROL_REG &= (uint32) (~CY_PM_PWR_CONTROL_HIBERNATE);
-    #endif /* (CY_IP_SRSSV2) */
-
-    #if (CY_PSOC4_4100 || CY_PSOC4_4200)
-        CY_PM_CPUSS_CONFIG_REG |= CY_PM_CPUSS_CONFIG_FLSH_ACC_BYPASS;
-    #endif /* (CY_PSOC4_4100 || CY_PSOC4_4200) */
-
-    /* Adjust delay to wait for references to settle on wakeup from Deep Sleep */
-    CY_PM_PWR_KEY_DELAY_REG = CY_SFLASH_DPSLP_KEY_DELAY_REG;
-
-    /* CM0 enters DeepSleep/Hibernate mode upon execution of WFI */
-    CY_PM_CM0_SCR_REG |= CY_PM_CM0_SCR_SLEEPDEEP;
-
-    #if(CY_IP_SRSSV2)
-        /* Preserve system clock configuration and
-        * reduce sysclk to <=12 MHz (Cypress ID #158710, #179888).
-        */
-        clkSelectReg = CY_SYS_CLK_SELECT_REG;
-        CySysClkWriteSysclkDiv(CY_SYS_CLK_SYSCLK_DIV4);
-    #endif /* (CY_IP_SRSSV2) */
-
-    /* Sleep and wait for interrupt */
-    CY_PM_WFI;
-
-    #if(CY_IP_SRSSV2)
-        /* Restore system clock configuration */
-        CY_SYS_CLK_SELECT_REG = clkSelectReg;
-    #endif /* (CY_IP_SRSSV2) */
-
-    #if (CY_PSOC4_4100 || CY_PSOC4_4200)
-        CY_PM_CPUSS_CONFIG_REG &= (uint32) (~CY_PM_CPUSS_CONFIG_FLSH_ACC_BYPASS);
-    #endif /* (CY_PSOC4_4100 || CY_PSOC4_4200) */
-
-    CyExitCriticalSection(interruptState);
+//    uint8 interruptState;
+//    #if(CY_IP_SRSSV2)
+//        volatile uint32 clkSelectReg;
+//    #endif /* (CY_IP_SRSSV2) */
+//
+//    interruptState = CyEnterCriticalSection();
+//
+//    #if(CY_IP_SRSSV2)
+//        /* Device enters DeepSleep mode when CPU asserts SLEEPDEEP signal */
+//        CY_PM_PWR_CONTROL_REG &= (uint32) (~CY_PM_PWR_CONTROL_HIBERNATE);
+//    #endif /* (CY_IP_SRSSV2) */
+//
+//    #if (CY_PSOC4_4100 || CY_PSOC4_4200)
+//        CY_PM_CPUSS_CONFIG_REG |= CY_PM_CPUSS_CONFIG_FLSH_ACC_BYPASS;
+//    #endif /* (CY_PSOC4_4100 || CY_PSOC4_4200) */
+//
+//    /* Adjust delay to wait for references to settle on wakeup from Deep Sleep */
+//    CY_PM_PWR_KEY_DELAY_REG = CY_SFLASH_DPSLP_KEY_DELAY_REG;
+//
+//    /* CM0 enters DeepSleep/Hibernate mode upon execution of WFI */
+//    CY_PM_CM0_SCR_REG |= CY_PM_CM0_SCR_SLEEPDEEP;
+//
+//    #if(CY_IP_SRSSV2)
+//        /* Preserve system clock configuration and
+//        * reduce sysclk to <=12 MHz (Cypress ID #158710, #179888).
+//        */
+//        clkSelectReg = CY_SYS_CLK_SELECT_REG;
+//        CySysClkWriteSysclkDiv(CY_SYS_CLK_SYSCLK_DIV4);
+//    #endif /* (CY_IP_SRSSV2) */
+//
+//    /* Sleep and wait for interrupt */
+//    CY_PM_WFI;
+//
+//    #if(CY_IP_SRSSV2)
+//        /* Restore system clock configuration */
+//        CY_SYS_CLK_SELECT_REG = clkSelectReg;
+//    #endif /* (CY_IP_SRSSV2) */
+//
+//    #if (CY_PSOC4_4100 || CY_PSOC4_4200)
+//        CY_PM_CPUSS_CONFIG_REG &= (uint32) (~CY_PM_CPUSS_CONFIG_FLSH_ACC_BYPASS);
+//    #endif /* (CY_PSOC4_4100 || CY_PSOC4_4200) */
+//
+//    CyExitCriticalSection(interruptState);
 }
 
 
