@@ -56,7 +56,7 @@ uint8 CapSense_sensorOnMask[CapSense_TOTAL_SENSOR_MASK] = {0u};
 
 uint8 CapSense_lowBaselineResetCnt[CapSense_TOTAL_SENSOR_COUNT];
 uint8 CapSense_lowBaselineReset[CapSense_TOTAL_SENSOR_COUNT] = {
-    30u, 30u, 30u, 30u, 30u, 
+    30u, 
 };
 
 
@@ -79,27 +79,19 @@ uint8 CapSense_negativeNoiseThreshold[CapSense_THRESHOLD_TBL_SIZE];
 uint8 CapSense_hysteresis[CapSense_WIDGET_PARAM_TBL_SIZE];
 
 uint8 CapSense_debounce[] = {
-    1u, 
+    5u, 
+};
+
+static uint8 CapSense_debounceCounter[] = {
+    0u, 0u, 
 };
 
 const uint8 CapSense_rawDataIndex[] = {
-    0u, /* LinearSlider0__LS */
+    0u, /* ProximitySensor0__PROX */
 };
 
 const uint8 CapSense_numberOfSensors[] = {
-    5u, /* LinearSlider0__LS */
-};
-
-static const uint16 CapSense_centroidMult[] = {
-    6400u, 
-};
-
-static uint8 CapSense_posFiltersMask[] = {
-    0x8u, 
-};
-
-static uint8 CapSense_posFiltersData[] = {
-    1u, 0u, 0u, 
+    1u, /* ProximitySensor0__PROX */
 };
 
 
@@ -161,6 +153,7 @@ void CapSense_BaseInit(uint32 sensor)
     CapSense_sensorBaselineLow[sensor] = 0u;
     CapSense_sensorSignal[sensor] = 0u;
         
+    CapSense_debounceCounter[widget] =  CapSense_debounce[widget];
 
     
     #if ((0u != (CapSense_RAW_FILTER_MASK & CapSense_MEDIAN_FILTER)) ||\
@@ -1109,11 +1102,7 @@ uint32 CapSense_CheckIsSensorActive(uint32 sensor)
 
 	uint8 fingerThreshold;
 	uint8 hysteresis;
-	static uint8 CapSense_debounceCounter[] = {
-    0u, 
-};
-
-
+	
 	
     /* Prepare to find debounce counter index */
     widget = CapSense_widgetNumber[sensor];
@@ -1122,8 +1111,7 @@ uint32 CapSense_CheckIsSensorActive(uint32 sensor)
 	hysteresis = CapSense_hysteresis[widget];
 	debounce = CapSense_debounce[widget];	
 	
-	    debounceIndex = CapSense_UNUSED_DEBOUNCE_COUNTER_INDEX;
-    CapSense_debounceCounter[debounceIndex] = 1u;
+	    debounceIndex = widget;
 
 	
     /* Was on */

@@ -43,6 +43,7 @@
 <dep name=".\Generated_Source\PSoC4\CapSense_SMS.h" />
 <dep name=".\Generated_Source\PSoC4\CapSense_SampleClk.h" />
 <dep name=".\Generated_Source\PSoC4\CapSense_SenseClk.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Sns.h" />
 <dep name=".\Generated_Source\PSoC4\CapSense_Sns_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\CapSense_TunerHelper.h" />
 <dep name=".\Generated_Source\PSoC4\CyFlash.h" />
@@ -94,6 +95,7 @@
 <file name=".\Generated_Source\PSoC4\CapSense_SMS.h" />
 <file name=".\Generated_Source\PSoC4\CapSense_SampleClk.h" />
 <file name=".\Generated_Source\PSoC4\CapSense_SenseClk.h" />
+<file name=".\Generated_Source\PSoC4\CapSense_Sns.h" />
 <file name=".\Generated_Source\PSoC4\CapSense_Sns_aliases.h" />
 <file name=".\Generated_Source\PSoC4\CapSense_TunerHelper.h" />
 <file name=".\Generated_Source\PSoC4\CyFlash.h" />
@@ -145,6 +147,7 @@
 <dep name=".\Generated_Source\PSoC4\CapSense_SMS.h" />
 <dep name=".\Generated_Source\PSoC4\CapSense_SampleClk.h" />
 <dep name=".\Generated_Source\PSoC4\CapSense_SenseClk.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Sns.h" />
 <dep name=".\Generated_Source\PSoC4\CapSense_Sns_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\CapSense_TunerHelper.h" />
 <dep name=".\Generated_Source\PSoC4\CyFlash.h" />
@@ -433,6 +436,16 @@
 <dep name=".\Generated_Source\PSoC4\CapSense_SenseClk.c" />
 </file>
 <file name=".\Generated_Source\PSoC4\CapSense_SenseClk.c" />
+<file name=".\CortexM0\ARM_GCC_484\Debug\CapSense_Sns.o">
+<dep name=".\Generated_Source\PSoC4\CapSense_Sns.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Sns_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Sns.c" />
+</file>
+<file name=".\Generated_Source\PSoC4\CapSense_Sns.c" />
 <file name=".\CortexM0\ARM_GCC_484\Debug\CapSense_TunerHelper.o">
 <dep name=".\Generated_Source\PSoC4\CapSense.h" />
 <dep name=".\Generated_Source\PSoC4\CapSense_CSHL.h" />
@@ -616,6 +629,7 @@
 <dep name=".\CortexM0\ARM_GCC_484\Debug\CapSense_SMS.o" />
 <dep name=".\CortexM0\ARM_GCC_484\Debug\BLE_1_bless_isr.o" />
 <dep name=".\CortexM0\ARM_GCC_484\Debug\CapSense_SampleClk.o" />
+<dep name=".\CortexM0\ARM_GCC_484\Debug\CapSense_Sns.o" />
 <dep name=".\CortexM0\ARM_GCC_484\Debug\CapSense_SenseClk.o" />
 <dep name=".\CortexM0\ARM_GCC_484\Debug\Cm0Start.o" />
 <dep name=".\CortexM0\ARM_GCC_484\Debug\CyBootAsmGnu.o" />
@@ -1282,14 +1296,14 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
 </warp_dep>
-<deps_time v="131225859061779154" />
+<deps_time v="131226054996513313" />
 <top_block v="TopDesign" />
 <last_generation v="7" />
 </CyGuid_925cc1e1-309e-4e08-b0a1-09a83c35b157>
 </dataGuid>
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
-<deps_time v="131225859113571245" />
+<deps_time v="131226055511397233" />
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
 </userData>

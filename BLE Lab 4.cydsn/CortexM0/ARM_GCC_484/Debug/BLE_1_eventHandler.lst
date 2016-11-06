@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
   17:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** 
   18:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** 
   19:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** /***************************************
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 2
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 2
 
 
   20:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** ##Private Function Prototypes
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
   74:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #endif /* CYBLE_GAP_ROLE_CENTRAL || CYBLE_GAP_ROLE_OBSERVER */
   75:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** 
   76:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #if(CYBLE_GATT_ROLE_CLIENT)
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 3
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 3
 
 
   77:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** uint8 cyBle_disCount; /* Counter for discovery procedures */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  131:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #endif /* CYBLE_IAS_CLIENT */
  132:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #ifdef CYBLE_LLS_CLIENT
  133:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     {{CYBLE_GATT_INVALID_ATTR_HANDLE_VALUE, CYBLE_GATT_INVALID_ATTR_HANDLE_VALUE}, CYBLE_UUID_LINK_
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 4
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 4
 
 
  134:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #endif /* CYBLE_LLS_CLIENT */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  188:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** Return:
  189:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****  None
  190:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 5
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 5
 
 
  191:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** ******************************************************************************/
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  225:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     }
  226:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #endif /* CYBLE_CSCS_SERVER */
  227:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #ifdef CYBLE_CTS_SERVER
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 6
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 6
 
 
  228:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     if((CYBLE_GATT_ERR_NONE == gattErr) && ((cyBle_eventHandlerFlag & CYBLE_CALLBACK) != 0u))
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  282:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     if((CYBLE_GATT_ERR_NONE == gattErr) && ((cyBle_eventHandlerFlag & CYBLE_CALLBACK) != 0u))
  283:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     {
  284:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****         gattErr = CyBle_ScpssWriteEventHandler(eventParam);
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 7
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 7
 
 
  285:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     }
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
   88 0046 3A1C     		mov	r2, r7
   89 0048 0F32     		add	r2, r2, #15
   90 004a 1278     		ldrb	r2, [r2]
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 8
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 8
 
 
   91 004c DA70     		strb	r2, [r3, #3]
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  329:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** Parameters:
  330:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****  CYBLE_CONN_HANDLE_T *eventParam - Pointer to a structure
  331:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     of type 'CYBLE_CONN_HANDLE_T'
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 9
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 9
 
 
  332:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  375:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****         {
  376:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****             CyBle_LnssConfirmationEventHandler(eventParam);
  377:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****         }
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 10
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 10
 
 
  378:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     #endif /* CYBLE_LNS_SERVER */
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  417:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** {
  418:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #ifdef CYBLE_ANS_CLIENT
  419:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     CyBle_AnscWriteResponseEventHandler(eventParam);
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 11
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 11
 
 
  420:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #endif /* CYBLE_ANS_CLIENT */
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  474:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****         CyBle_HidscWriteResponseEventHandler(eventParam);
  475:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     }
  476:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #endif /* CYBLE_HIDS_CLIENT */
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 12
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 12
 
 
  477:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  531:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     }
  532:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #endif /* CYBLE_TPS_CLIENT */
  533:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 13
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 13
 
 
  534:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #ifdef CYBLE_UDS_CLIENT
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  588:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     {
  589:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****         CyBle_CscscNotificationEventHandler(eventParam);
  590:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     }
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 14
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 14
 
 
  591:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #endif /* CYBLE_CSCS_CLIENT */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  645:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #endif /* CYBLE_SCPS_CLIENT */
  646:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #ifdef CYBLE_TPS_CLIENT
  647:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     if((cyBle_eventHandlerFlag & CYBLE_CALLBACK) != 0u)
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 15
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 15
 
 
  648:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     {
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  702:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     if((cyBle_eventHandlerFlag & CYBLE_CALLBACK) != 0u)
  703:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     {
  704:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****         CyBle_GlscIndicationEventHandler(eventParam);
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 16
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 16
 
 
  705:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     }
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  759:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #endif /* CYBLE_BAS_CLIENT */
  760:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #ifdef CYBLE_BLS_CLIENT
  761:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     if((cyBle_eventHandlerFlag & CYBLE_CALLBACK) != 0u)
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 17
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 17
 
 
  762:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     {
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  816:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     {
  817:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****         CyBle_HtscReadResponseEventHandler(eventParam);
  818:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     }
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 18
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 18
 
 
  819:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #endif /* CYBLE_HTS_CLIENT */
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  873:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #endif /* CYBLE_UDS_CLIENT */
  874:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** }
  875:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** #endif /* CYBLE_GATT_ROLE_CLIENT */
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 19
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 19
 
 
  876:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** 
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  914:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     #ifdef CYBLE_CPS_CLIENT
  915:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****         CyBle_CpscDisconnectEventHandler();
  916:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     #endif /* CYBLE_CPS_CLIENT */
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 20
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 20
 
 
  917:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  187              		.cfi_startproc
  188 0000 80B5     		push	{r7, lr}
  189              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 21
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 21
 
 
  190              		.cfi_offset 7, -8
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  202              		.cfi_endproc
  203              	.LFE5:
  204              		.size	CyBle_TimeOutEventHandler, .-CyBle_TimeOutEventHandler
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 22
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 22
 
 
  205              		.section	.text.CyBle_GattConnectReqHandler,"ax",%progbits
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  221 0004 BD46     		mov	sp, r7
  222              		@ sp needed
  223 0006 80BD     		pop	{r7, pc}
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 23
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 23
 
 
  224              		.cfi_endproc
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  252 0012 9B79     		ldrb	r3, [r3, #6]
  253 0014 002B     		cmp	r3, #0
  254 0016 1CD1     		bne	.L13
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 24
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 24
 
 
 1058:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     {
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  296 0054 0E33     		add	r3, r3, #14
  297 0056 1B78     		ldrb	r3, [r3]
 1069:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** }
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 25
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 25
 
 
  298              		.loc 1 1069 0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
 1095:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     
 1096:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     /* Unreferenced variable warning workaround */
 1097:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     if(response != 0u)
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 26
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 26
 
 
 1098:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     {
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
 1126:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     {
 1127:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****     }
 1128:.\Generated_Source\PSoC4/BLE_1_eventHandler.c **** }
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 27
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 27
 
 
  353              		.loc 1 1128 0
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  387 0014 0122     		mov	r2, #1
  388 0016 1343     		orr	r3, r2
  389 0018 DAB2     		uxtb	r2, r3
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 28
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 28
 
 
  390 001a A04B     		ldr	r3, .L50
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  441 0088 66020000 		.word	.L49
  442 008c 66020000 		.word	.L49
  443 0090 66020000 		.word	.L49
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 29
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 29
 
 
  444 0094 66020000 		.word	.L49
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  498 016c 66020000 		.word	.L49
  499 0170 66020000 		.word	.L49
  500 0174 66020000 		.word	.L49
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 30
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 30
 
 
  501 0178 66020000 		.word	.L49
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  541 004e 0C33     		add	r3, r3, #12
  542 0050 0722     		mov	r2, #7
  543 0052 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 31
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 31
 
 
 1166:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****             bleSsPowerLevel.bleSsChId = CYBLE_LL_CONN_CH_TYPE;
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
 1182:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****             #if (SILICON_GENERATED_DEVICE_ADDRESS != 0u)
 1183:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****                 cyBle_deviceAddress.bdAddr[0] = CYBLE_SFLASH_DIE_X_REG;
  582              		.loc 1 1183 0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 32
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 32
 
 
  583 009a 834B     		ldr	r3, .L50+12
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
 1199:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****             CyBle_TimeOutEventHandler((CYBLE_TO_REASON_CODE_T *)eventParam);
  622              		.loc 1 1199 0
  623 00dc 3B68     		ldr	r3, [r7]
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 33
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 33
 
 
  624 00de 181C     		mov	r0, r3
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  655              		.loc 1 1222 0
  656 010c 6D4B     		ldr	r3, .L50+40
  657 010e 1A78     		ldrb	r2, [r3]
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 34
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 34
 
 
  658 0110 6B4B     		ldr	r3, .L50+36
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  687 013a 0422     		mov	r2, #4
  688 013c 1A70     		strb	r2, [r3]
 1248:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****             break;
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 35
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 35
 
 
  689              		.loc 1 1248 0
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  727              	.L44:
 1265:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****                 }
 1266:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****                 /* When application initiated stop advertisement */
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 36
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 36
 
 
 1267:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****                 else if(0u != (cyBle_eventHandlerFlag & CYBLE_STOP_FLAG))
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  767 01ba FFF7FEFF 		bl	CyBle_GappStartAdvertisement
  768 01be 031C     		mov	r3, r0
  769 01c0 002B     		cmp	r3, #0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 37
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 37
 
 
  770 01c2 03D1     		bne	.L43
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
 1326:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****                         }
 1327:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****                     #endif /* CYBLE_SLOW_ADV_ENABLED */
 1328:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****                     }
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 38
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 38
 
 
 1329:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****                 }
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
 1351:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****         #endif /* CYBLE_GATT_ROLE_SERVER */
 1352:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****         
 1353:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****         #if (CYBLE_GATT_ROLE_CLIENT)
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 39
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 39
 
 
 1354:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****             CyBle_SetClientState(CYBLE_CLIENT_STATE_CONNECTED);
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  843 0232 3B68     		ldr	r3, [r7]
  844 0234 3A1C     		mov	r2, r7
  845 0236 0E32     		add	r2, r2, #14
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 40
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 40
 
 
  846 0238 1288     		ldrh	r2, [r2]
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
 1409:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****             {
 1410:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****                 (void)CyBle_PasssWriteCmdEventHandler((CYBLE_GATTS_WRITE_REQ_PARAM_T *)eventParam);
 1411:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****             }
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 41
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 41
 
 
 1412:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****         #endif /* CYBLE_PASS_SERVER */
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
 1459:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****             /* Respond with a Handle Value Confirmation when request handled */
 1460:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****             if((cyBle_eventHandlerFlag & CYBLE_CALLBACK) == 0u)
 1461:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****             {
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 42
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 42
 
 
 1462:.\Generated_Source\PSoC4/BLE_1_eventHandler.c ****                 (void)CyBle_GattcConfirmation(((CYBLE_GATTC_HANDLE_VALUE_IND_PARAM_T *)eventParam)-
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  899 028c 1178     		ldrb	r1, [r2]
  900 028e 3A68     		ldr	r2, [r7]
  901 0290 081C     		mov	r0, r1
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 43
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 43
 
 
  902 0292 111C     		mov	r1, r2
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  953 0019 00000000 		.4byte	.Ldebug_ranges0+0
  954 001d 00000000 		.4byte	0
  955 0021 00000000 		.4byte	.Ldebug_line0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 44
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 44
 
 
  956 0025 02       		.uleb128 0x2
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1010 0088 48000000 		.4byte	0x48
  1011 008c 02       		.uleb128 0x2
  1012 008d 04       		.byte	0x4
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 45
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 45
 
 
  1013 008e 04       		.byte	0x4
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1067 00f4 610B0000 		.4byte	.LASF26
  1068 00f8 24       		.sleb128 36
  1069 00f9 08       		.uleb128 0x8
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 46
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 46
 
 
  1070 00fa 7D0B0000 		.4byte	.LASF27
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1124 0170 EC080000 		.4byte	.LASF45
  1125 0174 CA00     		.sleb128 74
  1126 0176 08       		.uleb128 0x8
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 47
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 47
 
 
  1127 0177 2E080000 		.4byte	.LASF46
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1181 01f5 67150000 		.4byte	.LASF64
  1182 01f9 F700     		.sleb128 119
  1183 01fb 08       		.uleb128 0x8
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 48
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 48
 
 
  1184 01fc EE010000 		.4byte	.LASF65
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1238 026b 2A030000 		.4byte	.LASF81
  1239 026f 0B       		.sleb128 11
  1240 0270 08       		.uleb128 0x8
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 49
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 49
 
 
  1241 0271 CE190000 		.4byte	.LASF82
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1295 02e4 21150000 		.4byte	.LASF100
  1296 02e8 8602     		.sleb128 262
  1297 02ea 00       		.byte	0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 50
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 50
 
 
  1298 02eb 09       		.uleb128 0x9
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1352 0354 7B060000 		.4byte	.LASF114
  1353 0358 03       		.byte	0x3
  1354 0359 3A02     		.2byte	0x23a
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 51
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 51
 
 
  1355 035b 37030000 		.4byte	0x337
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1409 03cf 07       		.uleb128 0x7
  1410 03d0 01       		.byte	0x1
  1411 03d1 04       		.byte	0x4
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 52
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 52
 
 
  1412 03d2 44       		.byte	0x44
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1466 043b 03       		.sleb128 3
  1467 043c 08       		.uleb128 0x8
  1468 043d 39180000 		.4byte	.LASF134
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 53
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 53
 
 
  1469 0441 04       		.sleb128 4
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1523 04a8 05       		.byte	0x5
  1524 04a9 2601     		.2byte	0x126
  1525 04ab E4040000 		.4byte	0x4e4
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 54
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 54
 
 
  1526 04af 0C       		.uleb128 0xc
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1580 0521 76000000 		.4byte	0x76
  1581 0525 04       		.byte	0x4
  1582 0526 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 55
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 55
 
 
  1583 0527 061C0000 		.4byte	.LASF157
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1637 0595 0D       		.sleb128 13
  1638 0596 08       		.uleb128 0x8
  1639 0597 FE120000 		.4byte	.LASF172
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 56
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 56
 
 
  1640 059b 0E       		.sleb128 14
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1694 0607 00       		.sleb128 0
  1695 0608 08       		.uleb128 0x8
  1696 0609 C3140000 		.4byte	.LASF189
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 57
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 57
 
 
  1697 060d 01       		.sleb128 1
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1751 067a 8001     		.sleb128 128
  1752 067c 08       		.uleb128 0x8
  1753 067d C3170000 		.4byte	.LASF208
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 58
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 58
 
 
  1754 0681 8001     		.sleb128 128
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1808 06f7 6401     		.2byte	0x164
  1809 06f9 CD060000 		.4byte	0x6cd
  1810 06fd 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 59
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 59
 
 
  1811 06fe 08       		.byte	0x8
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1865 076d A101     		.2byte	0x1a1
  1866 076f 8E070000 		.4byte	0x78e
  1867 0773 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 60
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 60
 
 
  1868 0774 4C160000 		.4byte	.LASF226
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1922 07e0 55       		.byte	0x55
  1923 07e1 F1060000 		.4byte	0x6f1
  1924 07e5 00       		.byte	0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 61
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 61
 
 
  1925 07e6 12       		.uleb128 0x12
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  1979 0855 2E000000 		.4byte	.LASF242
  1980 0859 01       		.byte	0x1
  1981 085a C0       		.byte	0xc0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 62
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 62
 
 
  1982 085b 00000000 		.4byte	.LFB2
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2036 08ca 00       		.byte	0
  2037 08cb 0F       		.uleb128 0xf
  2038 08cc 04       		.byte	0x4
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 63
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 63
 
 
  2039 08cd D1080000 		.4byte	0x8d1
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2093 094a 01       		.byte	0x1
  2094 094b 1C04     		.2byte	0x41c
  2095 094d 71090000 		.4byte	0x971
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 64
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 64
 
 
  2096 0951 02       		.uleb128 0x2
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2150 09bd 01       		.byte	0x1
  2151 09be 5E04     		.2byte	0x45e
  2152 09c0 C8090000 		.4byte	0x9c8
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 65
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 65
 
 
  2153 09c4 02       		.uleb128 0x2
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2207 0a35 76000000 		.4byte	0x76
  2208 0a39 02       		.uleb128 0x2
  2209 0a3a 91       		.byte	0x91
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 66
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 66
 
 
  2210 0a3b 76       		.sleb128 -10
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2264 0ab3 04       		.byte	0x4
  2265 0ab4 0E       		.uleb128 0xe
  2266 0ab5 A6000000 		.4byte	0xa6
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 67
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 67
 
 
  2267 0ab9 03       		.byte	0x3
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2321 000d 11       		.uleb128 0x11
  2322 000e 01       		.uleb128 0x1
  2323 000f 10       		.uleb128 0x10
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 68
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 68
 
 
  2324 0010 17       		.uleb128 0x17
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2378 0046 01       		.byte	0x1
  2379 0047 0B       		.uleb128 0xb
  2380 0048 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 69
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 69
 
 
  2381 0049 3A       		.uleb128 0x3a
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2435 007f 00       		.byte	0
  2436 0080 00       		.byte	0
  2437 0081 0C       		.uleb128 0xc
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 70
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 70
 
 
  2438 0082 0D       		.uleb128 0xd
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2492 00b8 00       		.byte	0
  2493 00b9 00       		.byte	0
  2494 00ba 11       		.uleb128 0x11
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 71
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 71
 
 
  2495 00bb 13       		.uleb128 0x13
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2549 00f1 11       		.uleb128 0x11
  2550 00f2 01       		.uleb128 0x1
  2551 00f3 12       		.uleb128 0x12
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 72
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 72
 
 
  2552 00f4 06       		.uleb128 0x6
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2606 012b 0B       		.uleb128 0xb
  2607 012c 3B       		.uleb128 0x3b
  2608 012d 05       		.uleb128 0x5
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 73
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 73
 
 
  2609 012e 49       		.uleb128 0x49
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2663 0165 03       		.uleb128 0x3
  2664 0166 0E       		.uleb128 0xe
  2665 0167 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 74
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 74
 
 
  2666 0168 0B       		.uleb128 0xb
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2720 01a0 00       		.byte	0
  2721 01a1 20       		.uleb128 0x20
  2722 01a2 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 75
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 75
 
 
  2723 01a3 01       		.byte	0x1
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2777 01da 03       		.uleb128 0x3
  2778 01db 0E       		.uleb128 0xe
  2779 01dc 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 76
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 76
 
 
  2780 01dd 0B       		.uleb128 0xb
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2834 0054 D8020000 		.4byte	.LFE10-.LFB10
  2835 0058 00000000 		.4byte	0
  2836 005c 00000000 		.4byte	0
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 77
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 77
 
 
  2837              		.section	.debug_ranges,"",%progbits
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2873 004f 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_CONNECTED\000"
  2873      455F4556 
  2873      545F4741 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 78
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 78
 
 
  2873      505F4445 
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2893 015a 4359424C 		.ascii	"CYBLE_GATT_ERR_UNSUPPORTED_GROUP_TYPE\000"
  2893      455F4741 
  2893      54545F45 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 79
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 79
 
 
  2893      52525F55 
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2913 0289 4359424C 		.ascii	"CYBLE_GAP_AUTH_ERROR_UNSPECIFIED_REASON\000"
  2913      455F4741 
  2913      505F4155 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 80
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 80
 
 
  2913      54485F45 
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2931      41445645 
  2931      52544953 
  2932              	.LASF218:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 81
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 81
 
 
  2933 039a 62644861 		.ascii	"bdHandle\000"
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2951      42595F54 
  2952              	.LASF17:
  2953 049f 4359424C 		.ascii	"CYBLE_EVT_STACK_ON\000"
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 82
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 82
 
 
  2953      455F4556 
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2971      4541445F 
  2971      424C4F42 
  2972              	.LASF201:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 83
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 83
 
 
  2973 05b2 4359424C 		.ascii	"CYBLE_GATT_ERR_INVALID_ATTRIBUTE_LEN\000"
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  2991      52525F43 
  2991      4343445F 
  2992              	.LASF40:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 84
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 84
 
 
  2993 06c1 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3011      4341505F 
  3011      43424643 
  3012              	.LASF43:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 85
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 85
 
 
  3013 07d2 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3031      434E4847 
  3031      5F4D5455 
  3032              	.LASF77:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 86
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 86
 
 
  3033 08cf 4359424C 		.ascii	"CYBLE_ERROR_NO_DEVICE_ENTITY\000"
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3051              	.LASF71:
  3052 09d7 4359424C 		.ascii	"CYBLE_ERROR_INVALID_PARAMETER\000"
  3052      455F4552 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 87
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 87
 
 
  3052      524F525F 
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3070      4341505F 
  3070      434F4E4E 
  3071              	.LASF147:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 88
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 88
 
 
  3072 0b0c 4359424C 		.ascii	"CYBLE_GAP_AUTH_ERROR_LINK_DISCONNECTED\000"
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3090 0c15 4359424C 		.ascii	"CYBLE_GATT_READ_REQ\000"
  3090      455F4741 
  3090      54545F52 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 89
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 89
 
 
  3090      4541445F 
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3110 0d3e 6379426C 		.ascii	"cyBle_mtuSize\000"
  3110      655F6D74 
  3110      7553697A 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 90
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 90
 
 
  3110      6500
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3129      65737300 
  3130              	.LASF197:
  3131 0e63 4359424C 		.ascii	"CYBLE_GATT_ERR_PREPARE_WRITE_QUEUE_FULL\000"
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 91
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 91
 
 
  3131      455F4741 
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3149      505F4348 
  3150              	.LASF78:
  3151 0fa4 4359424C 		.ascii	"CYBLE_ERROR_REPEATED_ATTEMPTS\000"
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 92
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 92
 
 
  3151      455F4552 
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3173      455F4741 
  3173      54545F45 
  3173      52525F49 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 93
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 93
 
 
  3173      4E535546 
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3191      54545F45 
  3191      52525F41 
  3191      54545249 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 94
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 94
 
 
  3192              	.LASF69:
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3211 12fe 4359424C 		.ascii	"CYBLE_GATT_READ_MULTIPLE_REQ\000"
  3211      455F4741 
  3211      54545F52 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 95
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 95
 
 
  3211      4541445F 
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3229      505F454E 
  3229      43525950 
  3230              	.LASF38:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 96
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 96
 
 
  3231 141c 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3249 1521 4359424C 		.ascii	"CYBLE_ERROR_INVALID_STATE\000"
  3249      455F4552 
  3249      524F525F 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 97
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 97
 
 
  3249      494E5641 
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3269      455F4741 
  3269      505F4244 
  3269      5F414444 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 98
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 98
 
 
  3269      525F5400 
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3289      655F7374 
  3289      61746500 
  3290              	.LASF48:
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 99
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 99
 
 
  3291 16f8 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3312 17f6 45525300 		.ascii	"ERS\000"
  3313              	.LASF194:
  3314 17fa 4359424C 		.ascii	"CYBLE_GATT_ERR_REQUEST_NOT_SUPPORTED\000"
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 100
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 100
 
 
  3314      455F4741 
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3333              	.LASF212:
  3334 1903 4359424C 		.ascii	"CYBLE_GATT_ERR_ANS_COMMAND_NOT_SUPPORTED\000"
  3334      455F4741 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 101
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 101
 
 
  3334      54545F45 
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3354 19e5 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
  3354      455F4556 
  3354      545F5354 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 102
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 102
 
 
  3354      41434B5F 
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3375      455F4348 
  3375      41525F44 
  3375      4953435F 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 103
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 103
 
 
  3375      444F4E45 
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 1
  3396              	.LASF37:
  3397 1be8 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
  3397      455F4556 
-ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccWiNetf.s 			page 104
+ARM GAS  C:\Users\Evan\AppData\Local\Temp\ccj8v4Eu.s 			page 104
 
 
  3397      545F4741 

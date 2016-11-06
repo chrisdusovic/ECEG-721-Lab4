@@ -142,6 +142,7 @@ void InitializeSystem(void)
 	/* Initialize CapSense component and initialize baselines*/
 	CapSense_Start();
 	CapSense_InitializeAllBaselines();
+    CapSense_EnableWidget(CapSense_PROXIMITYSENSOR0__PROX);
 }
 
 
@@ -162,7 +163,7 @@ void InitializeSystem(void)
 void HandleCapSenseSlider(void)
 {
 	/* Last read CapSense slider position value */
-	static uint16 lastPosition;	
+	//static uint16 lastPosition;	
 	
 	/* Present slider position read by CapSense */
 	uint16 sliderPosition;
@@ -177,19 +178,20 @@ void HandleCapSenseSlider(void)
 	while(CapSense_IsBusy());
 	
 	/* Read the finger position on the slider */
-	sliderPosition = CapSense_GetCentroidPos(CapSense_LINEARSLIDER0__LS);	
+	sliderPosition =  CapSense_GetDiffCountData(CapSense_PROXIMITYSENSOR0__PROX);
+	SendCapSenseNotification((uint8)sliderPosition);
 
 	/*If finger is detected on the slider*/
-	if((sliderPosition != NO_FINGER) && (sliderPosition <= SLIDER_MAX_VALUE))
+	//if((sliderPosition != NO_FINGER) && (sliderPosition <= SLIDER_MAX_VALUE))
 	{
         /* If finger position on the slider is changed then send data as BLE 
          * notifications */
-        if(sliderPosition != lastPosition)
+       // if(sliderPosition != lastPosition)
 		{
 			/* Update global variable with present finger position on slider*/
-			lastPosition = sliderPosition;
+			//lastPosition = sliderPosition;
 
-			SendCapSenseNotification((uint8)sliderPosition);
+			
 
 		}	
 	}	

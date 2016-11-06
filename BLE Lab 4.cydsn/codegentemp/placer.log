@@ -6,7 +6,7 @@
 
 #Build Date:         Oct 23 2014 13:00:08
 
-#File Generated:     Nov 2 2016 14:45:03
+#File Generated:     Nov 2 2016 20:11:30
 
 #Purpose:            
 
@@ -55,7 +55,7 @@ Design Statistics after Packing
 Device Utilization Summary after Packing
     Macrocells                  :	6/32
     UDBS                        :	2/4
-    IOs                         :	9/38
+    IOs                         :	5/38
 
 
 D2088: Phase 3, elapsed time : 0.0 (sec)
@@ -117,7 +117,7 @@ Clock: PRS_Clock            | Frequency:  87.5 MHz | Target:   1.0 MHz
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 0.0 (sec)
+D2088: Phase 7, elapsed time : 0.1 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	1
@@ -127,11 +127,11 @@ Final Design Statistics
     Number of Status            	:	0
     Number of SyncCells         	:	0
     Number of count7cells       	:	0
-    Number of IOs       	:	9
+    Number of IOs       	:	5
 
 Device Utilization Summary
     Macrocells                  :	6/32
-    IOs                         :	9/38
+    IOs                         :	5/38
 
 
 
@@ -170,5 +170,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 0.3 sec.
+I2076: Total run-time: 1.0 sec.
 

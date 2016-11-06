@@ -67,6 +67,8 @@
   <file name="C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\codegentemp\BLE_1_bless_isr.h" value="NONE;BLE_1_bless_isr" />
   <file name="C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\codegentemp\CapSense_SampleClk.c" value="ARM_C_FILE;CapSense_SampleClk" />
   <file name="C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\codegentemp\CapSense_SampleClk.h" value="NONE;CapSense_SampleClk" />
+  <file name="C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\codegentemp\CapSense_Sns.c" value="ARM_C_FILE;CapSense_Sns" />
+  <file name="C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\codegentemp\CapSense_Sns.h" value="NONE;CapSense_Sns" />
   <file name="C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\codegentemp\CapSense_Sns_aliases.h" value="NONE;CapSense_Sns" />
   <file name="C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\codegentemp\CapSense_SenseClk.c" value="ARM_C_FILE;CapSense_SenseClk" />
   <file name="C:\Users\Evan\Desktop\BLE Lab 4\BLE Lab 4.cydsn\codegentemp\CapSense_SenseClk.h" value="NONE;CapSense_SenseClk" />

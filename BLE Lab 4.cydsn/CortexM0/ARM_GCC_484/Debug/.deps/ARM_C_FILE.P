@@ -126,6 +126,14 @@ C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/CortexM0/ARM_GCC_484/Debug/C
 
 C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_SenseClk.c : 
 
+C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/CortexM0/ARM_GCC_484/Debug/CapSense_Sns.o : C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_Sns.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_Sns_aliases.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_Sns.c 
+
+C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_Sns.h : 
+
+C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_Sns_aliases.h : 
+
+C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_Sns.c : 
+
 C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/CortexM0/ARM_GCC_484/Debug/CapSense_TunerHelper.o : C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_CSHL.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_IP.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_SampleClk.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_SenseClk.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_TunerHelper.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/core_cm0.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/core_cmFunc.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/core_cmInstr.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_TunerHelper.c 
 
 C:/Users/Evan/Desktop/BLE\ Lab\ 4/BLE\ Lab\ 4.cydsn/Generated_Source/PSoC4/CapSense_TunerHelper.h : 

@@ -1,5 +1,5 @@
 # BLE Lab 4
-# 2016-11-02 18:45:03Z
+# 2016-11-03 00:11:31Z
 
 # IO_6@[IOP=(0)][IoId=(6)] is reserved: SWDDebugEnabled
 dont_use_io iocell 0 6
@@ -25,10 +25,6 @@ set_location "\CapSense:IDAC1:cy_psoc4_idac\" p4csidac8cell -1 -1 0
 set_location "\CapSense:IDAC2:cy_psoc4_idac\" p4csidac7cell -1 -1 0
 set_location "\CapSense:ISR\" interrupt -1 -1 16
 set_io "\CapSense:Sns(0)\" iocell 2 1
-set_io "\CapSense:Sns(1)\" iocell 2 2
-set_io "\CapSense:Sns(2)\" iocell 2 3
-set_io "\CapSense:Sns(3)\" iocell 2 4
-set_io "\CapSense:Sns(4)\" iocell 2 5
 set_location "\PRS_1:SyncCtl:ControlReg\" 1 0 6
 set_location "\PRS_1:enable_final_reg\" 1 0 0 0
 set_location "\PRS_1:sC8:PrISMdp:u0\" 1 0 2

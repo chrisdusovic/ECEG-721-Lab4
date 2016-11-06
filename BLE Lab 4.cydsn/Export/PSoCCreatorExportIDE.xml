@@ -109,6 +109,8 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CapSense_SampleClk.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CapSense_SampleClk.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CapSense_Sns_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CapSense_Sns.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CapSense_Sns.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CapSense_SenseClk.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\CapSense_SenseClk.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC4\Cm0Start.c</File>
